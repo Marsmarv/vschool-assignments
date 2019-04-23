@@ -1,0 +1,82 @@
+h1, h2, h3 {
+    text-align: center;    
+}
+
+.randomside {
+    font-size: 16px;
+    width: 15%;
+    border-width: thin;
+    border-style: solid;
+}
+
+.heading {
+    text-align: center;
+    font-size: 46px;
+    border-style: solid;
+
+}
+
+h1 {
+    display: inline-block;
+    text-align: center;
+    margin: 0px;
+}
+
+h2 {
+    font-size: 65px;
+    margin: 0px;
+    border-bottom: double;
+    border-width: thin;
+}
+
+h3 {
+    font-size: 45px;
+    font-style: italic;
+    margin: 2px;
+    word-spacing: 15px;
+    letter-spacing: 1px;
+    border-bottom: double;
+}
+
+#title {
+    width: 60%;
+    font-size: 67px;
+    font-family: cursive;
+    letter-spacing: 1px;
+}
+
+.sideparagraph {
+    display: inline-block;
+    width: 20%;
+    padding: 10px;
+    margin: 0px;
+}
+
+img {
+    display: inline-block;
+}
+
+.bodyside {
+    text-align: center;
+}
+
+.underline {
+    margin: 0px;
+    text-align: center;
+}
+
+b {
+    font-size: 30px;
+}
+
+.bottomside {
+    display: inline-block;
+    width: 20%;
+    text-align: left;
+    padding: 10px;
+    margin: 0px;
+}
+
+.leftovers {
+    padding-left: 90px;
+}

@@ -1,0 +1,71 @@
+.box {
+    height: 42px;
+    width: 100%;
+    background: rgb(48, 102, 184);
+}
+
+.layerOne {
+   display: block;
+   width: 100%;
+}
+
+div {
+    margin: 0pt;
+    display: inline-block;
+    width: 75%;
+    margin-bottom: 40px;
+}
+
+.boxTwo {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    height: 65pt;
+    width: 75pt;
+    background: rgb(48, 102, 184);
+}
+
+.boxThree {
+    position: absolute;
+    top: 8px;
+    left: 150px;
+    height: 65pt;
+    width: 75pt;
+    background: rgb(48, 102, 184);
+}
+ .boxFour {
+    position: absolute;
+    top: 135px;
+    left: 8px;
+    height: 65pt;
+    width: 75pt;
+    background: rgb(48, 102, 184);
+}
+.boxFive {
+    position: absolute;
+    top: 135px;
+    left: 150px;
+    height: 65pt;
+    width: 75pt;
+    background: rgb(48, 102, 184);
+}
+
+.cross {
+    z-index: 5;
+    position: absolute;
+    top: 8px;
+    left: 107px;
+    height: 214px;
+    width: 43px;
+    background: white;
+}
+
+.crossTwo {
+    z-index: 5;
+    position: absolute;
+    top: 95px;
+    left: 8px;
+    height: 40px;
+    width: 242px;
+    background: white;
+}
