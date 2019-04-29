@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box; 
+    font-size: 0px;
+}
+
 body{
     margin: 0;
     box-sizing: border-box;
@@ -15,7 +20,7 @@ body{
 }
 
 .box{
-    background: tomato;
+    background: white;
     height: 100px;
     width: 100px;
     display: inline-block;
@@ -24,36 +29,38 @@ body{
     box-sizing: border-box; 
     font-size: 0px;
     margin: auto;
-
-
 }
 
 .one{
     background: #F5C6D6;
     width: 100%;
-
 }
 
 .two{
     background: #EE2E84;
     width: 25%;
-
 }
 
 .three{
     background: #85CFD8;
     width: 50%;
-
 }
 
 .four{
     background: #8DC63F;
     width: 75%;
-
 }
 
 .five{
     background: #E76E34;
     width: 25%;
-    
+}
+
+@media (max-width: 768px){
+    .box {
+        height:50px;
+        width:100%;
+        border: solid white 1px;
+
+    }
 }

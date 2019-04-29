@@ -419,3 +419,140 @@ myArr.reverse()
 str = myArr.join('')
 console.log(str)
 Collapse
+
+// let form = document.myForm;
+
+// form.addEventListener('submit',function(event){
+//     event.preventDefault()
+//     let name = form.yourName.value
+//     let age = form.age.value
+
+//     let person = {
+//         name,
+//         age
+//     }
+    
+// })
+
+let form = document.words
+
+form.addEventListener('submit', function(e){
+    e.preventDefault()
+
+    let noun = form.noun.value
+    let verb = form.verb.value
+    let adverb = form.adverb.value
+    let adjective = form.adjective.value
+
+    console.log(`The ${adjective} ${noun} ${verb} ${adverb} and did other cool stuff too`) // Template Literal
+    // console.log("The " + adjective + " " + noun + " " + verb + " " + adverb + " and did other cool stuff too") // old way don't do this anymore
+})
+
+let form = document.words
+
+form.addEventListener('submit', function(e){
+    e.preventDefault()
+
+    let noun = form.noun.value
+    let verb = form.verb.value
+    let adverb = form.adverb.value
+    let adjective = form.adjective.value
+
+    let madLib = `The ${adjective} ${noun} ${verb} ${adverb} and did other cool stuff too` // Template Literal
+
+    form.noun.value = ''
+    form.verb.value = ''
+    form.adverb.value = ''
+    form.adjective.value = ''
+
+    document.getElementById('results').innerHTML = `<h1>${madLib}</h1>`
+})
+
+// <!DOCTYPE html>
+/* <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Forms</title>
+</head>
+<body>
+    
+    <form name="words">
+        <input type="text" placeholder="Nouns" name="noun" >
+        <input type="text" placeholder="Verbs" name="verb" >
+        <input type="text" placeholder="Adverb" name="adverb">
+        <input type="text" placeholder="Adjective" name="adjective" >
+        <button>Submit</button>
+    </form>
+    <div id="results">
+        
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> */
+
+let form = document.cars
+
+form.addEventListener('submit', function(event){
+    event.preventDefault()
+    // document.getElementById('myName').innerHTML = `<h1>${form.name.value}</h1>` // template literal
+
+    // Checkboxes
+    const cars = form.likes // NodeList
+    const likedCars = []
+    for(let i = 0; i < cars.length; i++){
+        if(cars[i].checked){
+            likedCars.push(cars[i].value)
+        }
+    }
+
+    //Radio Button
+    console.log(form.favorite.value)
+
+
+})
+Collapse
+
+
+
+
+// var str = 'string';
+
+// let strOne = 'string one';
+// const strTwo = 'string two';
+
+// var numb = 2343
+// var arr = ['random string', 4545, {
+//     hi: 1
+// }, true, ['hi'], str, strOne]
+// var foo = false
+// var obj = {
+//     hi: 1,
+//     points: 0,
+// }
+
+// var mainHeader = ''
+
+// var person = {
+//     firstName: 'Charles',
+//     lastName: 'Charlie',
+//     age: 45,
+// }
+
+// var x = 9
+// var y = 3
+
+// var z = x * y
+
+// var k = 9 % 3
+
+// function myFunc() {
+//     return k
+// }
+
+// function myNewFunc(numOne, numTwo) {
+//     return numOne + numTwo
+// }
+
+// console.log(myNewFunc(3, 4))

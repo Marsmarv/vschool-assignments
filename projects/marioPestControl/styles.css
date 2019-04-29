@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+}
+
+.columnOne{
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+}
+
+.columnTwo{
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+}
+
+.columnThree{
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+}
+
+.imgOne {
+    height: 100pt;
+    width: 75pt;
+    position: relative;
+    margin: 30pt;
+}
+.imgTwo {
+    height: 100pt;
+    width: 100pt;
+    margin-bottom: 5pt;
+    margin: 30pt;
+}
+
+.imgThree {
+    height: 100pt;
+    width: 100pt;
+    margin: 30pt;
+}
+
+body {
+    margin: 0pt;
+}
+
+.input {
+    margin: 0pt;
+    width: 40%;
+    text-align: center;
+}
+
+#primary-background {
+    background-image: url(http://images5.fanpop.com/image/photos/26500000/Mario-mario-26502748-1440-900.jpg);
+    height: 100vh;
+    display: flex;
+    background-attachment: fixed;
+    background-position: top center;
+    z-index: -2;
+    
+}
+
+.large-title {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: 33.1%;
+    
+}
+
+.header {
+    border-radius: 0px;
+}
+
+.one {
+    background-color: rgb(0, 0, 189);
+    background: linear-gradient(rgba(4, 35, 172), rgba(71, 39, 39, 0.872));
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 50pt;  
+    margin-top:5pt;
+    opacity: 1;
+    border-radius: 20px;
+}
+
+h1 {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 40pt;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    color: aliceblue;
+    text-align: center;
+}
+
+.three {
+    margin-top: 30pt;
+    background: linear-gradient(rgba(4, 35, 172), rgba(71, 39, 39, 0.6));
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 105pt;
+    border-radius: 20px;
+}
+
+.home{
+    color: aliceblue;
+    font-size:20px;
+    border: solid red 1px;
+    text-align: center;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    border-radius: 20px;
+    width: 50%;
+    margin-left: 25%;
+    
+}
+
+.about{
+    color: aliceblue;
+    font-size:20px;
+    border: solid red 1px;
+    text-align: center;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    border-radius: 20px;
+    width: 50%;
+    margin-left: 25%;
+    
+}
+
+.contact{
+    color: aliceblue;
+    font-size:20px;    
+    border: solid red 1px;
+    text-align: center;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    border-radius: 20px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+@media (max-width: 638px) {
+    .home {font-size:14px;}
+    .about {font-size:14px;}
+    .contact {font-size:14px;}
+}
+
+@media (max-width: 738px) {
+    .four{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1056px) {
+    h1 {font-size:45px;}
+}
+
+@media (max-width: 800px) {
+    h1 {font-size:40px;}
+}
+
+@media (max-width: 674px) {
+    h1 {font-size:24px;}
+}
+
+@media (max-width: 400px) {
+    h1 {font-size:20px;}
+}
+
+@media (max-width: 344px) {
+    h1 {font-size:14px;}
+}
+
+.two {
+    background: linear-gradient(rgb(255, 0, 0), rgba(71, 39, 39, 0.6));
+    margin-top:15pt;
+    height: 65pt;
+    opacity: 1;
+    border-radius: 20px;
+}
+
+.four {
+    grid-column: 1 / -1;
+    background-color: rgb(0, 0, 0);
+    /* border-radius: 5px; */
+    color: aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0pt;
+    opacity: .85;
+    
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1 / -1;
+  background-color: rgb(0, 0, 0);
+  opacity: .85;
+  color: aliceblue;
+  top: 0px;
+}
+
+button {
+    cursor: pointer;
+    white-space: nowrap;
+    font: inherit;
+    width: 150pt;
+}
+
+.footerOne {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: rgb(0, 0, 0);
+    opacity: .85;
+    color: aliceblue;
+    top: 0px;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    text-align: left;
+    padding-left: 20pt;
+}
+
+.footerTwo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    opacity: .85;
+    color: aliceblue;
+    top: 0px;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    text-align: end;
+    
+}
+
+.footerThree {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    opacity: .85;
+    color: aliceblue;
+    top: 0px;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    padding-left: 10pt;
+}

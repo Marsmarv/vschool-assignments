@@ -42,9 +42,9 @@ var looping = function(n) {
     return f;
 };
 
-console.log(looping(7))
-console.log(arr)
+console.log(looping(7));
+console.log(arr);
 
-const fizzBuzz (num) => {
+const fizzBuzz = (num) => {
     console.log ("hello")
 }

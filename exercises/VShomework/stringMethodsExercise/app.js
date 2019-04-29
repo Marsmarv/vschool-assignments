@@ -19,8 +19,7 @@
 // console.log(half("do another ninja flip"));
 
 function first(str) {
-    // return str.replace(/\s+\w/g, (letter) => letter.toUpperCase()) ||didn't create this||
-    
+    // return str.replace(/\s+\w/g, (letter) => letter.toUpperCase()) ||didn't create this||   
     arr = str.split(" ")
     for (i = 0; i < arr.length; i++){
         str1 = arr[i][0].toUpperCase();
@@ -29,11 +28,3 @@ function first(str) {
 }
 
 console.log(first("big balconies and trophy wives"))
-
-// function sandbox(str){
-//     arr = str.split('')
-//     console.log(arr)
-//     arr[0].toUpperCase([0])
-//    return  arr.join('')
-// }
-// console.log(sandbox('hello in the big city'))
