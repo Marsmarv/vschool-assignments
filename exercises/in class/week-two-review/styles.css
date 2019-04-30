@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 0;
+}
+
+header {
+    font-size: 20pt;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 30pt;
+    background: #335;
+    position: fixed;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input{
+    font-size: 21pt;
+}
+
+button{
+    font-size: 21pt;
+    background: #f7f7f7;
+    
+}
+
+section {
+    min-height: 100vh;
+    background: #333;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 30pt;
+    grid-auto-rows: 300pt;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 2pt;
+    grid-auto-rows: 200pt; */
+}
+
+/* .picture {
+    background: rgb(91, 134, 177);
+    background-image: url(https://img.pokemondb.net/artwork/large/charizard-mega-y.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.pic-one {
+    background: rgb(14, 83, 151);
+}
+
+.pic-two {
+    background: rgb(14, 28, 151);
+}
+
+.pic-three {
+    background: rgb(59, 47, 126);
+}
+
+.pic-four {
+    background: rgb(100, 84, 194);
+} */
+
+footer {
+    height: 30pt;
+    background: #335;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    padding: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #f7f7f7;
+    height: 100%;
+}
+
+ol{
+    width: 100%;
+}
+
+li {
+    font-size: 21pt;
+}
+
+/* .top {
+    display: grid;
+    grid-column-start: 1 /-1;
+    height: 50pt;
+    background-color: darkgray;
+    border: 1px solid powderblue;
+} */
+
+/* @media (min-width: 500pt){
+    section{
+        
+    }
+} */
+
+/* .row-one{
+    background: #f0f0f0;
+    align-content: space-around;
+    font-size: 15pt;
+}
+.row-two{
+    grid-column: span 4;
+    background: #0f0f0f;
+}
+
+.row-extra{
+    grid-column: span 8;
+    background: #444;
+}
+.row-four{
+    grid-column: span 6;
+    background: rgb(32, 187, 32);
+}
+.row-five{
+    grid-column: 1/ -1;
+    background: rgb(226, 38, 38);
+} */

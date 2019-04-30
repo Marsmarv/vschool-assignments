@@ -22,7 +22,7 @@ section {
     display: grid;
     padding-top: 30pt;
     grid-auto-rows: 200pt;
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-gap: 2pt;
     /* width: 102% */
 }
@@ -36,6 +36,9 @@ section {
 .pic-one {
     background-image: url(https://www.pngkey.com/png/full/695-6954554_crystals.png);
     /* background: rgba(14, 82, 151, 0.527); */
+    display: flex;
+    justify-content: center;
+
 }
 .firstPadding{
     padding-top: 30pt;
@@ -49,6 +52,7 @@ p {
     color: #f7f7f7;
     text-shadow: 1px 0 rgb(0, 0, 0), 0 0px black, 0px 0 black, 0 0px black;
     box-shadow: 2px 4px 4px 4px rgb(38, 38, 38);
+    background-color: #335;
 }
 
 #footerContact{
@@ -146,6 +150,22 @@ img {
 .pic-four {
     /* background: rgb(100, 84, 194); */
     background-image: url(https://i.pinimg.com/originals/cd/89/2c/cd892cf96c24ddc36a099c5de0623214.png);
+}
+
+.pic-five{
+    /* background: rgb(100, 84, 194); */
+    display: grid;
+    grid-column-start: (1, 3);
+
+    background-image: url(https://www.pngkey.com/png/full/219-2195126_picture-free-download-brazilian-crystal-specimen-chairish-amethyst.png);
+}
+
+.pic-six{
+    /* background: rgb(100, 84, 194); */
+    display: grid;
+    grid-column-start: (1, 3);
+
+    background-image: url(https://data.whicdn.com/images/190432592/large.png);
 }
 
 footer {
