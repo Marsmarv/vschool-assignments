@@ -1,6 +1,6 @@
 var form = document.airForm;
 var submit = document.getElementById("submit");
-var query = document.querySelector;
+// var query = document.querySelector;
 
 
 
