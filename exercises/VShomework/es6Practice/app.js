@@ -26,7 +26,7 @@
 //     })
 // }
 
-// function mapVegetables(arr) {
+// const mapVegetables = arr =>{
 //     return carrots.map(carrot => {
 //         return { type: "carrot", name: carrot}
 //     })
@@ -122,12 +122,12 @@
 //  filterForDogs = arr => {return arr.filter(animal => animal.type === "dog" ? true : false )}
 //  console.log(filterForDogs(animals))
 
-temp = (location, name) => {
-    return `    Hi ${name}!
+// temp = (location, name) => {
+//     return `    Hi ${name}!
     
-    Welcome to ${location}.
+//     Welcome to ${location}.
     
-    I hope you enjoy your stay. Please ask the president of ${location} if you need anything.`
-}
+//     I hope you enjoy your stay. Please ask the president of ${location} if you need anything.`
+// }
 
-console.log(temp("Brazil", "Marv"))
+// console.log(temp("Brazil", "Marv"))

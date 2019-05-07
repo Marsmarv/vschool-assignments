@@ -1,0 +1,70 @@
+{
+    "appetizers": [{
+        "name": "Buffalo wings",
+        "ingredients": ["Chicken wings", "Side of ranch"]
+    }, {
+        "name": "Fries",
+        "ingredients": ["potato", "salt"]
+    }, {
+        "name": "Garlic knots",
+        "ingredients": ["dough", "garlic"]
+    }],
+    "cold sandwiches": [{
+        "name": "Ham and cheese",
+        "ingredients": ["Hero/roll", "Ham", "cheese", "lettuce", "tomato"],
+        "number": 22,
+        "description": "Regular sandwich for the regular guy"
+    }, {
+        "name": "Amazon wrap",
+        "ingredients": ["Wrap", "Breaded chicken", "Cheese", "Lettuce", "tomato", "Honey mustard"],
+        "number": 10,
+        "description": "Can be good if you get extra sauce"
+    }, {
+        "name": "Turkey delight",
+        "ingredients": ["Hero/roll", "Turkey", "Lettuce", "BBQ sauce", "cheese"],
+        "number": 6,
+        "description": "Will make you sleepy"
+    }],
+    "hot sandwiches": [{
+        "name": "Chicken cordon bleu",
+        "ingredients": ["Hero", "Lettuce", "Cheese", "Grilled chicken", "Ham", "Honey mustard"],
+        "number": 62,
+        "description": "Hero sandwich, very good"
+    }, {
+        "name": "New York Yankees",
+        "ingredients": ["Hero", "Lettuce", "Cheese", "Breaded chicken", "Onion rings", "Gravy"],
+        "number": 69,
+        "description": "Hero sandwich, very scrumptious"
+    }, {
+        "name": "New York Giants",
+        "ingredients": ["Hero", "Lettuce", "Cheese", "Breaded chicken", "fries", "BBQ sauce"],
+        "number": 72,
+        "description": "Hero sandwich, great if not soggy"
+    }],
+    "desserts": [{
+        "name": "Cinna-sticks",
+        "levelOfYum": 8,
+        "description": "Very sweet, might not always be a good idea"
+    }, {
+        "name": "Pudding",
+        "levelOfYum": 6,
+        "description": "If not entirely full grab one to go"
+    }, {
+        "name": "Cheesecake",
+        "levelOfYum": 7,
+        "description": "Nice touch after a wrap"
+    }],
+    "drinks": [{
+        "name": "Ginger-ale",
+        "type": "soda",
+        "size": "Large"
+    }, {
+        "name": "Horchata",
+        "type": "rice drink",
+        "size": "Large"
+    }, {
+        "name": "Water",
+        "type": "Water",
+        "size": "Large"
+    }]
+}
