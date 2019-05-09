@@ -1,0 +1,20 @@
+#container {
+    margin: 0;
+    margin-left: 5px;
+    margin-top: 3px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+div {
+    padding-right: 30px;
+    margin-bottom: 0;
+}
+
+h2, p {
+    margin: 0;
+}

@@ -1,0 +1,36 @@
+::placeholder{
+    text-align: center;
+}
+
+.place {
+    width: 15%;
+}
+
+#container {
+    display: grid;
+    justify-items: center;
+    margin-top: 100px;
+    border: solid black 3px;
+    padding-bottom: 20px;
+    background-color: azure;
+}
+
+#sectionOne, #sectionTwo, #sectionThree, #sectionFour {
+    padding: 10px;
+    /* margin-left: 150px;  */
+    border: black solid 1px;
+    width: 30%;
+    text-align: center;
+}
+
+#sectionOne, #sectionThree{
+    background-color: rgb(198, 198, 198);
+}
+
+#sectionTwo, #sectionFour{
+    background-color: rgb(154, 154, 154);
+}
+
+p {
+    text-align: center;
+}
