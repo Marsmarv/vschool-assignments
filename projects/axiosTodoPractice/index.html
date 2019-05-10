@@ -8,16 +8,15 @@
 </head>
 <body>
     <h1>add to do:</h1>
-    <form name="addTodo">
+    <form name="addTodo" id="formInput">
         <input id="" type="text" placeholder="Title" name="title"><br>
         <input id="" type="text" placeholder="Description" name="description"><br>
-        <input id="" type="number" placeholder="price" name="price"><br>
-        <input id="" type="text" placeholder="Image URL" name="imgURL"><br>
+        <input id="" type="number" placeholder="price" name="price" step=".01"><br>
+        <input id="" type="text" placeholder="Image Url" name="imgUrl" value="http://5.imimg.com/data5/HV/TB/GLADMIN-2/grocery-bag-500x500.jpg"><br>
         <button>Submit</button>
     </form>
-    <h1></h1>
+    <h1>Tasks</h1>
     <div id="container"></div>
-
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="app.js"></script>
