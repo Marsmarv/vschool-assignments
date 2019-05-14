@@ -70,9 +70,9 @@ body{
     .second-content{
         background: #C1D8C9;
         opacity: .7;
-        background-image: url("http://www.csszengarden.com/214/contours-opaque.png"), url('http://www.csszengarden.com/214/bamboo.png');
+        background-image: url("http://www.csszengarden.com/214/contours-opaque.png"),url("http://www.csszengarden.com/214/gridlines-opaque.png"), url('http://www.csszengarden.com/214/bamboo.png');
         background-color: rgb(165, 202, 181);
-        background-attachment: scroll, fixed;
+        background-attachment: scroll, scroll, fixed;
 
 
         
@@ -120,9 +120,9 @@ body{
         grid-row: 3/4;
         background: #B0CBBB;
         opacity: .7;
-        background-image: url("http://www.csszengarden.com/214/contours-opaque.png"),url('http://www.csszengarden.com/214/bamboo.png');
-        background-color: rgba(138,188,159,1);
-        background-attachment: scroll, fixed;
+        background-image: url("http://www.csszengarden.com/214/contours-opaque.png"),url("http://www.csszengarden.com/214/gridlines-opaque.png"), url('http://www.csszengarden.com/214/bamboo.png');
+        background-color: rgb(136, 184, 156);
+        background-attachment: scroll, scroll, fixed;
     }
 
     .image {
@@ -195,4 +195,53 @@ body{
     display: grid;
     grid-template-columns: repeat(5,175px);
     padding-bottom: 47px;
+}
+
+p {
+    line-height: 2;
+}
+
+a {
+    display: inline-block;
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    padding: 2px;
+    color: #a9b995;
+    background: #d9e1cd;
+    /* -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px; */
+    content: "D";
+    font-size: 16px;
+    text-indent: 0;
+    font-family: 'verdemoderna';
+    /* speak: none; */
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+}
+
+.content-container a:hover::before {
+    color: #fff;
+    background: #357d93;
+  }
+
+
+.content-container a, .content-container a:visited {
+    position: relative;
+    display: inline-block;
+    padding: 1px 10px 1px 32px;
+    margin: -1px -10px -1px -6px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    color: #809b7e;
+    font-family: 'Julius Sans One', sans-serif;
+    text-transform: uppercase;
 }

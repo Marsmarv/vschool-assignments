@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background: pink;
+    display: flex;
+    justify-content: space-around;
+    height: 40pt;
+    align-items: center;
+}
+.footer {
+    background: purple;
+    display: flex;
+    justify-content: space-around;
+    height: 40pt;
+    align-items: center;
+}
+
+.main {
+    background: red;
+    height: 90vh;
+}
