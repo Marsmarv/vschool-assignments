@@ -1,13 +1,15 @@
 import React from 'react'
 
 const Component = (props) => {
+    const styles = {
+        backgroundColor: props.background
+    }
+    
     return (
-        <>
-        <div>Background: {props.background}</div>
-        <div>Title: {props.title}</div>
-        <div>Subtitle: {props.subtitle}</div>
-        <div>Information: {props.information}</div>
-        </>
+       <div style={styles}>
+           <h1>color box</h1>
+           <p>this is the number {props.number}</p>
+       </div>
     )
 }
 

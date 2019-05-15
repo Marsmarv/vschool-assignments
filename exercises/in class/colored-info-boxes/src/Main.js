@@ -1,26 +1,35 @@
 import React from 'react'
 import Component from './Component'
 
-const Main = ()=>{
-    const myComponent = [{
-        background: 'black',
-        title: 'first component',
-        subtitle: 'sub',
-        information: 'empty'
+const colorInfo = [
+    {
+        number: 1,
+        background: 'green'
     },{
-    background: 'blue',
-    title: 'second component',
-    subtitle: 'another sub',
-    information: 'empty'
+        number: 2,
+        background: 'blue'
+    },{
+        number: 3,
+        background: 'red'
+    },{
+        number: 4,
+        background: 'yellow'
+    },{
+        number: 5,
+        background: 'gray'
+    },{
+        number: 6,
+        background: 'black'
     }
 ]
 
+const Main = ()=>{
+    const mappedColors = colorInfo.map((color)=>{
+        return<Component number={color.number} background={color.background} />
+    })
     return (
-        <div className="main-container">
-            <Component background={myComponent.background}
-                        title={myComponent.title}
-                        subtitle={myComponent.subtitle}
-                        information={myComponent.information}/>
+        <div className="colorContainer">
+            {mappedColors}
         </div>
     )
 }

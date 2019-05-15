@@ -1,12 +1,11 @@
 import React from 'react'
-import Main from './Main'
-import "./styles.css"
-import Component from "./Component"
+import VacationBox from './VacationBox'
+import './styles.css'
 
 const App = ()=>{
     return (
         <>
-        <Main />
+        <VacationBox />
         </>
     )
 }
