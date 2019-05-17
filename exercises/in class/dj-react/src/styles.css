@@ -1,0 +1,22 @@
+
+.container {
+    margin-left:10px;
+    margin-top:10px;
+    display: inline-grid;
+    grid-gap: 15px;
+    grid-template-areas: 
+    "a a"
+    "a a"
+}
+
+.square {
+    display: inline-grid;
+    margin: 0;
+    height: 200px;
+    width: 200px;
+    border: black solid 2px;
+}
+
+button {
+    margin-left: 100px;
+}

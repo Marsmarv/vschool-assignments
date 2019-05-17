@@ -107,3 +107,39 @@
 // }
 
 // console.log(myFunc(myNum))
+
+
+// console.log( 5 > 3 ? "is greater than" : "is not greater than" )
+
+// console.log( "cat".length === 3 ? "is the length" : "is not the length" )
+
+// console.log( "cat" === "dog" ? "is the same" : "is not the same" )
+
+// let person = {
+//     name: "Bobby",
+//     age: 12
+//   }
+
+// console.log(person.age >= 18 ? person.name + " is allowed to go to the movie" : person.name + " is not allowed to go to the movie")
+
+// console.log( person.name[0] === "B" ? person.name + " is allowed to go to the movies" : person.name + " is not allowed to go to the movies" )
+
+// console.log( person.name[0] && person.age > 18 ? person.name + " is allowed to go" : person.name + " is not allowed to go hah." )
+
+// console.log(1 === "1" ? "strict" : 1 == "1" ? "loose" : "not equal at all")
+
+// console.log(1 <= 2 && 2 === 4 ? "yes" : "no")
+
+// console.log(typeof "dog" === "string" ? "is a type of string" : "is not a type of string")
+
+// console.log(typeof true === "boolean" ? "is a bool" : "is not bool")
+// console.log(typeof "true" === "boolean" ? "is a bool" : "is not bool")
+
+// let x;
+// let y = "defined"
+
+// console.log(typeof x === "undefined" ? "this isn't defined" : "this is defined")
+
+// console.log("s" > 12 ? "it's greater " : "it's not greater")
+
+// console.log(11 % 2 === 0 ? "number is even" : "number is odd")

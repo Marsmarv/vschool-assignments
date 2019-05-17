@@ -3,29 +3,46 @@ import Component from './Component'
 
 const colorInfo = [
     {
-        number: 1,
+        title: 1,
+        subtitle: "numbers",
+        information: "This color is green",
         background: 'green'
     },{
-        number: 2,
-        background: 'blue'
-    },{
-        number: 3,
+        title: 2,
+        subtitle: "numbers",
+        information: "This color is red",
         background: 'red'
     },{
-        number: 4,
+        title: 3,
+        subtitle: "numbers",
+        information: "This color is blue",
+        background: 'blue'
+    },{
+        title: 4,
+        subtitle: "numbers",
+        information: "This color is yellow",
         background: 'yellow'
     },{
-        number: 5,
+        title: 5,
+        subtitle: "numbers",
+        information: "This color is gray",
         background: 'gray'
     },{
-        number: 6,
-        background: 'black'
+        title: 6,
+        subtitle: "numbers",
+        information: "This color is orange",
+        background: 'orange'
+    },{
+        title: 7,
+        subtitle: "numbers",
+        information: "This color is pink",
+        background: 'pink'
     }
 ]
 
 const Main = ()=>{
     const mappedColors = colorInfo.map((color)=>{
-        return<Component number={color.number} background={color.background} />
+        return<Component color={color} />
     })
     return (
         <div className="colorContainer">

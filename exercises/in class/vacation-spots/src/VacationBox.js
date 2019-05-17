@@ -29,15 +29,6 @@ let vacationSpots = [
 
 const VacationBox = ()=>{
     const mappedSpots = vacationSpots.map((spot, i)=>{
-        // if(vacationSpots[i].timeToGo === "Spring"){
-        //     spot.background = "Green"
-        // } else if (vacationSpots[i].timeToGo === "Winter"){
-        //     spot.background = "Grey"
-        // } else if (vacationSpots[i].timeToGo === "Fall"){
-        //     spot.background = "Orange"
-        // } else if (vacationSpots[i].timeToGo === "Summer"){
-        //     spot.background = "Red"
-        // }
 
         switch(vacationSpots[i].timeToGo){
             case "Spring":
@@ -54,12 +45,19 @@ const VacationBox = ()=>{
             break;
         }
 
+        if (vacationSpots[i].price < 500){
+            spot.expense = "$";
+        } else if (vacationSpots[i].price < 1000 && vacationSpots[i].price >= 500){
+            spot.expense = "$$";
+        } else if (vacationSpots[i].price > 1000) {
+            spot.expense = "$$$"
+        }
+
         return <Spots spot={spot} />
     })
     return (
         <div className="main-container">
             {mappedSpots}
-
         </div>
     )
 }
