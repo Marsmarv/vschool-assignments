@@ -18,13 +18,13 @@
 // console.log(half("talk like a fire starter"));
 // console.log(half("do another ninja flip"));
 
-function first(str) {
-    // return str.replace(/\s+\w/g, (letter) => letter.toUpperCase()) ||didn't create this||   
-    arr = str.split(" ")
-    for (i = 0; i < arr.length; i++){
-        str1 = arr[i][0].toUpperCase();
-        str1.concat(str)
-    }
+const first = function(str) {
+    let arr = str.split(" ")
+    newArr = arr.map((str, i)=>{
+        let str1 = arr[i][0].toUpperCase();
+        return str1.concat(str.slice(1))
+    })
+    console.log(newArr.join(" "))
 }
+first("big balconies and trophy wives")
 
-console.log(first("big balconies and trophy wives"))

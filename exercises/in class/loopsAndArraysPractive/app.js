@@ -94,3 +94,10 @@ madMax.map((e, i)=>{
   : console.log(madMax[i].name + " is not old enough, SHE is not good") 
 })
 
+lightCounter = 0
+arr = [2, 5, 435, 4, 3]
+arr.map((light, i)=>{
+lightCounter = arr[i] + lightCounter
+})
+lightCounter % 2 === 0 ? console.log("Light is off") : console.log('light is on')
+

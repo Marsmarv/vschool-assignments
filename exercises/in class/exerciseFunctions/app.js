@@ -30,21 +30,20 @@
 
 // console.log(funcConcat("cat in the hat got many tickets!"))
 
-var looping = function(n) {
-    var a = 0, b = 1, f = 1;
-    for(var i = 2; i <= n; i++) {
-        arr = []
+let looping = function(n) {
+    let a = 1, b = 1, f = 0;
+    let arr = []
+    let sum = 0
+    for(let i = 1; i <= n; i++) {
         arr.push(a)
         f = a + b;
-        a = b;
+        a = b ;
         b = f;
+        // console.log("Fib number "+arr)
+        sum = sum + arr[i] 
     }
-    return f;
+    console.log("Sum of fibonacci sequence is " , f - 1)
+    console.log(arr)
 };
 
-console.log(looping(7));
-console.log(arr);
-
-const fizzBuzz = (num) => {
-    console.log ("hello")
-}
+return looping(10)

@@ -1,6 +1,7 @@
 import React from 'react'
 import "./styles.css"
 import Squares from './Squares'
+import Buttons from './Buttons'
 
 class App extends React.Component {
     constructor(){
@@ -93,18 +94,14 @@ class App extends React.Component {
         const mappedColors = this.state.colors.map((background, i)=>{
             return <Squares background={background} />
         })
-
+        
+        let {color, colorHalf, bright, bleft, topLeft, topRight, bottomLeft, bottomRight} = this
+        const functions = [color, colorHalf, bright, bleft, topLeft, topRight, bottomLeft, bottomRight]
+        
         return(
             <div className="container">
                 {mappedColors}
-                <button onClick={this.color}>Black/White</button>
-                <button onClick={this.colorHalf}>Top purple</button>
-                <button onClick={this.bleft}>Blue left</button>
-                <button onClick={this.bright}>Blue right</button>
-                <button onClick={this.topLeft}>Top left random</button>
-                <button onClick={this.topRight}>Top right random</button>
-                <button onClick={this.bottomLeft}>Bottom left random</button>
-                <button onClick={this.bottomRight}>Bottom right random</button>
+               <Buttons buttons={functions} />
             </div>
         )
     }
