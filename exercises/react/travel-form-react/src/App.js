@@ -9,71 +9,95 @@ class App extends Component {
             lName: "",
             age: "",
             gender: "",
-            locations: "",
-            isChecked: "",
-
+            locations: [],
+            diet: [],
+            isChecked: false,
         }
      }
     
      handleChange = (event) => {
-        event.preventDefault()
-        const {checked, type} = event.target
-        return type === 'checkbox' ? this.isChecked = checked : null
-        
+        const {name, value} = event.target
+        this.setState({[name]: value})       
         }       
-//     handleSubmit = (e) => {
-//             e.preventDefault()
-//             const {name, checked, type} = e.target
-//                 let value;
-//                 if(type === 'checkbox'){
-//                         value = checked
-//                         } else {
-//                         value = e.target.value
-//                         }
 
-//                 this.setState({[name]: value})
+     handleSubmit = (e) => {
+            e.preventDefault()
+            const { fName, lName, age, gender, locations, diet } = this.state
+                
+            alert(`
+                Name: ${fName} ${lName}
+                Age: ${age}
+                Gender: ${gender}
+                Location: ${locations}
+                Diet: ${diet}
+            `)
+        }
+
+        handleCheckbox = (e) =>{
+			const {value, checked} = e.target
+			checked ? this.setState(({diet})=>({diet: [...diet, value]}))
+			: this.setState(({diet})=>({diet: diet.filter((food)=> food !== value )}))
+                
+			// this.setState((prevState) => {
+			//        return {
+			//            diet: [...prevState.diet, value ]
+			//        }
+			// })
+	}
 
 
     render() { 
+        const { handleChange, handleSubmit, state:{fName, lName, locations, age}, handleCheckbox } = this
         return ( 
-            <form onSubmit={this.handleSubmit} >
-                <input  type="text" 
-                        name="fName"
-                        value={this.state.fName}
-                        placeholder="First name" /> <br/>
-                <input  type="text" 
-                        name="lName"
-                        value={this.state.lName}
-                        placeholder="Last name"/> <br/>
-                Male
-                <input  type="radio" 
-                        name="gender" 
-                        value="male"/> <br/>
-                Female
-                <input  type="radio" 
-                        name="gender" 
-                        value="female"/> <br/>
-                Other
-                <input  type="radio" 
-                        name="gender" 
-                        value="other"/> <br/>
-                Locations:
-                <select name="locations" 
-                        value={this.state.locations}>
-                        <option value="London">London</option>
-                        <option value="California">California</option>
-                        <option value="Japan">Japan</option>
-                        <option value="New York">New York</option>
-                </select> <br/>
-                Vegetarian
-                <input type="checkbox" name="isChecked" value={this.state.isChecked} onChange={this.handleChange}/>
-                Kosher
-                <input type="checkbox" name="isChecked" value={this.state.isChecked} onChange={this.handleChange}/>
-                Lactose free
-                <input type="checkbox" name="isChecked" value={this.state.isChecked} onChange={this.handleChange}/> <br/>
-                <button>Submit</button>
-            </form>
-         );
+			<form onSubmit={handleSubmit} >
+				<input  onChange={handleChange}
+					type="text" 
+					name="fName"
+					value={fName}
+					placeholder="First name" /> <br/>
+				<input  onChange={handleChange}
+					type="text" 
+					name="lName"
+					value={lName}
+					placeholder="Last name"/> <br/>
+				<input  onChange={handleChange}
+					type="number"
+					name="age"
+					value={age}
+					placeholder="Age" /> <br/>
+				Male
+				<input  onChange={handleChange}
+					type="radio" 
+					name="gender" 
+					value="Male"/> <br/>
+				Female
+				<input  onChange={handleChange}
+					type="radio" 
+					name="gender" 
+					value="Female"/> <br/>
+				Other
+				<input  onChange={handleChange}
+					type="radio" 
+					name="gender" 
+					value="Other"/> <br/>
+				Locations:
+				<select onChange={handleChange}
+					name="locations" 
+					value={locations}>
+					<option value="London">London</option>
+					<option value="California">California</option>
+					<option value="Japan">Japan</option>
+					<option value="New York">New York</option>
+				</select> <br/>
+				Vegetarian
+				<input type="checkbox" name="isChecked" value=' Vegetarian' onChange={handleCheckbox}/>
+				Kosher
+				<input type="checkbox" name="isChecked" value=' Kosher' onChange={handleCheckbox}/>
+				Lactose free
+				<input type="checkbox" name="isChecked" value=' Lactose free' onChange={handleCheckbox}/> <br/>
+				<button>Submit</button>
+			</form>
+        )
     }
 }
  

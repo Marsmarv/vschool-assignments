@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Form from './Form'
 
 class App extends Component {
     constructor(props) {
@@ -12,34 +13,38 @@ class App extends Component {
             favFood: "",
             description: "",
             people: []
-         }
+        }
     }
 
-    handleSubmit = (e) => {
-        e.preventDefault()
-        this.setState((prevState) => {
-            return {
+    handleChange = e => {
+        const { name, value } = e.target
+        this.setState({[name]: value})
+    }
 
-            }
-        })
+    handleSubmit = e => {
+        e.preventDefault()
+        const { fName, lName, email, birthPlace, phone, favFood, description } = this.state
+        const newPerson = {fName, lName, email, birthPlace, phone, favFood, description}
+        this.setState( prevState => ({people: [...prevState.people, newPerson]}) )
     }
 
     render() { 
-        
+        console.log(this.state.people)
+        const {handleChange, handleSubmit, state:{fName, lName, email, birthPlace, phone, favFood, description}} = this
+        const values = [fName, lName, email, birthPlace, phone, favFood, description]
+        const mappedPeople = this.state.people.map((input)=>{
+            return <h3>Name: {input.fName} Last Name: {input.lName} email: {input.email}</h3>
+        })
         return ( 
+            <>
             <div>
-                <form onSubmit={onSubmit}>
-                    <input class="form" type="text" value="" placeholder="first name" name="fName" /><br/>
-                    <input class="form" type="text" value="" placeholder="last name" name="lName" /><br/>
-                    <input class="form" type="text" value="" placeholder="email" name="email" /><br/>
-                    <input class="form" type="text" value="" placeholder="birth place" name="birthPlace" /><br/>
-                    <input class="form" type="text" value="" placeholder="phone" name="phone" /><br/>
-                    <input class="form" type="text" value="" placeholder="favorite food" name="favFood" /><br/>
-                    <input class="form" type="text" value="" placeholder="description" name="description" /><br/>
-                    <button>Submit</button>
-                </form>
+                <Form handleChange={handleChange} handleSubmit={handleSubmit} form={values}  />
             </div>
-         )
+            <div>
+            {mappedPeople}
+            </div>
+            </>
+        )
     }
 }
  

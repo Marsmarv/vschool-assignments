@@ -1,4 +1,4 @@
-let form = document.addTodo
+let form = document.form
 let todoList = []
 
 axios.get('https://api.vschool.io/marv/todo/').then((response)=>{

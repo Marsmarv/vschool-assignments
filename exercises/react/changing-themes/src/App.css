@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+
+}
+
+.dark-nav{
+    background-color: gray;
+}
+
+.dark {
+    background-color: black;
+    height: 100vh;
+    color: white;
+}
+
+.light-nav{
+    background-color: white;
+}
+
+.light {
+    background-color: #E0ABBA;
+    height: 100vh;
+}
+
+.light-footer{
+    background-color: blanchedalmond;
+}
+
+.dark-footer{
+    background-color: white;
+    color:red;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    align-content: center;
+    height: 50px;
+
+}
+
+.footer, .button {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    align-content: center;
+    height: 50px;;
+}
+
+.btn {
+    height: 80vh;
+    display: grid;
+    align-content: center;
+}
