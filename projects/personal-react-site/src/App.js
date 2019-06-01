@@ -7,12 +7,12 @@ import Tacos from './Tacos'
 import Quotes from './Quotes'
 import Shibas from './Shibas'
 import Strains from './Strains'
-import {withVideo}from './GlobalProvider'
+import Memes from './Memes'
 
+import {withVideo}from './GlobalProvider'
 import { Switch, Route } from "react-router-dom";
 
 const App = () => {
-
   return (
     <>
       <Navbar />
@@ -23,11 +23,10 @@ const App = () => {
         <Route path='/Quotes' component={Quotes} />
         <Route path='/Shibas' component={Shibas} />
         <Route path='/Youtube' component={Youtube} />
+        <Route path='/Memes' component={Memes} />
       </Switch>
-
     </>
   )
-  
 }
 
 export default withVideo(App)

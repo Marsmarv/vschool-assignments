@@ -10,9 +10,9 @@ const Navbar = () => {
       <Link to='Quotes' className="quotes">Quotes</Link>
       <Link to='Shibas' className="shibas">Shibas</Link>
       <Link to='Youtube' className="youtube">Youtube</Link>
+      <Link to='Memes' className="memes">Memes</Link>
     </div>
   )
 }
-
 
 export default Navbar
