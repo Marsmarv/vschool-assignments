@@ -4,8 +4,12 @@ import {withVideo}from './GlobalProvider'
 const Shibas = (props) => {
   return (
     <>
-      <button onClick={props.getShibas}>click</button>
-      <div> {props.shiba !== '' && props.shiba.map(s => <img src={s} height='125' width='125' />)} </div> 
+        <div className="shibas container">
+        <div className="btn">
+          <button onClick={props.getShibas}>Pictures of shiba inu</button>
+        </div>
+        <div> {props.shiba !== '' && props.shiba.map(s => <img className="shib" src={s} />)} </div> 
+      </div>
     </>
   )
 }

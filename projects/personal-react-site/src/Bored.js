@@ -3,10 +3,17 @@ import {withVideo}from './GlobalProvider'
 
 const Bored = (props) => {
   return (
-    <div className="bored container">
-    <h3>{props.bored}</h3>
-    <button onClick={props.getActivity}>Bored?</button>
-    </div>
+    <>
+      <div className="bored container">
+      <div className="btn">
+        <button onClick={props.getActivity}>Bored? Get an activity</button>
+      </div>
+      {props.bored &&
+        <div className='textbored'><h3><u>Here's something to do:</u> {props.bored}</h3></div>
+      }
+      </div>
+
+    </>
   )
 }
 

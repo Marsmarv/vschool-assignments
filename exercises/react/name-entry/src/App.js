@@ -12,10 +12,7 @@ class App extends Component {
 
     handleChange = (e) => {
         const {value} = e.target
-
-        this.setState((prevState) => {
-            return {sentence: value}
-        })
+        this.setState(() => ({sentence: value}))
     }
 
     handleSubmit = (e) => {
@@ -31,7 +28,7 @@ class App extends Component {
 
     render() {
         const oList = this.state.listItems.map((item, i)=>{
-            return <li key={i + item}>{item}</li>
+            return <li key={i + item}> {item} </li>
         })
         const {handleChange, handleSubmit, state} = this
         const {sentence} = state

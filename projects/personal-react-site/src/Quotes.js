@@ -4,16 +4,18 @@ import {withVideo}from './GlobalProvider'
 const Quotes = (props)=>{
   return(
     <>
-      <div>
+      <div className="quotes container">
+      <div className="btn">
+        <button onClick={props.getQuotes}>Generate a quote</button>
+      </div>
         {props.quotes &&
         <>
-          <h3>author: {props.quotes[0].title} <br/>
-              quote: {props.quotes[0].content}
+          <h3><u>author:</u> {props.quotes[0].title} <br/>
+              <u>quote:</u> {props.quotes[0].content}
           </h3>
         </>
         }
       </div>
-      <button onClick={props.getQuotes}>click</button>
     </>
   )
 }

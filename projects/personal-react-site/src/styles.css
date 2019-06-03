@@ -1,4 +1,137 @@
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic);
+
+body{
+  /* background-color: black; */
+  background-image: url('https://data.whicdn.com/images/292934821/original.gif');
+  background-size: cover;
+  color: white;
+  margin: 0;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 24px;
+}
+
+/* @-webkit-keyframes background {
+  0%{background-image: url('https://data.whicdn.com/images/292934821/original.gif');
+}
+  33%{
+    background-image: url('https://media.giphy.com/media/g6HhfNmgSCjqU/giphy.gif');
+  }
+} */
+
+a{
+  text-decoration: none;
+  color: white
+}
+a:hover{
+  color: gray;
+  transition: .5s;
+}
+
 u {
   font-weight: bold;
-  font-style: italic
+  font-style: italic;
+  color: rgba(179, 179, 179, 0.644);
+}
+
+h2{
+  height: 50px;
+}
+
+h3 {
+  margin: 0;
+}
+
+.frame{
+  display: grid;
+  grid-template-rows: 10vh minmax(80vh, auto) 10vh;
+
+}
+
+.header{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  background-color: rgba(119, 119, 119, 0.479);
+  height: 100%;
+  text-align: center;
+  align-content: center;
+
+}
+
+.container{
+  margin-top: 20px;
+  margin-bottom:20px;
+  border: solid 2px black;
+  display: grid;
+  text-align: center;
+  height: 1fr 2fr;
+  background-color: rgba(80, 80, 80, 0.74)
+}
+
+img {
+  height: 400px;
+}
+
+.memegrow:hover {
+  height: 700px;
+  transition: 1s;
+}
+
+.shib{
+  height: 125px;
+  width: 125px;
+  margin: 5px;
+}
+
+
+iframe{
+  height: 400px;
+  width: 800px;
+}
+
+.btn{
+  height: 60px;
+  margin-bottom: 25px;
+}
+
+button {
+  margin-top:25px;
+  background-color: rgb(82, 82, 82); 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Julius Sans One', sans-serif;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: gray;
+  transition: 1s;
+}
+
+button:active{
+  background-color: rgb(207, 207, 207);
+  transition: 0s;
+}
+
+.strains{
+  font-size: 16px;
+}
+
+.text:hover{
+  font-size: 24px;
+  transition: .5s;
+}
+
+.textbored:hover{
+  font-size: 30px;
+  transition: .5s;
+}
+
+.tacotext:hover{
+  font-size: 30px;
+  transition: .5s;
 }

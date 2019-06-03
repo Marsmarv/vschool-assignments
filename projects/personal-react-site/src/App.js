@@ -14,8 +14,8 @@ import { Switch, Route } from "react-router-dom";
 
 const App = () => {
   return (
-    <>
-      <Navbar />
+    <div className="frame">
+      <Navbar/>
       <Switch>
         <Route exact path='/' component={Strains} />
         <Route path='/Bored' component={Bored} />
@@ -25,7 +25,8 @@ const App = () => {
         <Route path='/Youtube' component={Youtube} />
         <Route path='/Memes' component={Memes} />
       </Switch>
-    </>
+
+    </div>
   )
 }
 
