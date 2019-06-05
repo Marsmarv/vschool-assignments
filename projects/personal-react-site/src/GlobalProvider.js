@@ -16,8 +16,13 @@ class GlobalProvider extends Component {
       strain:'',
       description:'',
       strainI:{},
-      memes:[]
+      memes:[],
+      thumb: false
     }
+  }
+
+  toggleThumb = () => {
+    this.setState(({thumb}) => ({thumb: !thumb}))
   }
 
   getVideos = () => {
@@ -93,7 +98,8 @@ class GlobalProvider extends Component {
           getQuotes: this.getQuotes,
           getShibas: this.getShibas,
           getStrains: this.getStrains,
-          getMemes: this.getMemes
+          getMemes: this.getMemes,
+          toggleThumb: this.toggleThumb
         }}>
           { this.props.children }
       </Provider>

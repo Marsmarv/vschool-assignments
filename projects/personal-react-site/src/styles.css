@@ -1,7 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic);
 
 body{
-  /* background-color: black; */
   background-image: url('https://data.whicdn.com/images/292934821/original.gif');
   background-size: cover;
   color: white;
@@ -10,18 +9,11 @@ body{
   font-size: 24px;
 }
 
-/* @-webkit-keyframes background {
-  0%{background-image: url('https://data.whicdn.com/images/292934821/original.gif');
-}
-  33%{
-    background-image: url('https://media.giphy.com/media/g6HhfNmgSCjqU/giphy.gif');
-  }
-} */
-
 a{
   text-decoration: none;
   color: white
 }
+
 a:hover{
   color: gray;
   transition: .5s;
@@ -49,8 +41,19 @@ h3 {
 
 .header{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   background-color: rgba(119, 119, 119, 0.479);
+  height: 100%;
+  text-align: center;
+  align-content: center;
+}
+
+.footer{
+  display: grid;
+  background-color: rgba(151, 151, 151, 0.63);
+  background-image: url('https://netacare.org/wp-content/themes/neta/dist/images/buds/buds-group-bottom.png');
+  background-size: cover;
+  opacity: 0.5;
   height: 100%;
   text-align: center;
   align-content: center;
@@ -60,16 +63,15 @@ h3 {
 .container{
   margin-top: 20px;
   margin-bottom:20px;
-  border: solid 2px black;
   display: grid;
   text-align: center;
   height: 1fr 2fr;
   background-color: rgba(80, 80, 80, 0.74)
 }
 
-img {
+/* img {
   height: 400px;
-}
+} */
 
 .memegrow:hover {
   height: 700px;
@@ -80,6 +82,11 @@ img {
   height: 125px;
   width: 125px;
   margin: 5px;
+}
+
+.shib:hover{
+  transform: scale(2, 2);
+  transition: .5s;
 }
 
 
@@ -135,3 +142,54 @@ button:active{
   font-size: 30px;
   transition: .5s;
 }
+
+h1 {
+  font-size: 64px;
+}
+
+#thumbs {
+  margin-top: 250px;
+  width: 100%;
+}
+
+#tiny-thumb {
+  width: .5%;
+  margin-top: 20%;
+}
+
+/* .thumbBox {
+  animation-name: box;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+} */
+
+.thumbBox {
+  position: absolute;
+  width: 360px;
+  animation: mymove 40s infinite;
+  z-index: 1;
+}
+
+@keyframes mymove {
+  0%   {left: 200px; bottom: -300px;}
+  50%  {left: 400px; bottom: -5px;}
+  100% {left: 300px; bottom: -400px;}
+}
+
+.passBox {
+  position: absolute;
+  width: 600px;
+  animation: hismove 40s infinite;
+  z-index: 1;
+}
+
+@keyframes hismove {
+  0%   {right: -1000px; bottom:200px}
+  50%  {right: -20px; bottom:100px}
+  100% {right: -400px; bottom: 50px}
+}
+
+/* @keyframes box {
+  0% {left: 0px;}
+  100% {left:100px;}
+} */
