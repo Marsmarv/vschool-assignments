@@ -17,9 +17,12 @@ class GlobalProvider extends Component {
       description:'',
       strainI:{},
       memes:[],
-      thumb: false
+      thumb: false,
+      show: false
+
     }
   }
+
 
   toggleThumb = () => {
     this.setState(({thumb}) => ({thumb: !thumb}))
@@ -28,8 +31,10 @@ class GlobalProvider extends Component {
   getVideos = () => {
     const pageTokens = ['CDIQAA','CGQQAA', 'CJYBEAA', 'CMgBEAA','CPoBEAA','CKwCEAA']
     const rand = Math.floor(Math.random() * pageTokens.length)
+    
     Axios.get(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&pageToken=${pageTokens[rand]}&playlistId=PLUDL-u2Cvt5pCwFbWkzZpdAz2HgqfMPo5&key=AIzaSyCGcY7LBk-dRKVn6REkTxUdGon1VBeDdB0`).then(res => {
-      this.setState({ videoIds: res.data.items[Math.floor(Math.random() * res.data.items.length)].snippet.resourceId.videoId })
+      this.setState({ videoIds: res.data.items[Math.floor(Math.random() * res.data.items.length)].snippet.resourceId.videoId 
+      , show: !this.state.show})
     })
   }
 

@@ -2,6 +2,7 @@ import React from 'react'
 import { Transition } from "react-transition-group";
 import { TweenLite } from "gsap/all";
 import { withVideo } from './GlobalProvider'
+import Fade from 'react-reveal/Fade'
 
 const startState = { autoAlpha: 0, y: -50 };
 
@@ -20,7 +21,7 @@ const Strains = (props) => <Transition
         }}
         >
 
-        <div className="strains container">
+        <Fade><div className="strains container">
           <div className="btn">
             <button onClick={props.getStrains}>Get a strain</button>
           </div>
@@ -36,7 +37,8 @@ const Strains = (props) => <Transition
               <div className='text'><u>Description:</u> {props.description}</div>
               </h3>
             }
-        </div>
+        </div></Fade>
+
         </Transition>;
 
 export default withVideo(Strains)

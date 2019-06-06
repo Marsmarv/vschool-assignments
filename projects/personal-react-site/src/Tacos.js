@@ -1,10 +1,11 @@
 import React from 'react'
 import {withVideo}from './GlobalProvider'
+import Fade from 'react-reveal/Fade';
 
 const Tacos = (props) => {
   const {base_layer, shell, mixin, condiment, seasoning} = props.taco
   return (
-    <div className="tacos container">
+    <Fade><div className="tacos container">
     <div className="btn">
       <button onClick={props.getTacos}>Get ingredients for a taco</button>
     </div>
@@ -20,7 +21,7 @@ const Tacos = (props) => {
               <u>Seasoning:</u> {seasoning.name}</h3>
         </>
       }
-    </div>
+    </div></Fade>
   )
 }
 

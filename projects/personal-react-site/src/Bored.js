@@ -2,6 +2,7 @@ import React from 'react'
 import { Transition } from "react-transition-group";
 import { TweenMax } from "gsap/all";
 import {withVideo}from './GlobalProvider'
+import Fade from 'react-reveal/Fade';
 
 const startState = { autoAlpha: 0, y: -50 };
 
@@ -18,14 +19,14 @@ const Bored = (props) => <Transition
       });
     }}
     >
-      <div className="bored container">
+    <Fade><div className="bored container">
       <div className="btn">
         <button onClick={props.getActivity}>Bored? Get an activity</button>
       </div>
       {props.bored &&
         <div className='textbored'><h3><u>Here's something to do:</u> {props.bored}</h3></div>
       }
-      </div>
+      </div></Fade>
     </Transition>
 
 
