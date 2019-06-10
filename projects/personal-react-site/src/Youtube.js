@@ -8,9 +8,9 @@ const Youtube = (props) => {
     <Fade>
       <div className="video container">
       <div className="btn">
-        <button onClick={props.getVideos}>Get a video</button>
+        <button onClick={props.getVideos}>{!props.show ? "Get a video" : "Close video"}</button>
       </div>
-      {props.videoIds !== '' && <Fade bottom><div><iframe src={`https://www.youtube.com/embed/${props.videoIds}?controls=1`} frameborder="0"></iframe></div></Fade>} <br/>
+      {props.videoIds !== '' && <Fade bottom when={props.show === true}><div><iframe src={`https://www.youtube.com/embed/${props.videoIds}?controls=1`} frameborder="0"></iframe></div></Fade>} <br/>
       </div>
     </Fade>
     </>

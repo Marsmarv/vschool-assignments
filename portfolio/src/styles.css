@@ -1,0 +1,97 @@
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic);
+
+* {
+  margin: 0px;
+}
+
+.proj, .res, .con, .myself-container{
+  height: 500px;
+  font-size: 32px;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.myself-container {
+  background:linear-gradient(315deg,rgba(255, 255, 255, 0.9), rgba(255, 220, 220, 0.95) 50%);
+  animation: back-color 20s ease infinite;
+}
+
+.res {
+  background-color: rgba(255, 255, 255, 0.95);
+  animation: back-color 20s ease infinite;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+}
+.header {
+  height: 100px;
+  margin:0px;
+  background:linear-gradient(315deg,rgba(255, 255, 255, 0.9), rgba(255, 220, 220, 0.95) 50%);
+  animation: back-color 20s ease infinite;
+}
+
+@keyframes back-color{
+  0% {
+    background: rgba(255, 255, 255, 0.95);
+    background-position: 0% 7%
+  }
+  50% {
+    background: rgba(253, 236, 239, 0.8);
+    background-position: 100% 94%
+  } 
+  100% {
+    background: rgba(255, 255, 255, 0.95);
+    background-position:  0% 7%
+  }
+}
+
+.proj {
+  height: 400;
+  background-color: rgba(190, 190, 190, 0.527);
+  background-image: url("https://images.pexels.com/photos/71859/spring-flowers-stroll-cherry-blossom-71859.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h3 {
+  margin-left: 20px;
+  padding-top: 20px;
+}
+
+body {
+  font-family: 'Libre Baskercille', 'Julius Sans One', sans-serif;
+  background: url("https://images.pexels.com/photos/71859/spring-flowers-stroll-cherry-blossom-71859.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.hello{
+  padding-top: 40px;
+}
+
+
+.resBox {
+  padding-top: 20px;
+  display: grid;
+}
+
+.con {
+  color: rgb(255, 226, 226);
+  background: url("https://images.pexels.com/photos/673181/pexels-photo-673181.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+.pic{
+  margin-top: 30px;
+  height: 350px;
+  width: 270px;
+  /* background-image: url('resFront.png'); */
+  background-size: cover;
+  box-shadow: 2px 2px 5px 1px;
+  margin-left: auto;
+  margin-right: auto;
+}
