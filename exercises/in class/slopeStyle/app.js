@@ -36,17 +36,47 @@
 
 // console.log(returnFavorites(favoriteActivities))
 
-function combineAnimals(...arr) {
-    const newArr = []
-    for (let i = 0; i < arr.length; i++) {
-        newArr.push(...arr[i])
-    }
-    return newArr
+// function combineAnimals(...arr) {
+//     const newArr = []
+//     for (let i = 0; i < arr.length; i++) {
+//         newArr.push(...arr[i])
+//     }
+//     return newArr
+// }
+
+// const realAnimals = ["dog", "cat", "mouse"];
+// const magicalAnimals = ["jackolope"];
+// const mysteriousAnimals = ["platypus"];
+
+// const results = combineAnimals(realAnimals, magicalAnimals, mysteriousAnimals)
+// console.log(results)
+
+// function product(...a) {  
+//     let numbers = [...a];
+  
+//     return numbers.reduce(function(acc, number) {
+//       return acc * number;
+//     },1)
+//   }
+
+//   console.log(product(2,2,2,4,5))
+
+// function unshift(array, ...a) {  
+//     return [...a].concat(array);
+//   }
+
+// console.log(unshift([1, 2, 3, 4], 1, 2, 3, 4))
+
+function populatePeople(names){
+    return names.map(function(name){
+        name = name.split(" ");
+            firstName = name[0],
+            lastName = name[1]
+        return {
+            firstName: firstName,
+            lastName: lastName
+        }
+    })
 }
 
-const realAnimals = ["dog", "cat", "mouse"];
-const magicalAnimals = ["jackolope"];
-const mysteriousAnimals = ["platypus"];
-
-const results = combineAnimals(realAnimals, magicalAnimals, mysteriousAnimals)
-console.log(results)
+console.log(populatePeople(["Frank Peterson", "Suzy Degual", "Liza Jones"]))

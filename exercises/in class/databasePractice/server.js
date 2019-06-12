@@ -1,20 +1,12 @@
 const express = require('express')
 const app = express()
-const data = require('./database')
 
+
+//express middleware
 app.use(express.json())
 
-app.get('/vroom', (request, response)=>{
-  response.send(data)
-})
-
-app.post('/vroom', (request, response)=>{
-  const newShip = request.body
-  data.push(newShip)
-  response.send(newShip)
-})
-
+app.use('/Vroom', require('./Vroom'))
 
 app.listen(2000, () => {
-  console.log('puta')
+  console.log('gsvdjsdvhgf')
 })
