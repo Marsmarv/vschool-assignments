@@ -4,15 +4,19 @@
 
 // collectAnimals("dog", "cat", "mouse", "jackolope", "platypus"); 
 
-// let food = {}
-// function combineFruit(fruit, sweets, vegetables){
-//     return food = {fruit: [...fruit], sweets: [...sweets], vegtables: [...vegetables]}
-// }
+let food = {}
+function combineFruit(fruit, sweets, vegetables){
+    return food = {
+        fruit: [...fruit], 
+        sweets: [...sweets], 
+        vegtables: [...vegetables]}
+}
 
-// combineFruit(["apple", "pear"],
-//              ["cake", "pie"],
-//              ["carrit"]);
-// console.log(food.fruit)
+combineFruit(["apple", "pear"],
+             ["cake", "pie"],
+             ["carrit"]);
+             
+console.log(food)
 
 // const vacation = {  
 //     location: "Burly Idaho",
@@ -67,16 +71,16 @@
 
 // console.log(unshift([1, 2, 3, 4], 1, 2, 3, 4))
 
-function populatePeople(names){
-    return names.map(function(name){
-        name = name.split(" ");
-            firstName = name[0],
-            lastName = name[1]
-        return {
-            firstName: firstName,
-            lastName: lastName
-        }
-    })
-}
+// function populatePeople(names){
+//     return names.map(function(name){
+//         name = name.split(" ");
+//             firstName = name[0],
+//             lastName = name[1]
+//         return {
+//             firstName: firstName,
+//             lastName: lastName
+//         }
+//     })
+// }
 
-console.log(populatePeople(["Frank Peterson", "Suzy Degual", "Liza Jones"]))
+// console.log(populatePeople(["Frank Peterson", "Suzy Degual", "Liza Jones"]))
