@@ -4,19 +4,19 @@
 
 // collectAnimals("dog", "cat", "mouse", "jackolope", "platypus"); 
 
-let food = {}
-function combineFruit(fruit, sweets, vegetables){
-    return food = {
-        fruit: [...fruit], 
-        sweets: [...sweets], 
-        vegtables: [...vegetables]}
-}
+// let food = {}
+// function combineFruit(fruit, sweets, vegetables){
+//     return food = {
+//         fruit: [...fruit], 
+//         sweets: [...sweets], 
+//         vegtables: [...vegetables]}
+// }
 
-combineFruit(["apple", "pear"],
-             ["cake", "pie"],
-             ["carrit"]);
+// combineFruit(["apple", "pear"],
+//              ["cake", "pie"],
+//              ["carrit"]);
              
-console.log(food)
+// console.log(food)
 
 // const vacation = {  
 //     location: "Burly Idaho",
@@ -40,20 +40,20 @@ console.log(food)
 
 // console.log(returnFavorites(favoriteActivities))
 
-// function combineAnimals(...arr) {
-//     const newArr = []
-//     for (let i = 0; i < arr.length; i++) {
-//         newArr.push(...arr[i])
-//     }
-//     return newArr
-// }
+function combineAnimals(...arr) {
+    const newArr = []
+    for (let i = 0; i < arr.length; i++) {
+        newArr.push(...arr[i])
+    }
+    return newArr
+}
 
-// const realAnimals = ["dog", "cat", "mouse"];
-// const magicalAnimals = ["jackolope"];
-// const mysteriousAnimals = ["platypus"];
+const realAnimals = ["dog", "cat", "mouse"];
+const magicalAnimals = ["jackolope"];
+const mysteriousAnimals = ["platypus"];
 
-// const results = combineAnimals(realAnimals, magicalAnimals, mysteriousAnimals)
-// console.log(results)
+const results = combineAnimals(realAnimals, magicalAnimals, mysteriousAnimals)
+console.log(results)
 
 // function product(...a) {  
 //     let numbers = [...a];
