@@ -38,7 +38,7 @@ body{
     body{
         display: grid;
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: 233pt 700pt 560pt 650pt 300pt
+        grid-template-rows: 232.8pt 705pt 580pt 631pt 200pt
     }
     
     .header {
@@ -48,10 +48,10 @@ body{
         background-attachment: auto, fixed, fixed, scroll;
         background-color: rgba(138,188,159,0.5);
         background-image: url("http://www.csszengarden.com/214/contours-opaque.png"), url("http://www.csszengarden.com/214/noise.png"), url("http://www.csszengarden.com/214/gridlines-opaque.png"), url("http://www.csszengarden.com/214/huntington.jpg");
-        background-position: 0px 30px, 0 0, -5px -38px, 0 -122px;
+        background-position: -1px -15px, 0 0, -5px -38px, 0 -122px;
         background-repeat: repeat, repeat, repeat, no-repeat;
-        background-size: 45%, auto, auto, cover;
-        
+        background-size: 35%, auto, auto, cover;
+
         grid-row: 1/2;
         grid-column: 1/-1;
         width: 100%;
@@ -59,6 +59,7 @@ body{
         border-top: solid 12px rgba(19, 67, 71, 0.8);
         box-shadow: inset 0 0 100px rgba(255, 255, 255, 0.3);        
     }
+    
 
     .content {
         background: white;
@@ -67,9 +68,41 @@ body{
         grid-column: 1/2
     }
 
+    .first {
+        padding: 3.85em 7.5% 1em 15%;
+    }
+
+    .second {
+        padding: 2.05em 7.5% 1em 15%;
+    }
+
+    .paragraph-link{
+        color: #147990;
+        text-decoration: none;
+    }
+
+    .paragraph-link:hover{
+        text-decoration: underline;
+    }
+
+    .paragraph-link:visited{
+        color: #174840;
+    }
+
+    .link-button {
+        display: inline-block;
+        font-family:verdemoderna;
+        background-color: #D0DBC2;
+        color: #99AC82;
+        padding: 2px;
+        -webkit-border-radius: 2px;
+        line-height: 1;
+    }
+
+    
     .second-content{
         background: #C1D8C9;
-        opacity: .7;
+        opacity: .8;
         background-image: url("http://www.csszengarden.com/214/contours-opaque.png"),url("http://www.csszengarden.com/214/gridlines-opaque.png"), url('http://www.csszengarden.com/214/bamboo.png');
         background-color: rgb(165, 202, 181);
         background-attachment: scroll, scroll, fixed;
@@ -90,7 +123,7 @@ body{
         grid-column: 1/-1;
         background-image: url("http://www.csszengarden.com/214/contours-opaque.png"), url("http://www.csszengarden.com/214/noise.png"), url("http://www.csszengarden.com/214/gridlines-opaque.png"), url("http://www.csszengarden.com/214/koi.jpg");
         background-size: 50% auto, auto, auto, cover;
-        background-position:0px -340px;
+        background-position: 0px -220px, 0px 0px, -20px 80px, 0px -340px;
         box-shadow: inset 0 0 100px rgba(255, 255, 255, 0.3);   
 
     }
@@ -125,6 +158,17 @@ body{
         background-attachment: scroll, scroll, fixed;
     }
 
+    abbr {
+        border: none;
+        text-transform: uppercase;
+        font-size: 0.90em;
+        letter-spacing: 0.01em;
+    }
+
+    .first-paragraph {
+        padding-top: 12px;
+    }
+
     .image {
         background-image: url('http://www.csszengarden.com/214/enso.svg');
         background-size: cover;
@@ -137,13 +181,22 @@ body{
 
     .title {
         font-family: 'Julius Sans One', sans-serif;
+        line-height: 1;
         font-size: 3.2em;
-        padding-top: 90px;
+        padding-top: 92px;
         padding-left: 165px;
         padding-bottom: 10px;
         border-bottom: none;
         margin: 0;
         color: #fff;
+    }
+
+    .title-div {
+        font-family: 'Julius Sans One', sans-serif;
+        padding-top: 30px;
+        font-size: 2em;
+        font-weight: normal;
+        color: #23383B;
     }
 
     #italic {
@@ -198,25 +251,25 @@ body{
 }
 
 p {
-    line-height: 2;
+    line-height: 1.6;
+    color: #263F3F;
+    font-size: 1.235em;
+    letter-spacing:.01em;
 }
 
-a {
+.foot-text {
+    line-height: 2;
+    color: #BCC9C7;
+    font-size: 1.01em;
+}
+
+.styledbutton {
     display: inline-block;
     position: absolute;
     top: 6px;
     left: 8px;
-    padding: 2px;
+    top: 0px;
     color: #a9b995;
-    background: #d9e1cd;
-    /* -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -o-border-radius: 2px; */
-    content: "D";
-    font-size: 16px;
-    text-indent: 0;
-    font-family: 'verdemoderna';
-    /* speak: none; */
     font-weight: normal;
     font-variant: normal;
     text-transform: none;
@@ -225,23 +278,52 @@ a {
     -webkit-transition: all 0.25s ease-out;
     -moz-transition: all 0.25s ease-out;
     transition: all 0.25s ease-out;
+    text-decoration: none;
+    margin-right: 5px;
+    padding-right: 20px;
+    font-size: .8em;
+    padding: 10px;
 }
 
-.content-container a:hover::before {
-    color: #fff;
-    background: #357d93;
-  }
+.styledbutton:hover {
+    background-color: #0d8ba1;
+    padding: 10px;
+    -webkit-border-radius: 2px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    color: white
+
+}
 
 
-.content-container a, .content-container a:visited {
+.content-container .styledbutton, .content-container .styledbutton:visited {
     position: relative;
     display: inline-block;
-    padding: 1px 10px 1px 32px;
-    margin: -1px -10px -1px -6px;
+    margin: -1px 0px -1px -6px;
     -webkit-border-radius: 1px;
     -moz-border-radius: 1px;
     border-radius: 1px;
-    color: #809b7e;
     font-family: 'Julius Sans One', sans-serif;
     text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+    margin-top: 70px;
+    margin-left: 40px;
+    font-style: italic;
+    font-family: 'Libre Baskerville', sans-serif;
+}
+
+.design{
+    font-family: 'Julius Sans One', sans-serif;
+    text-decoration: none;
+    font-style: normal;
+    font-size:19.2px;
+    margin-bottom: 4.8px;
+    
+}
+
+.designer{
+    font-style: normal;
+    text-decoration: none;
 }

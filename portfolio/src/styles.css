@@ -1,8 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic);
 
+@font-face {
+  font-family: verdemoderna;
+  src: url('./fonts/verdemoderna.woff');
+}
+
 * {
   margin: 0px;
 }
+
 
 .proj, .res, .con, .myself-container{
   height: 500px;
@@ -89,9 +95,47 @@ body {
   margin-top: 30px;
   height: 350px;
   width: 270px;
-  /* background-image: url('resFront.png'); */
+  background-image: url('resFront.png');
   background-size: cover;
   box-shadow: 2px 2px 5px 1px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.show-modal{
+
+  position: absolute;
+  margin-top: 30px;
+  top: 300px;
+  height: 750px;
+  width: 580px;
+  background-image: url('resFront.png');
+  background-size: cover;
+  box-shadow: 2px 2px 5px 1px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+
+
+.xbox{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: black;
+  position: absolute;
+  left: -640px;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0px;
+  color: white;
+  font-family: verdemoderna;
+  text-align: center;
+}
+
+.no-display {
+  display: none;
 }
