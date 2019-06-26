@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import Fade from 'react-reveal/Fade'
-import ModalImage from 'react-modal-image'
-import resFront from './resFront.png'
+import resume from './resFront.png'
 
 const Resume = () => {
   const [showRes, setShowRes] = useState(false)
@@ -17,9 +16,8 @@ const Resume = () => {
               <h3>Résumé</h3>
               <div className='pic' onClick={() => setShowRes(!showRes)}></div>
               <Fade bottom opposite when={showRes === true}>
-                <div className={modalDisplay} onClick={() => setShowRes(!showRes)}>
-                  <div className={modalDisplayTwo}>d</div>
-                </div>
+                <div className={modalDisplay} onClick={() => setShowRes(!showRes)}></div>
+                <a href={resume} className={modalDisplayTwo} onClick={() => console.log('downloaded')} download>D</a>
               </Fade>
             </Fade>
           </div>
