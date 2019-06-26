@@ -17,11 +17,12 @@
   margin-left: auto;
   margin-right: auto;
   top: 330px;
-  color: rgb(252, 214, 249);
+  color: rgb(255, 227, 253);
   text-align: center;
   border-radius:10px;
   font-size: 30px;
   text-decoration: none;
+  transition: .1s;
 }
 
 .xbox:active {
@@ -40,6 +41,7 @@
   text-align: center;
   border-radius:10px;
   font-size: 26px;
+  transition: .1s;
 }
 
 
@@ -53,6 +55,10 @@
   height: 500px;
   font-size: 32px;
 }
+
+/* .proj{
+  padding: 60px;
+} */
 
 .container {
   margin-top: 20px;
