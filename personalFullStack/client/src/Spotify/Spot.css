@@ -3,9 +3,10 @@
 .spotify-container {
   text-align: right;
   font-family: 'Julius Sans One';
-  /* letter-spacing: -1px; */
   font-weight: bold;
-  margin: 10px 10px 10px 0;
+  padding: 10px 10px 10px 0;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(214, 253, 253, 1));
+  width: 35%;
 }
 a{
   text-decoration: none;
@@ -19,8 +20,11 @@ button{
 }
 
 .miniPlayer{
-  background-color: rgb(167, 167, 167);
   display: flex;
   justify-content: flex-end;
-  
+
+}
+
+.size{
+  font-size: 14px;
 }

@@ -47,8 +47,8 @@ class Spot extends Component{
     return (
       <div className="spotify-container">
         <div className='Spot'><a href='http://localhost:8888'> Login to Spotify </a></div>
-        <div> Now Playing: { this.state.nowPlaying.name } </div>
-        <div> Artist: { this.state.nowPlaying.artist } </div>
+        <div className="size"> Now Playing: { this.state.nowPlaying.name } </div>
+        <div className="size"> Artist: { this.state.nowPlaying.artist } </div>
         <div><img src={this.state.nowPlaying.image} style={{width: 100}}alt=""/></div>
         <button onClick={ () => this.getNowPlaying() }>now playing</button>
       </div>

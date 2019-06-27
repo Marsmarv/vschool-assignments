@@ -44,6 +44,19 @@
   transition: .1s;
 }
 
+.facebook, .instagram, .twitter, .github{
+  fill: wheat;
+  transition: .1s;
+}
+
+.facebook:active, .instagram:active, .twitter:active, .github:active{
+  fill: rgb(177, 160, 130);
+  width: 60px;
+  height: 60px;
+  padding: 4px;
+  transition: .1s;
+}
+
 
 
 * {
@@ -54,6 +67,26 @@
 .proj, .res, .con, .myself-container{
   height: 500px;
   font-size: 32px;
+}
+
+.con {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr
+}
+
+.contact-text{
+  /* position: relative;
+  top:-165px; */
+}
+
+.icons{
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  align-items:center;
 }
 
 /* .proj{
