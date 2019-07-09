@@ -4,12 +4,23 @@
 
 .header{
 min-height: 10vh;
-background-color: rgb(167, 167, 167);
+background-image: url('https://d1smv7h0armdzg.cloudfront.net/wp-content/uploads/2012/08/the-met_14652598443_o.jpg');
+background-size: 1300px;
+background-position-y: 560px;
+background-position-x: -275px;
 }
 
 .main{
   min-height: 80vh;
-  background-color: gray;
+  background-image: url('https://www.nycgo.com/images/venues/188/met-museum-tagger-yancey-iv-5262__x_large.jpg');
+  background-size: 1600px;
+  background-position-y: 795px;
+  background-position-x: -239px;
+}
+
+.main-container{
+  min-height: 80vh;
+  background-color: rgba(0, 0, 0, .7);
 }
 
 .footer{
@@ -17,9 +28,9 @@ background-color: rgb(167, 167, 167);
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-image: url('https://media3.giphy.com/media/9aF459eKEsNP2/source.gif');
+  background-image: url('https://d1smv7h0armdzg.cloudfront.net/wp-content/uploads/2012/08/the-met_14652598443_o.jpg');
   background-size: 1300px;
-  background-position-y: 500px;
+  background-position-y: 460px;
   background-position-x: -275px;
 }
 
@@ -69,4 +80,6 @@ button:active{
   fill: rgb(68, 68, 68);
 }
 
-
+a{
+  color: white; 
+}

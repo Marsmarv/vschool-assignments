@@ -12,7 +12,7 @@ app.use(morgan('dev'))
 
 
 mongoose.set('useCreateIndex', true)
-mongoose.connect('mongodb://localhost:27017/game-app',
+mongoose.connect('mongodb://localhost:27017/art-app',
 { useNewUrlParser: true },
 (err) => {
   if (err) throw err;
@@ -21,9 +21,9 @@ mongoose.connect('mongodb://localhost:27017/game-app',
 ) 
 
 app.use('/api', expressJwt({secret: process.env.SECRET}))
-app.use('/api/game', require('./routes/game'))
+app.use('/api/art', require('./routes/art'))
 app.use('/auth', require("./routes/auth"))
-// app.use("/game", require("./routes/game"));
+// app.use("/art", require("./routes/art"));
 
 // app.use((err, req, res, next) => {
 //     console.error(err);
