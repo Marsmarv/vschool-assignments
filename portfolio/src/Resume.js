@@ -8,11 +8,11 @@ const Resume = () => {
   const modalDisplayTwo = showRes ? "xbox" : "no-display"
 
   return (
-    <Fade bottom delay={500}>
+    <Fade bottom>
       <div>
         <div className="res">
           <div className="resBox">
-            <Fade bottom cascade delay={3000}>
+            <Fade bottom cascade>
               <h3>Résumé</h3>
               <div className='pic' onClick={() => setShowRes(!showRes)}></div>
               <Fade bottom opposite when={showRes === true}>

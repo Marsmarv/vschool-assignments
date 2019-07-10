@@ -2,12 +2,23 @@
   margin: 0;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic);
+
 .header{
 min-height: 10vh;
 background-image: url('https://d1smv7h0armdzg.cloudfront.net/wp-content/uploads/2012/08/the-met_14652598443_o.jpg');
 background-size: 1300px;
 background-position-y: 560px;
 background-position-x: -275px;
+display: flex;
+justify-content: center;
+align-items: center; 
+font-size: 40px;
+color: white;
+font-weight: bold;
+text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+font-family: 'Julius Sans One', 'Ubuntu', sans-serif;
 }
 
 .main{
@@ -15,12 +26,36 @@ background-position-x: -275px;
   background-image: url('https://www.nycgo.com/images/venues/188/met-museum-tagger-yancey-iv-5262__x_large.jpg');
   background-size: 1600px;
   background-position-y: 795px;
-  background-position-x: -239px;
+  background-position-x: -200px;
 }
 
 .main-container{
   min-height: 80vh;
   background-color: rgba(0, 0, 0, .7);
+}
+
+.main-background{
+  background-image: url('https://media.vanityfair.com/photos/58cc73bf65c51404f08418de/16:9/w_1280,c_limit/the-met-04-17-01.jpg');
+  background-size: 1600px;
+  background-position-y: 795px;
+  background-position-x: -239px;
+}
+
+.login-container{
+  min-height: 80vh;
+  background-color: rgba(0, 0, 0, .7)
+}
+
+.art-background{
+  background-image: url('https://si.wsj.net/public/resources/images/B3-CA491_NYMET__GR_20181011162345.jpg');
+  background-size: 1300px;
+  background-position-y: 790px;
+  background-position-x: -90px;
+}
+
+.art-container{
+  min-height: 80vh;
+  background-color: rgba(0, 0, 0, .7)
 }
 
 .footer{
@@ -53,15 +88,9 @@ background-position-x: -275px;
   transition: .1s;
 }
 
-button:hover{
-  cursor: pointer;
-}
 
-button:active{
-  background-color: rgb(68, 68, 68);
-  width: 96px;
-  font-size: 14px;
-}
+
+
 
 .github:hover{
   cursor: pointer;
@@ -81,5 +110,5 @@ button:active{
 }
 
 a{
-  color: white; 
+  color: gray; 
 }

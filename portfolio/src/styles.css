@@ -16,13 +16,16 @@
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  top: 330px;
+  top: 1310px;
   color: rgb(255, 227, 253);
   text-align: center;
   border-radius:10px;
   font-size: 30px;
   text-decoration: none;
   transition: .1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .xbox:active {
@@ -36,7 +39,7 @@
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  top: 335px;
+  top: 1310px;
   color: rgb(219, 188, 217);
   text-align: center;
   border-radius:10px;
@@ -56,8 +59,6 @@
   padding: 4px;
   transition: .1s;
 }
-
-
 
 * {
   margin: 0px;
@@ -184,7 +185,7 @@ body {
 
   position: absolute;
   margin-top: 30px;
-  top: 300px;
+  top: 1280px;
   height: 750px;
   width: 580px;
   background-image: url('resFront.png');

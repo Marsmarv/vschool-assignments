@@ -23,7 +23,8 @@ const Login = (props) => {
 }
 
   return (
-    <Fade right>
+    <>
+    <div className="main-container main-background">
       <div className="login-container">
       <form className="form-set">
         <input onChange={handleChange} 
@@ -39,12 +40,12 @@ const Login = (props) => {
         <button onClick={handleSignup}>Sign up</button>
         <button onClick={handleLogin}>Log in</button>
       </form>
-      </div>
         <h3 className="welcome">Welcome {props.username}!</h3>
-
         <Link to='/' className='home-button'>HOME</Link>
+      </div>
+    </div>
 
-    </Fade>
+    </>
   )
 }
 

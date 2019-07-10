@@ -11,9 +11,9 @@ const App = () => {
     <>
     <ProgressBar bgcolor="#E5960B"/>
     <Projects/>
-    <Resume/>
-    <Contact/>
     <Myself/>
+    <Contact/>
+    <Resume/>
     </>
   )
 }

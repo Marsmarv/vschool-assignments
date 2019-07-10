@@ -5,7 +5,7 @@ const Header = ()=>{
   return(
     <>
       <div className="header">
-        Head
+        The Metropolitan Museum of Art artwork search
       </div>
     </>
   )
