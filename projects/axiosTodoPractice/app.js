@@ -98,6 +98,10 @@ const checkTodo = oldTodo => {
             todoList.push(response.data);
             displayToDo([response.data]);
         })
+        form.title.value = '',
+        form.description.value = '',
+        form.price.value = '',
+        form.imgUrl.value = 'http://5.imimg.com/data5/HV/TB/GLADMIN-2/grocery-bag-500x500.jpg'
     }
 // localStorage.setItem('isAuth', true)
 // localStorage.setItem('isAuth')

@@ -7,16 +7,24 @@
     <link rel="stylesheet" href="styless.css">
 </head>
 <body>
-    <h1>add to do:</h1>
-    <form name="form" id="formInput">
-        <input id="" type="text" placeholder="Title" name="title"><br>
-        <input id="" type="text" placeholder="Description" name="description"><br>
-        <input id="" type="number" placeholder="price" name="price" step=".01"><br>
-        <input id="" type="text" placeholder="Image Url" name="imgUrl" value="http://5.imimg.com/data5/HV/TB/GLADMIN-2/grocery-bag-500x500.jpg"><br>
-        <button>Submit</button>
-    </form>
-    <h1>Tasks</h1>
-    <div id="container"></div>
+    <div class="body-container">
+        <h3 class="todo-header">Todo List</h3>
+        <div class="content-container">
+            <h1>add to do:</h1>
+                <div class="form-container">
+                    <form name="form" id="form-input">
+                        <input id="form-elements" type="text" placeholder="Title" name="title"><br>
+                        <input id="form-elements" type="text" placeholder="Description" name="description"><br>
+                        <input id="form-elements" type="number" placeholder="price" name="price" step=".01"><br>
+                        <input id="form-elements" type="text" placeholder="Image Url" name="imgUrl" value="http://5.imimg.com/data5/HV/TB/GLADMIN-2/grocery-bag-500x500.jpg"><br>
+                        <button id="submit">Submit</button>
+                    </form>
+                </div>
+        
+            <h1>Tasks</h1>
+            <div id="container"></div>
+        </div>
+    </div>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="app.js"></script>

@@ -8,16 +8,15 @@ class Contact extends Component {
   constructor(props) {
     super(props)
   }
-  offset = () => {
-    console.log(offset)
-    return window.pageYOffset 
-  }
+  
+
+
   render() {
     return(
       <>
       <Fade bottom>
 
-        <div className="con" onScroll={offset}>
+        <div className="con" onScroll="">
         <Fade bottom cascade><h3 className="contact-text">Contact</h3></Fade>
           <div className="icons">
             <Fade left duration={2000} delay={1000}><div>

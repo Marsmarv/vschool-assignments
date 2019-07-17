@@ -70,6 +70,10 @@
   font-size: 32px;
 }
 
+.proj {
+  padding-top: 90px;
+}
+
 .con {
   /* display: flex;
   flex-direction: column;
