@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap');
+
 *{
     margin: 0%;
-    font-family: 'Ubuntu', 'Montserrat', sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap');
 
 #container {
     margin: 0;
@@ -52,6 +52,7 @@ h1 {
     margin-bottom: 25px;
     text-decoration: underline;
     text-align: center;
+    font-family: 'Ubuntu', 'Montserrat', sans-serif;
 }
 
 button, #formInput {
@@ -76,6 +77,7 @@ button, #formInput {
 
 h3 {
     text-align: center;
+    font-family: 'Ubuntu', 'Montserrat', sans-serif;
 }
 
 input[type=text], select {
@@ -87,7 +89,8 @@ input[type=text], select {
     border-radius: 4px;
     box-sizing: border-box;
   }
-  input[type=number], select {
+
+input[type=number], select {
     width: 100%;
     padding: 12px 10px;
     margin: 8px 0;
@@ -95,9 +98,9 @@ input[type=text], select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-  }
-  
-  #submit{
+}
+
+#submit{
     width: 100%;
     background-color: rgb(107, 114, 107);
     color: white;
@@ -110,40 +113,144 @@ input[type=text], select {
     justify-content: center;
 
     transition: .1s;
-  }
-  
-  #submit:hover {
+}
+
+#submit:hover {
     background-color: #a8a8a8;
     transition: .1s;
-  }
-  #submit:active {
+}
+#submit:active {
     border-radius: 24px;
     transition: .1s;
     background-color: rgb(78, 78, 78);
-  }
+}
 
-  button{
+button{
     background-color: rgb(107, 114, 107);
     color: white;
     border-radius: 4px;
     cursor: pointer;
     transition: .1s
-  }
+}
 
-  button:hover {
+button:hover {
     background-color: #a8a8a8;
     transition: .1s;
-  }
-  button:active {
+}
+
+button:active {
     border-radius: 24px;
     transition: .1s;
     background-color: rgb(78, 78, 78);
-  }
+}
 
-  .todo-header{
+.todo-header{
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 40px;
     height: 100px;
-  }
+}
+
+.footer{
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(206, 192, 133);
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+
+    align-items: center;
+    box-shadow: inset 0px 0px 12px 3px rgba(0,0,0,0.37);
+}
+
+svg{
+    transition: .1s;
+    margin-left: 10px
+}
+
+svg:active{
+    fill: rgb(65, 65, 65);
+    height: 60px;
+    width: 60px;
+    transition: .1s;
+    padding: 4px;
+}
+
+svg:hover{
+    fill: rgb(97, 96, 96);
+}
+
+.name{
+    display: flex;
+    align-self: flex-end;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+@media(max-width: 375px){
+    .body-container{
+        width: 375px;
+    }
+    .content-container{
+        width: 375px;
+        display: block;
+        ;
+    }
+    #container{
+        display: block ;
+        width: 375px ;
+    }
+
+    .form-container{
+        display: block;
+    }
+    .todoBox{
+        display: block;
+    }
+    body {
+        height: 100vh;
+        display: grid;
+        justify-content: center;
+        background-image: none;
+        background-color: rgb(206, 192, 133);
+    
+    }
+}
+
+@media(max-width: 690px){
+    .body-container{
+        width: 375px;
+    }
+    .content-container{
+        width: 375px;
+        display: block;
+        ;
+    }
+    #container{
+        display: block ;
+        width: 375px ;
+    }
+
+    .form-container{
+        display: block;
+    }
+    .todoBox{
+        display: block;
+        margin: 16px;
+    }
+    body {
+        height: 100vh;
+        display: grid;
+        justify-content: center;
+        background-image: none;
+        background-color: rgb(206, 192, 133);
+    
+    }
+}
+
+@media(max-width: 900px){
+    .todoBox{
+        margin: 16px;
+    }
+}
