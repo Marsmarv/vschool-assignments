@@ -64,7 +64,6 @@
   margin: 0px;
 }
 
-
 .proj, .res, .con, .myself-container{
   height: 500px;
   font-size: 32px;
@@ -203,4 +202,160 @@ body {
 
 .no-display {
   display: none;
+}
+
+.projects{
+  display: grid;
+  grid-template-rows: repeat(11, 36.5px);
+  grid-template-columns: repeat(11, 1fr);
+}
+
+.proj1{
+  grid-column: 3/4;
+  grid-row: 3/10;
+  justify-self: center;
+  align-self: center;
+}
+
+.proj2{
+  grid-column: 5/6;
+  grid-row: 6/6;
+  justify-self: center;
+  align-self: center;
+}
+
+.proj3{
+  grid-column: 7/8;
+  grid-row: 6/6;
+  justify-self: center;
+  align-self: center;
+}
+
+.proj4{
+  grid-column: 9/10;
+  grid-row: 6/6;
+  justify-self: center;
+  align-self: center;
+}
+
+.screenshot{
+  height: 200px;
+  width: 200px;
+  border: 2px black solid;
+  border-radius: 100%;
+  transition: .1s;
+}
+
+.screenshot:hover{
+  transition: .1s;
+  height: 170px;
+  width: 170px;
+  margin: 15px;
+}
+
+.shot-one{
+  background-image: url('./images/proj1.png');
+  background-size: 300px;
+  background-position-x: -50px;
+  background-position-y: -40px;
+}
+
+.shot-two{
+  background-image: url('./images/proj2.png');
+  background-size: 300px;
+  background-position-x: -50px;
+  background-position-y: 0px;
+}
+
+.shot-three{
+  background-image: url('./images/proj3.png');
+  background-size: 300px;
+  background-position-x: -50px;
+  background-position-y: -50px;
+}
+
+.shot-four{
+  background-image: url();
+  background-size: ;
+  background-position-x: ;
+  background-position-y: ;
+}
+
+.shot-one:hover{
+  background-size: 300px;
+  background-position-x: -65px;
+  background-position-y: -55px;
+}
+.shot-two:hover{
+  background-position-x: -65px;
+  background-position-y: -15px;
+ }
+.shot-three:hover{
+  background-position-x: -65px;
+  background-position-y: -65px;
+  }
+.shot-four:hover{
+  background-position-x: 10px;
+  background-position-y: 10px;
+}
+
+.screenshot-link{
+  transition: .1s;
+}
+
+.screenshot-link:hover{
+  transition: .1s;
+  height: 170px;
+  width: 170px;
+}
+
+@media (max-width: 815px){
+  .projects{
+    display: grid;
+  grid-template-rows: repeat(11, 36.5px);
+  grid-template-columns: repeat(6, 1fr);
+  }
+
+  .proj1{
+    grid-column: 2/3;
+    grid-row: 3/10;
+  }
+
+  .proj2{
+    grid-column: 3/4;
+    grid-row: 6/6;
+  }
+
+  .proj3{
+    grid-column: 4/5;
+    grid-row: 6/6;
+  }
+
+  .proj4{
+    grid-column: 5/6;
+    grid-row: 6/6;
+  }
+
+  .screenshot{
+    height: 80px;
+    width: 80px;
+    background-size: 80px;
+  }
+}
+
+@media (max-width: 580px){
+  .show-modal{
+    top: 1580px;
+    height: 460px;
+    width: 360px;
+  }
+
+  .xbox{
+    left: -660px;
+    right: -340px;
+    top: 1615px;
+    height: 25px;
+    width: 30px;
+    font-size: 20px;
+  }
 }

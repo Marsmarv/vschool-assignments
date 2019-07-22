@@ -87,8 +87,8 @@ class GlobalProvider extends Component {
   }
 
   getMemes = () => {
-    Axios.get('https://api.memeload.us/v1/random').then(res=> {
-      this.setState({memes: res.data.image}) 
+    Axios.get('https://meme-api.herokuapp.com/gimme').then(res=> {
+      this.setState({memes: res.data.url}) 
     })
   }
 

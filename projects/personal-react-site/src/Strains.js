@@ -26,7 +26,7 @@ const Strains = (props) => <Transition
             <button onClick={props.getStrains}>Get a strain</button>
           </div>
             {props.strain &&
-              <h3>
+              <h3 className="strain-content">
               <div className="text"> <u>Name:</u> {props.strain} </div> <br/>
               <div><u> Effects </u> </div>
               <div className="text">medical: {props.strainI.effects && props.strainI.effects.medical.map( effect => (<>{effect + ", "}</>) )} </div>

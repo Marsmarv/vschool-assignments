@@ -24,7 +24,7 @@ const Bored = (props) => <Transition
         <button onClick={props.getActivity}>Bored? Get an activity</button>
       </div>
       {props.bored &&
-        <div className='textbored'><h3><u>Here's something to do:</u> {props.bored}</h3></div>
+        <div className='textbored-one'><h3 className="textbored" ><u>Here's something to do:</u> {props.bored}</h3></div>
       }
       </div></Fade>
     </Transition>
