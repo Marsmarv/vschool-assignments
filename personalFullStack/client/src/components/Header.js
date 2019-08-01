@@ -5,7 +5,7 @@ const Header = ()=>{
   return(
     <>
       <div className="header">
-        The Metropolitan Museum of Art artwork search
+        The <span>Met</span>ropolitan Museum of Art artwork search
       </div>
     </>
   )

@@ -24,15 +24,13 @@ button:hover{
   cursor: pointer;
   background-color: rgb(105, 105, 105);
   transition: .2s;
-  font-size: .95em;
-
 }
 
 button:active{
   background-color: rgb(68, 68, 68);
-  width: 96px;
-  font-size: .9em;
+  font-size: .95em;
   transition: .2s;
+  margin-right: .2em;
 }
 
 .miniPlayer{

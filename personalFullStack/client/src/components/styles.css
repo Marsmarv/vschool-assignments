@@ -55,7 +55,7 @@ font-family: 'Julius Sans One', 'Ubuntu', sans-serif;
 
 .art-container{
   min-height: 80vh;
-  background-color: rgba(0, 0, 0, .7)
+  background-color: rgba(0, 0, 0, .6)
 }
 
 .footer{
@@ -111,4 +111,11 @@ font-family: 'Julius Sans One', 'Ubuntu', sans-serif;
 
 a{
   color: gray; 
+}
+
+span{
+  color: black;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+  margin-left:.30em; 
+  display:inline-block;
 }

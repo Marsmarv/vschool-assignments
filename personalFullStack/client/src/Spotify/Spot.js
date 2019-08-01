@@ -33,21 +33,25 @@ class Spot extends Component{
     getNowPlaying(){
       spotifyWebApi.getMyCurrentPlaybackState()
       .then(response => {
-        console.log(response.item)
-        this.setState({
+
+        this.setState(response ? {
           nowPlaying: {
             name: response.item.name,
             image: response.item.album.images[0].url,
             artist: response.item.artists[0].name
           }
-        })
+        }: {nowPlaying: {
+          name: "Nothing playing",
+          image: "",
+          artist:""
+        }})
       })
     }
   render() {
     return (
       <div className="spotify-container">
         <div className='Spot'><a href='http://localhost:8888'> Login to Spotify </a></div>
-        <div className="size"> Now Playing: { this.state.nowPlaying.name } </div>
+        <div className="size">  {this.state.nowPlaying.name.value === "undefined" ? null : `Now Playing: ${ this.state.nowPlaying.name }` } </div>
         <div className="size"> Artist: { this.state.nowPlaying.artist } </div>
         <div><img src={this.state.nowPlaying.image} style={{width: 100}}alt=""/></div>
         <button onClick={ () => this.getNowPlaying() }>now playing</button>
