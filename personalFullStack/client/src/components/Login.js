@@ -9,7 +9,7 @@ const Login = (props) => {
   const handleLogin = (e) => {
     e.preventDefault()
     userLogin({ username, password }).then(()=> {
-      props.history.push('/arts') //this needs a different redirect
+      props.history.push('/art') 
     })
     alert(`successfully logged in for ${props.username}`)
   }
@@ -17,7 +17,7 @@ const Login = (props) => {
   const handleSignup = (e) => {
     e.preventDefault()
     userSignUp({ username, password }).then(()=> {
-      props.history.push('/')
+      props.history.push('/art')
     })
     alert(`successful sign up for ${props.username}`)
 }

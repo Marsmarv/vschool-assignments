@@ -9,26 +9,18 @@ const PORT = process.env.PORT || 1989
 app.use(express.json())
 app.use(morgan('dev'))
 
-
-
 mongoose.set('useCreateIndex', true)
 mongoose.connect('mongodb://localhost:27017/art-app',
-{ useNewUrlParser: true },
-(err) => {
-  if (err) throw err;
-  console.log("Connected to the database");
-}
+    { useNewUrlParser: true },
+    (err) => {
+    if (err) throw err;
+    console.log("Connected to the database")
+    }
 ) 
 
 app.use('/api', expressJwt({secret: process.env.SECRET}))
 app.use('/api/art', require('./routes/art'))
 app.use('/auth', require("./routes/auth"))
-// app.use("/art", require("./routes/art"));
-
-// app.use((err, req, res, next) => {
-//     console.error(err);
-//     return res.send({ message: err.message });
-// });
 
 app.use((err, req, res, next) => {
     console.error(err)
@@ -39,7 +31,5 @@ app.use((err, req, res, next) => {
 })
 
 app.listen(PORT, () => {
-    console.log(`[+] Starting server on port ${PORT}`);
-});
-
-// server up and running
+    console.log(`[+] Starting server on port ${PORT}`)
+})

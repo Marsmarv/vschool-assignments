@@ -2,11 +2,15 @@
   margin: 0;
 }
 
+body{
+  color: white
+}
+
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 @import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic);
 
 .header{
-min-height: 10vh;
+min-height: 9vh;
 background-image: url('https://d1smv7h0armdzg.cloudfront.net/wp-content/uploads/2012/08/the-met_14652598443_o.jpg');
 background-size: 1300px;
 background-position-y: 560px;
@@ -21,6 +25,27 @@ text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 font-family: 'Julius Sans One', 'Ubuntu', sans-serif;
 }
 
+.search-form{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.search-bar{
+  font-size: 16px;
+  font-family: 'Julius Sans One', 'Ubuntu', sans-serif;
+  text-align: center;
+}
+
+.submit{
+  display: flex;
+  justify-content: center;
+}
+
+form{
+  display: flex;
+  align-items: center;
+}
 .main{
   min-height: 80vh;
   background-image: url('https://www.nycgo.com/images/venues/188/met-museum-tagger-yancey-iv-5262__x_large.jpg');
@@ -53,15 +78,18 @@ font-family: 'Julius Sans One', 'Ubuntu', sans-serif;
   background-position-x: -90px;
 }
 
+.result-container{
+  display: grid;
+}
+
 .art-container{
   min-height: 80vh;
-  background-color: rgba(0, 0, 0, .6)
+  background-color: rgba(0, 0, 0, .6);
 }
 
 .footer{
   min-height: 10vh;
   position: absolute;
-  bottom: 0;
   width: 100%;
   background-image: url('https://d1smv7h0armdzg.cloudfront.net/wp-content/uploads/2012/08/the-met_14652598443_o.jpg');
   background-size: 1300px;
@@ -88,9 +116,15 @@ font-family: 'Julius Sans One', 'Ubuntu', sans-serif;
   transition: .1s;
 }
 
+.display{
+  color:white;
+  font-size: 18px;
+}
 
-
-
+.display-image{
+  height: 300px;
+  width: auto;
+}
 
 .github:hover{
   cursor: pointer;

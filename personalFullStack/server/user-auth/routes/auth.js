@@ -9,11 +9,12 @@ authRouter.post('/signup', (req, res, next) => {
       res.status(500)
       return next(err)
     }
-
+    
     if (existingUser !== null) {
       res.status(400)
       return next(new Error('Username already exists'))
     }
+
     const newUser = new User(req.body)
     newUser.save((err, user) => {
       if (err) {
@@ -38,11 +39,19 @@ authRouter.post('/login', (req, res, next) => {
       return next(new Error('Email or password are incorrect'))
     }
 
+    user.checkPassword(req.body.password, (err, isMatch)=>{
+      if(err) {
+        res.status(401)
+        return next(err)
+      }
+      if (!isMatch){
+        res.status(401)
+        return next(new Error("username or password are incorrect"))
+      }
+    })
     const token = jwt.sign(user.toObject(), process.env.SECRET)
     return res.send({token: token, user: user.toObject(), success: true})
   })
 })
 
 module.exports = authRouter
-
-// authentication component complete

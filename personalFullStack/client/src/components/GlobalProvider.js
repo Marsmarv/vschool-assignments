@@ -9,22 +9,67 @@ artAxios.interceptors.request.use((config) => {
   return config
 })
 
-class GlobalProvider extends React.Component {
+class GlobalProvider extends Component {
   constructor(){
     super()
 
     this.state = {
+      search: "",
       artIds: [],
+      culture: "",
+      department: "",
+      medium: "",
+      period: "",
+      primaryImage: "",
+      title: "",
+      creditLine: "",
+      searchedArt: [],
       userData: {},
       user: JSON.parse(localStorage.getItem('user')) || {},
-      token: localStorage.getItem('token') || ''
+      token: localStorage.getItem('token') || '',
+      authErrMsg: "",
+      username: "",
+      password: ""
     }
   }
 
-  getArtIds = (search) => {
+  handleChange = e => {
+    const { name, value } = e.target
+        this.setState({[name]: value});
+  }
+
+  handleSubmit = e => {
+    e.preventDefault()
+    const { search } = this.state
     Axios.get(`https://collectionapi.metmuseum.org/public/collection/v1/search?q=${search}`).then( res => {
-      this.setState({artIds: res.data})
+      this.setState({artIds: res.data.objectIDs})
+      if (this.state.artIds === null){
+        alert('type something in the search bar')
+      } else if (this.state.artIds.length > 100){
+        this.state.artIds.splice(100, this.state.artIds.length)
+      }
     })
+    .then( () => {
+      this.state.artIds ? this.state.artIds.map( (id, i) => {
+        if(i < 10){
+          Axios.get(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${id}`).then(res => {
+            const { culture, department, medium, period, primaryImage, title, creditLine } = res.data
+            console.log(res.data)
+            const artObj = {
+              title,
+              primaryImage,
+              culture,
+              department,
+              medium,
+              period,
+              creditLine
+            }
+            this.setState( prevState => {return { searchedArt: [...prevState.searchedArt, artObj] }})
+          })
+        }
+      }) : console.log('fuck')
+    })
+    this.setState({searchedArt: []})
   }
 
   getUserData = () => {
@@ -41,12 +86,12 @@ class GlobalProvider extends React.Component {
   userSignUp = (userInfo) => {
     return Axios.post("/auth/signup", userInfo).then(res => {
       const { user, token } = res.data
-      console.log(res.data)
       localStorage.setItem("token", token);
       localStorage.setItem("user", JSON.stringify(user));
       this.setState({
         user,
-        token
+        token,
+        authErrMsg: ""
       });
       return res
     })
@@ -59,9 +104,9 @@ class GlobalProvider extends React.Component {
       localStorage.setItem("user", JSON.stringify(user));
       this.setState({
         user,
-        token
+        token,
+        authErrMsg: ""
       });
-      // console.log(res.data)
       this.getUserData()
       return res
     })
@@ -70,18 +115,19 @@ class GlobalProvider extends React.Component {
   logout = () => {
     localStorage.removeItem('user')
     localStorage.removeItem('token')
-    this.setState({ user: {}, token: "" })
+    this.setState({ user: {}, token: "", authErrMsg: "" })
   }
 
   render() {
     return (
       <Provider value={{
         ...this.state,
-        getArtIds: this.getArtIds,
         getUserData: this.getUserData,
         userSignUp: this.userSignUp,
         userLogin: this.userLogin,
-        logout: this.logout
+        logout: this.logout,
+        handleChange: this.handleChange,
+        handleSubmit: this.handleSubmit
       }} >{this.props.children}
       </Provider>
     )
@@ -89,12 +135,6 @@ class GlobalProvider extends React.Component {
 }
 
 export default GlobalProvider
-
-// export function withGlobalProvider(Comp){
-//   return props => <Consumer>
-//                     {value => <Comp {...props}{...value} />}
-//                   </Consumer>
-// }
 
 export const withGlobalProvider = C => props => (
   <Consumer>
