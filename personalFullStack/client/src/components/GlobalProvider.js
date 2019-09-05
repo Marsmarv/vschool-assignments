@@ -29,7 +29,8 @@ class GlobalProvider extends Component {
       token: localStorage.getItem('token') || '',
       authErrMsg: "",
       username: "",
-      password: ""
+      password: "",
+      objectID: ""
     }
   }
 
@@ -43,7 +44,9 @@ class GlobalProvider extends Component {
     const { search } = this.state
     Axios.get(`https://collectionapi.metmuseum.org/public/collection/v1/search?q=${search}`).then( res => {
       this.setState({artIds: res.data.objectIDs})
-      if (this.state.artIds === null){
+      if(this.state.artIds === null && this.state.search !== "") {
+        alert('no search results')
+      } else if (this.state.artIds === null && this.state.search === ""){
         alert('type something in the search bar')
       } else if (this.state.artIds.length > 100){
         this.state.artIds.splice(100, this.state.artIds.length)
@@ -53,7 +56,7 @@ class GlobalProvider extends Component {
       this.state.artIds ? this.state.artIds.map( (id, i) => {
         if(i < 10){
           Axios.get(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${id}`).then(res => {
-            const { culture, department, medium, period, primaryImage, title, creditLine } = res.data
+            const { culture, department, medium, period, primaryImage, title, creditLine, objectID } = res.data
             console.log(res.data)
             const artObj = {
               title,
@@ -62,7 +65,8 @@ class GlobalProvider extends Component {
               department,
               medium,
               period,
-              creditLine
+              creditLine,
+              objectID
             }
             this.setState( prevState => {return { searchedArt: [...prevState.searchedArt, artObj] }})
           })
@@ -74,7 +78,6 @@ class GlobalProvider extends Component {
 
   getUserData = () => {
     artAxios.get('/api/art').then( response => {
-      console.log( response.data )
       this.setState({
         userData: response.data,
         artIds: response.data[0].artIds
@@ -112,6 +115,17 @@ class GlobalProvider extends Component {
     })
   }
 
+  favoritedArt = () => {
+    return Axios.put("/like/:objectID", (req, res) => {
+      const foundArt = art.find(art => art.objectID === req.params.objectID)
+      const updatedObj = req.body
+      const updatedArt = Object.assign(foundArt, updatedObj)
+      const updatedDB = art.map(art => art.objectID == req.params.objectID ? updatedArt : art)
+      art = updatedDB
+      res.send(updatedArt)
+    })
+  }
+
   logout = () => {
     localStorage.removeItem('user')
     localStorage.removeItem('token')
@@ -127,7 +141,8 @@ class GlobalProvider extends Component {
         userLogin: this.userLogin,
         logout: this.logout,
         handleChange: this.handleChange,
-        handleSubmit: this.handleSubmit
+        handleSubmit: this.handleSubmit,
+        favoritedArt: this.favoritedArt
       }} >{this.props.children}
       </Provider>
     )

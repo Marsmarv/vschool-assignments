@@ -24,8 +24,8 @@ artRouter.post('/', (req, res, next) => {
   })
 })
 
-artRouter.get("/:artId", (req, res, next) => {
-  Art.findOne( {_id: req.params.artId, user: req.user._id}, (err, art) => {
+artRouter.get("/like/:objectID", (req, res, next) => {
+  Art.findOne( {_id: req.params.objectID, user: req.user._id}, (err, art) => {
     if (err) {
       res.status(500)
       return next(err)
@@ -38,10 +38,10 @@ artRouter.get("/:artId", (req, res, next) => {
   })
 })
 
-artRouter.put("/:artId", (req, res, next) => {
+artRouter.put("/like/:objectID", (req, res, next) => {
   Art.findOneAndUpdate(
-    {_id: req.params.artId, user: req.user._ids},
-    req.body,
+    {objectID: req.params.objectID, user: req.user._ids},
+    {$inc: {likes: 1}},
     { new: true },
     (err, art) => {
       if (err) {
@@ -54,8 +54,8 @@ artRouter.put("/:artId", (req, res, next) => {
   )
 })
 
-artRouter.delete("/:artId", (req, res, next) => {
-  Art.findOneAndRemove({_id:req.params.artId, user:req.user._id}, (err, art) => {
+artRouter.delete("/like/:objectID", (req, res, next) => {
+  Art.findOneAndRemove({_id:req.params.objectID, user:req.user._id}, (err, art) => {
     if (err) {
       res.status(500)
       return next(err)

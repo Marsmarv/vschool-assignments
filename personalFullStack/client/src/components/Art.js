@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { withGlobalProvider } from './GlobalProvider'
 
 const Art = (props) => {
-const { handleChange, handleSubmit } = props
+const { handleChange, handleSubmit, favoritedArt } = props
   return(
       <div className="main-container art-background">
         <div className="art-container">
@@ -25,7 +25,7 @@ const { handleChange, handleSubmit } = props
                 { art.period && <h1 className="display">Period: {art.period}</h1>}
                 { art.creditLine && <h1 className="display">Credit line: {art.creditLine}</h1>}
                 <img className="display-image" src={art.primaryImage} alt=""/><br/>
-                <button>like</button> <button>save</button>
+                <div><button onClick={favoritedArt}>like</button> <button>save</button></div>
               </div>
             })}
           </div>
