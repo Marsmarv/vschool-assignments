@@ -29,6 +29,7 @@ font-family: 'Julius Sans One', 'Ubuntu', sans-serif;
   display: grid;
   justify-content: center;
   align-content: center;
+  padding-top: 40px;
 }
 
 .search-bar{
@@ -76,10 +77,15 @@ form{
   background-size: 1300px;
   background-position-y: 790px;
   background-position-x: -90px;
+  background-attachment: fixed;
+
 }
 
 .result-container{
   display: grid;
+  justify-items: center;
+  padding-top: 100px; 
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .art-container{
@@ -117,13 +123,16 @@ form{
 }
 
 .display{
-  color:white;
+  /* color:white; */
+  color: #b58f58;
   font-size: 18px;
 }
 
 .display-image{
-  height: 300px;
-  width: auto;
+  width: 400px;
+  height: auto;
+  padding: 10px 0 10px 0;
+  padding-bottom: 5px;
 }
 
 .github:hover{
@@ -152,4 +161,23 @@ span{
   text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
   margin-left:.30em; 
   display:inline-block;
+}
+
+.photo-container{
+  width: 400px;
+}
+
+.button-container{
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.span{
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: none;
+  color: rgb(168, 168, 168);
+  margin-left: 0; 
+
+  font-size: 1.2em;
 }

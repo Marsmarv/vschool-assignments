@@ -17,15 +17,15 @@ const { handleChange, handleSubmit, favoritedArt } = props
           </div>
           <div className="result-container">
             {props.searchedArt.map( art => {
-              return <div>
-                { art.title && <h1 className="display">Title: {art.title}</h1>}
-                { art.culture && <h1 className="display">Culture: {art.culture}</h1>}
-                { art.department && <h1 className="display">Department: {art.department}</h1>}
-                { art.medium && <h1 className="display">Medium: {art.medium}</h1>}
-                { art.period && <h1 className="display">Period: {art.period}</h1>}
-                { art.creditLine && <h1 className="display">Credit line: {art.creditLine}</h1>}
+              return <div className="photo-container">
+                { art.title && <h1 className="display"><span className="span">Title:</span> {art.title}</h1>}
+                { art.culture && <h1 className="display"><span className="span">Culture:</span> {art.culture}</h1>}
+                { art.department && <h1 className="display"><span className="span">Department:</span> {art.department}</h1>}
+                { art.medium && <h1 className="display"><span className="span">Medium:</span> {art.medium}</h1>}
+                { art.period && <h1 className="display"><span className="span">Period:</span> {art.period}</h1>}
+                { art.creditLine && <h1 className="display"><span className="span">Credit line:</span> {art.creditLine}</h1>}
                 <img className="display-image" src={art.primaryImage} alt=""/><br/>
-                <div><button onClick={favoritedArt}>like</button> <button>save</button></div>
+                <div className="button-container"><button onClick={() => favoritedArt(art.objectID)}>like</button> <button>save</button></div>
               </div>
             })}
           </div>

@@ -2,13 +2,9 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const artSchema = new Schema({
-  favoritedArt: {
-    type: String,
-    required: false
-  },
-  likes:{
+  favoritedArtID: {
     type: Number,
-    default: 0
+    required: false
   },
   user: {
     type: Schema.Types.ObjectId,
