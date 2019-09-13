@@ -5,7 +5,7 @@ const bcrypt = require("bcrypt")
 const userSchema = new Schema({
   username: {
     type: String,
-    require: true,
+    required: true,
     unique: true,
     lowercase: true
   },
@@ -16,7 +16,11 @@ const userSchema = new Schema({
   isAdmin: {
     type: Boolean,
     default: false,
-  }
+  }//,
+  // favorites: [{
+  //   type: Schema.Types.ObjectId,
+  //   ref: "Art"
+  // }]
 })
 
 userSchema.pre("save", function(next) {
@@ -43,5 +47,3 @@ userSchema.methods.withoutPassword = function () {
 };
 
 module.exports = mongoose.model("User", userSchema)
-
-// component complete

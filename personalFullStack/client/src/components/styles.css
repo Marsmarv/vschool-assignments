@@ -178,6 +178,23 @@ span{
   text-shadow: none;
   color: rgb(168, 168, 168);
   margin-left: 0; 
-
   font-size: 1.2em;
+}
+
+.profile-likes{
+  color: #000;
+}
+
+.liked-button{
+  background-color: #876026;
+  width: 65px;
+  transition: 1s;
+}
+
+.liked-button-two{
+  background-color: rgb(168, 168, 168);
+  width: 55px;
+  transition: 1s;
+  margin-right: .2em;
+  margin-left: .2em;
 }

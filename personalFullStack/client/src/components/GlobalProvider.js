@@ -12,7 +12,6 @@ artAxios.interceptors.request.use((config) => {
 class GlobalProvider extends Component {
   constructor(){
     super()
-
     this.state = {
       search: "",
       artIds: [],
@@ -34,23 +33,23 @@ class GlobalProvider extends Component {
 
   handleSubmit = e => {
     e.preventDefault()
-    const { search } = this.state
+    const { search, artIds } = this.state
     Axios.get(`https://collectionapi.metmuseum.org/public/collection/v1/search?q=${search}`).then( res => {
       this.setState({artIds: res.data.objectIDs})
-      if(this.state.artIds === null && this.state.search !== "") {
+      if(artIds === null && search !== "") {
         alert('no search results')
-      } else if (this.state.artIds === null && this.state.search === ""){
+      } else if (artIds === null && search === ""){
         alert('type something in the search bar')
-      } else if (this.state.artIds.length > 100){
-        this.state.artIds.splice(100, this.state.artIds.length)
+      } else if (artIds.length > 100){
+        artIds.splice(100, artIds.length)
       }
     })
     .then( () => {
-      this.state.artIds ? this.state.artIds.map( (id, i) => {
+      const { artIds } = this.state
+      artIds && artIds.map( (id, i) => {
         if(i < 21){
-          Axios.get(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${id}`).then(res => {
+          Axios.get(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${id}`).then( res => {
             const { culture, department, medium, period, primaryImage, title, creditLine, objectID } = res.data
-            console.log(res.data)
             const artObj = {
               title,
               primaryImage,
@@ -62,15 +61,15 @@ class GlobalProvider extends Component {
               objectID
             }
             this.setState( prevState => {return { searchedArt: [...prevState.searchedArt, artObj] }})
-            console.log(this.state.searchedArt)
           })
         }
-      }) : console.log('fuck')
+      }) 
     })
     this.setState({searchedArt: []})
   }
 
   getUserData = () => {
+
     artAxios.get('/api/art').then( response => {
       this.setState({
         userData: response.data,
@@ -95,6 +94,7 @@ class GlobalProvider extends Component {
   }
 
   userLogin = (userInfo) => {
+    const { getUserData } = this
     return Axios.post("/auth/login", userInfo).then(res => {
       const { user, token } = res.data
       localStorage.setItem("token", token);
@@ -104,36 +104,41 @@ class GlobalProvider extends Component {
         token,
         authErrMsg: ""
       });
-      this.getUserData()
+      getUserData()
       return res
     })
   }
 
-  favoritedArt = (favoritedArtID) => {
-    console.log(favoritedArtID)
-//Take the art piece and add it to your favorites (.../api/art/)
-//create the artPiece object and send it
-//{favoritedArtID: 837238483}
+  componentDidMount(){
+    // const { getUserData } = this
+    // getUserData()
+    artAxios.get("/api/art/").then(res => {
+      // console.log(res.data)
+      // const artPieces = res.data.map( artPiece => artPiece.objectID)
+      this.setState({likedArt: res.data})
+    })
+  }
+  
 
-//Add the art piece to your liked art in state
-  artAxios.post("/api/art/", { favoritedArtID }).then(console.log('successfully added to liked Art'))
-  //don't forget to add the user auth token to the request
-  //artAxios is diff from just Axios because it has the interceptor
-  this.setState({likedArt = favoritedArtID})
-  console.log(this.likedArt)
-
-    // return Axios.post("/like/:objectID", (req, res) => {
-    //   const artPieces = req.body.art
-    //   const foundArt = artPieces.find(art => art.objectID === req.params.objectID)
-    //   const updatedObj = req.body
-    //   const updatedArt = Object.assign(foundArt, updatedObj)
-    //   const updatedDB = artPieces.map(art => art.objectID == req.params.objectID ? updatedArt : art)
-    //   artPieces = updatedDB
-    //   res.send(updatedArt)
-    // })
+  favoritedArt = (favoritedArt) => {
+    const { likedArt } = this.state
+    const { objectID, title, primaryImage, culture, department, medium, period, creditLine } = favoritedArt
+    this.setState(prevState => {return {likedArt: [...prevState.likedArt, objectID]}})
+    likedArt.includes(objectID) === true ?
+    alert('this is already liked') :
+    artAxios.post("/api/art/", { 
+      title,
+      primaryImage,
+      culture,
+      department,
+      medium,
+      period,
+      creditLine,
+      objectID 
+    })
   }
 
-  logout = () => {
+  logout = e => {
     localStorage.removeItem('user')
     localStorage.removeItem('token')
     this.setState({ user: {}, token: "", authErrMsg: "" })

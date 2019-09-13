@@ -7,7 +7,6 @@ const { handleChange, handleSubmit, favoritedArt } = props
   return(
       <div className="main-container art-background">
         <div className="art-container">
-
           <div className="search-form">
             <h3 className="search-bar">Art search</h3> 
             <form onSubmit={handleSubmit}>
@@ -25,7 +24,12 @@ const { handleChange, handleSubmit, favoritedArt } = props
                 { art.period && <h1 className="display"><span className="span">Period:</span> {art.period}</h1>}
                 { art.creditLine && <h1 className="display"><span className="span">Credit line:</span> {art.creditLine}</h1>}
                 <img className="display-image" src={art.primaryImage} alt=""/><br/>
-                <div className="button-container"><button onClick={() => favoritedArt(art.objectID)}>like</button> <button>save</button></div>
+                <div className="button-container">
+                  <button className={props.likedArt.includes(art.objectID) ? "liked-button-two" : "liked-button"} 
+                    onClick={() => favoritedArt(art)}>
+                    {props.likedArt.includes(art.objectID) ? "liked" : "like"}
+                  </button>
+                </div>
               </div>
             })}
           </div>
@@ -36,3 +40,6 @@ const { handleChange, handleSubmit, favoritedArt } = props
 }
 
 export default withGlobalProvider(Art)
+
+//() => favoritedArt(art)
+//{props.likedArt === art.objectID ? "liked" : "like"}

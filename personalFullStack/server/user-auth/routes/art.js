@@ -2,13 +2,15 @@ const express = require("express")
 const artRouter = express.Router()
 const Art = require("../models/art")
 
+
 artRouter.get('/', (req, res, next) => {
   Art.find({user: req.user._id}, (err, art) => {
     if (err) {
       res.status(500)
       return next(err)
     }
-    return res.send(art)
+
+    return res.status(200).send(art)
   })
 })
 

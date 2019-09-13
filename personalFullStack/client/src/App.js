@@ -7,6 +7,7 @@ import "./components/styles.css"
 import Login from './components/Login'
 import Footer from './components/Footer';
 import Art from './components/Art'
+import Profile from './components/Profile'
 
 import { Switch, Route } from 'react-router-dom'
 
@@ -18,6 +19,7 @@ const App = () => {
         <Route exact path='/' component={Main} />
         <Route path='/login' component={Login} />
         <Route path='/art' component={Art} />
+        <Route path='/profile' component={Profile} />
       </Switch>
     <Footer />
     </>

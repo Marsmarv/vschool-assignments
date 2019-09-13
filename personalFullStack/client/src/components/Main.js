@@ -10,6 +10,7 @@ const Main = ()=>{
         <Link to='/' className='home-button'>HOME</Link>
         <Link to='/login' className='info-button'>Login</Link>
         <Link to='/art' className='info-button'>art</Link>
+        <Link to='/profile' className='info-button'>profile</Link>
       </div>
     </div>
     </>

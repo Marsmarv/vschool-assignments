@@ -14,7 +14,6 @@ authRouter.post('/signup', (req, res, next) => {
       res.status(400)
       return next(new Error('Username already exists'))
     }
-
     const newUser = new User(req.body)
     newUser.save((err, user) => {
       if (err) {
@@ -52,6 +51,23 @@ authRouter.post('/login', (req, res, next) => {
     const token = jwt.sign(user.toObject(), process.env.SECRET)
     return res.send({token: token, user: user.toObject(), success: true})
   })
+})
+
+
+authRouter.put("/like/:objectID", (req, res, next) => {
+  User.findOneAndUpdate(
+    {_id: req.user._id},
+    {$push: {favorites: req.params.objectID}},
+    { new: true },
+    (err, art) => {
+      if (err) {
+        console.log("Error")
+        res.status(500)
+        return next(err)
+      }
+      return res.send(art)
+    }
+  )
 })
 
 module.exports = authRouter
