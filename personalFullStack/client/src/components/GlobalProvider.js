@@ -22,7 +22,8 @@ class GlobalProvider extends Component {
       authErrMsg: "",
       username: "",
       password: "",
-      likedArt:[]
+      likedArt:[],
+      likedArtID:[]
     }
   }
 
@@ -60,7 +61,7 @@ class GlobalProvider extends Component {
               creditLine,
               objectID
             }
-            this.setState( prevState => {return { searchedArt: [...prevState.searchedArt, artObj] }})
+            this.setState( prevState => ({ searchedArt: [...prevState.searchedArt, artObj] }))
           })
         }
       }) 
@@ -113,18 +114,17 @@ class GlobalProvider extends Component {
     // const { getUserData } = this
     // getUserData()
     artAxios.get("/api/art/").then(res => {
-      // console.log(res.data)
-      // const artPieces = res.data.map( artPiece => artPiece.objectID)
-      this.setState({likedArt: res.data})
+      const artPieces = res.data.map( artPiece => artPiece.objectID)
+      this.setState({likedArt: res.data, likedArtID: artPieces})
     })
   }
   
 
   favoritedArt = (favoritedArt) => {
-    const { likedArt } = this.state
+    const { likedArtID } = this.state
     const { objectID, title, primaryImage, culture, department, medium, period, creditLine } = favoritedArt
-    this.setState(prevState => {return {likedArt: [...prevState.likedArt, objectID]}})
-    likedArt.includes(objectID) === true ?
+    this.setState(prevState => {return {likedArtID: [...prevState.likedArtID, objectID]}})
+    likedArtID.includes(objectID) === true ?
     alert('this is already liked') :
     artAxios.post("/api/art/", { 
       title,
@@ -154,7 +154,10 @@ class GlobalProvider extends Component {
         logout: this.logout,
         handleChange: this.handleChange,
         handleSubmit: this.handleSubmit,
-        favoritedArt: this.favoritedArt
+        favoritedArt: this.favoritedArt,
+        likedArtID: this.state.likedArtID,
+        likedArt: this.state.likedArt,
+        searchedArt: this.state.searchedArt
       }} >{this.props.children}
       </Provider>
     )
