@@ -33,7 +33,7 @@ const Footer = (props)=>{
               c-0.087-0.498,0.421-0.998,1.121-1.127C44.271,97.014,44.911,97.305,45.002,97.799L45.002,97.799z M45.002,97.799"/></g>
           </svg>
         </a>
-        <div className="login-text">signed in as {props.user.username}</div>
+        {props.user.username && <div className="login-text">signed in as {props.user.username}</div>}
       </div>
       
       <div className="miniPlayer">

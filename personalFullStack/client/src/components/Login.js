@@ -5,20 +5,17 @@ import { Link } from "react-router-dom";
 
 const Login = (props) => {
   const { handleChange, username, password, userSignUp, userLogin, logout } = props
+  
   const handleLogin = (e) => {
     e.preventDefault()
-    userLogin({ username, password }).then(()=> {
-      props.history.push('/art') 
-    })
-    alert(`successfully logged in for ${props.username}`)
+    userLogin({ username, password })
+      .then(()=> props.history.push('/art'))
   }
   
   const handleSignup = (e) => {
     e.preventDefault()
-    userSignUp({ username, password }).then(()=> {
-      props.history.push('/art')
-    })
-    alert(`successful sign up for ${props.username}`)
+    userSignUp({ username, password })
+      .then(()=> { props.history.push('/art') })
   }
 
   const handleLogout = (e) => {
