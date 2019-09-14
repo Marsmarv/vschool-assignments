@@ -76,7 +76,8 @@ class GlobalProvider extends Component {
   }
 
   userSignUp = (userInfo) => {
-    return Axios.post("/auth/signup", userInfo).then(res => {
+    return Axios.post("/auth/signup", userInfo)
+    .then(res => {
       const { user, token } = res.data
       localStorage.setItem("token", token);
       localStorage.setItem("user", JSON.stringify(user));
@@ -90,8 +91,8 @@ class GlobalProvider extends Component {
   }
 
   userLogin = (userInfo) => {
-    const { getUserData } = this
-    return Axios.post("/auth/login", userInfo).then(res => {
+    return Axios.post("/auth/login", userInfo)
+    .then(res => {
       const { user, token } = res.data
       localStorage.setItem("token", token);
       localStorage.setItem("user", JSON.stringify(user));
@@ -100,14 +101,11 @@ class GlobalProvider extends Component {
         token,
         authErrMsg: ""
       });
-      getUserData()
       return res
     })
   }
 
   componentDidMount(){
-    const { getUserData } = this
-    getUserData()
     artAxios.get("/api/art/").then(res => {
       const artPieces = res.data.map( artPiece => artPiece.objectID)
       this.setState({likedArt: res.data, likedArtID: artPieces})
