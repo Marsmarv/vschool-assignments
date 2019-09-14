@@ -1,7 +1,8 @@
 import React from 'react'
+import { withGlobalProvider } from "./GlobalProvider.js";
 
 
-const Header = ()=>{
+const Header = (props)=>{
   return(
     <>
       <div className="header">
@@ -11,4 +12,4 @@ const Header = ()=>{
   )
 }
 
-export default Header
+export default withGlobalProvider(Header)
