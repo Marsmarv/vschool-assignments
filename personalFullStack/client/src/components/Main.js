@@ -7,10 +7,11 @@ const Main = ()=>{
     <>
     <div className="main">
       <div className="main-container">
-        <Link to='/' className='home-button'>HOME</Link>
-        <Link to='/login' className='info-button'>Login</Link>
-        <Link to='/art' className='info-button'>art</Link>
-        <Link to='/profile' className='info-button'>profile</Link>
+        <div className="link-container">
+          <Link to='/login' className='nav-button'> Login Page </Link>
+          <Link to='/art' className='nav-button'> Art </Link>
+          <Link to='/profile' className='nav-button'> Profile Page </Link>
+        </div>
       </div>
     </div>
     </>

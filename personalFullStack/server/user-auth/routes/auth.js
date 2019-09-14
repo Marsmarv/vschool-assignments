@@ -70,4 +70,8 @@ authRouter.put("/like/:objectID", (req, res, next) => {
   )
 })
 
+authRouter.get("/", res => {
+  console.log(res.data)
+})
+
 module.exports = authRouter

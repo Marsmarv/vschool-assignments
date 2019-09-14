@@ -1,7 +1,7 @@
 import React from 'react'
 import Spot from '../Spotify/Spot'
-
-const Footer = ()=>{
+import { withGlobalProvider } from "./GlobalProvider";
+const Footer = (props)=>{
   return(
     <>
     <div className="footer">
@@ -33,7 +33,9 @@ const Footer = ()=>{
               c-0.087-0.498,0.421-0.998,1.121-1.127C44.271,97.014,44.911,97.305,45.002,97.799L45.002,97.799z M45.002,97.799"/></g>
           </svg>
         </a>
+        <div className="login-text">signed in as {props.user.username}</div>
       </div>
+      
       <div className="miniPlayer">
         <a href="https://open.spotify.com/browse/featured" target="_blank">
           <svg className="spotify-icon" xmlns="http://www.w3.org/2000/svg" height="40px" width="132px" version="1.1" viewBox="0 0 559 168">
@@ -47,4 +49,4 @@ const Footer = ()=>{
   )
 }
 
-export default Footer
+export default withGlobalProvider(Footer)

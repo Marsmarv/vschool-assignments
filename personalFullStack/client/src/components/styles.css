@@ -198,3 +198,59 @@ span{
   margin-right: .2em;
   margin-left: .2em;
 }
+
+.nav-button{
+  font-size: 40px;
+  transition: .2s;
+}
+
+.nav-button:hover{
+  font-size: 54px;
+  color: white;
+  transition: .2s;
+}
+
+.nav-button:active{
+  font-size: 40px;
+  color: #474747;
+  transition: .2s;
+}
+
+.link-container, .login-container{
+  display: grid;
+  justify-items: center;
+  height: 777px;
+  align-content: center;
+}
+
+.form-set{
+  display: grid;
+  align-items: center;
+  width: 240px;
+}
+
+.login-button{
+  width: 200px;
+  justify-self: center;
+}
+
+.home-button{
+  font-size: 26px;
+  transition: .2s;
+}
+
+.home-button:hover{
+  font-size: 28px;
+  color: white;
+  transition: .2s;
+}
+
+.home-button:active{
+  font-size: 26px;
+  color: #474747;
+  transition: .2s;
+}
+
+.login-text{
+  color: lightgray;
+}

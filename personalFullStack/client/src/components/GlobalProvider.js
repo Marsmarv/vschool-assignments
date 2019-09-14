@@ -70,13 +70,8 @@ class GlobalProvider extends Component {
   }
 
   getUserData = () => {
-
     artAxios.get('/api/art').then( response => {
-      this.setState({
-        userData: response.data,
-        artIds: response.data[0].artIds
-      })
-      console.log(`artIds: ${this.state.userData[0].artIds}`)
+      this.setState({userData: response.data})
     })
   }
 
@@ -111,8 +106,8 @@ class GlobalProvider extends Component {
   }
 
   componentDidMount(){
-    // const { getUserData } = this
-    // getUserData()
+    const { getUserData } = this
+    getUserData()
     artAxios.get("/api/art/").then(res => {
       const artPieces = res.data.map( artPiece => artPiece.objectID)
       this.setState({likedArt: res.data, likedArtID: artPieces})
@@ -157,7 +152,8 @@ class GlobalProvider extends Component {
         favoritedArt: this.favoritedArt,
         likedArtID: this.state.likedArtID,
         likedArt: this.state.likedArt,
-        searchedArt: this.state.searchedArt
+        searchedArt: this.state.searchedArt,
+        username: this.state.username
       }} >{this.props.children}
       </Provider>
     )
