@@ -1,10 +1,8 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import {withGlobalProvider} from './GlobalProvider'
 
 const Main = ()=>{
   return(
-    <>
     <div className="main">
       <div className="main-container">
         <div className="link-container">
@@ -14,8 +12,7 @@ const Main = ()=>{
         </div>
       </div>
     </div>
-    </>
   )
 }
 
-export default withGlobalProvider(Main)
+export default Main

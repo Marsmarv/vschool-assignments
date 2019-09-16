@@ -167,6 +167,10 @@ span{
   width: 400px;
 }
 
+.pp{
+  padding: 100px 0 0 50px;
+}
+
 .button-container{
   padding-bottom: 70px;
   text-align: center;
@@ -253,4 +257,32 @@ span{
 
 .login-text{
   color: lightgray;
+}
+
+.profile{
+
+  background-color: rgba(0, 0, 0, .7);
+  min-height: 80vh;
+
+}
+
+.profile-container{
+  min-height: 80vh;
+  background-image: url('https://www.metmuseum.org/-/media/images/about-the-met/curatorial-departments/greek-and-roman/greek_roman_marquee_2320x940.jpg?h=940&w=2320&la=en&hash=EB59BFD7398AE6EFB6990CC9E349FE78C05A3201');
+  background-position-x: 1567px;
+}
+
+.art-notification{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 355px;
+  font-family: 'Julius Sans One', 'Ubuntu', sans-serif;
+}
+
+.fav-container{
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
 }

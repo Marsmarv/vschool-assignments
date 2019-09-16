@@ -1,27 +1,31 @@
 import React from 'react'
-import Axios from 'axios'
 import {withGlobalProvider} from './GlobalProvider'
-const artAxios = Axios.create()
-
 
 const Profile = (props) => {
+  const { likedArt , likedArtID } = props
   return(
-    <div className="result-container">
-      {props.likedArt.map(piece => {
-        return <div className="photo-container">
-          { piece.title && <h1 className="display"><span className="span">Title:</span> {piece.title}</h1>}
-          { piece.culture && <h1 className="display"><span className="span">Culture:</span> {piece.culture}</h1>}
-          { piece.department && <h1 className="display"><span className="span">Department:</span> {piece.department}</h1>}
-          { piece.medium && <h1 className="display"><span className="span">Medium:</span> {piece.medium}</h1>}
-          { piece.period && <h1 className="display"><span className="span">Period:</span> {piece.period}</h1>}
-          { piece.creditLine && <h1 className="display"><span className="span">Credit line:</span> {piece.creditLine}</h1>}
-          <img className="display-image" src={piece.primaryImage} alt=""/>
-          <button className="liked-button"
-            onClick={() => console.log("jebba debba")}>
-            un-favorite
-          </button>
+    <div className="profile-container">
+      <div className="profile">
+        { likedArtID.length === 0 ? <h1 className='art-notification'> no art liked yet </h1> : null }
+        <div className="fav-container">
+          {likedArt.map( piece => {
+            const { title , culture , department , medium , period , creditLine , primaryImage } = piece
+            return <div className="photo-container pp">
+              { title && <h1 className="display"><span className="span">Title:</span> {title}</h1>}
+              { culture && <h1 className="display"><span className="span">Culture:</span> {culture}</h1>}
+              { department && <h1 className="display"><span className="span">Department:</span> {department}</h1>}
+              { medium && <h1 className="display"><span className="span">Medium:</span> {medium}</h1>}
+              { period && <h1 className="display"><span className="span">Period:</span> {period}</h1>}
+              { creditLine && <h1 className="display"><span className="span">Credit line:</span> {creditLine}</h1>}
+              <img className="display-image" src={primaryImage} alt=""/>
+              <button className="liked-button"
+                onClick={() => console.log("jebba debba")}>
+                un-favorite
+              </button>
+            </div>
+          })}
         </div>
-      })}
+      </div>
     </div>
   )
 }

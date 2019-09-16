@@ -4,18 +4,18 @@ import Fade from 'react-reveal/Fade'
 import { Link } from "react-router-dom";
 
 const Login = (props) => {
-  const { handleChange, username, password, userSignUp, userLogin, logout } = props
+  const { handleChange, username, password, userSignUp, userLogin, logout, history: {push} } = props
   
   const handleLogin = (e) => {
     e.preventDefault()
     userLogin({ username, password })
-      .then(()=> props.history.push('/art'))
+      .then(()=> push('/art'))
   }
   
   const handleSignup = (e) => {
     e.preventDefault()
     userSignUp({ username, password })
-      .then(()=> { props.history.push('/art') })
+      .then(()=>  push('/art'))
   }
 
   const handleLogout = (e) => {
@@ -25,7 +25,7 @@ const Login = (props) => {
   }
 
   return (
-    <>
+    <Fade>
       <div className="main-container main-background">
         <div className="login-container">
           <form className="form-set">
@@ -47,7 +47,7 @@ const Login = (props) => {
           <Link to='/' className='home-button'>HOME</Link>
         </div>
       </div>
-    </>
+    </Fade>
   )
 }
 
