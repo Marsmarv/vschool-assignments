@@ -34,8 +34,9 @@ class GlobalProvider extends Component {
 
   handleSubmit = e => {
     e.preventDefault()
-    const { search , artIds , artIds: {length} } = this.state
-    Axios.get(`https://collectionapi.metmuseum.org/public/collection/v1/search?q=${search}`).then( res => {
+    const { search, artIds , artIds: {length}  } = this.state
+    Axios.get(`https://collectionapi.metmuseum.org/public/collection/v1/search?q=${search}`)
+    .then( res => {
       const { objectIDs } = res.data
       this.setState({artIds: objectIDs})
       if(artIds === null && search !== "") {
@@ -47,7 +48,8 @@ class GlobalProvider extends Component {
       }
     })
     .then( () => {
-      artIds && artIds.map( (id, i) => {
+      const { artIds , artIds: {length}  } = this.state
+      length > 0 && artIds.map( (id, i) => {
         if(i < 21){
           Axios.get(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${id}`).then( res => {
             const { culture, department, medium, period, primaryImage, title, creditLine, objectID } = res.data

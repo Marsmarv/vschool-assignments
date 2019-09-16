@@ -1,5 +1,5 @@
 import React from 'react'
-import {withGlobalProvider} from './GlobalProvider'
+import { withGlobalProvider} from './GlobalProvider'
 
 const Profile = (props) => {
   const { likedArt , likedArtID } = props
