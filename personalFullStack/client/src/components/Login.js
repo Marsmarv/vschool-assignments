@@ -21,7 +21,6 @@ const Login = (props) => {
   const handleLogout = (e) => {
     e.preventDefault()
     logout()
-    alert(`successfully logged out`)
   }
 
   return (
