@@ -51,3 +51,11 @@ button:active{
 .size{
   font-size: 14px;
 }
+
+.spot{
+  color: gray;
+}
+
+.spot:hover{
+  color: lightgray;
+}

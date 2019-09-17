@@ -1,21 +1,21 @@
 import React from 'react'
-import { Link } from "react-router-dom";
-import {withGlobalProvider} from './GlobalProvider'
+import { Link } from "react-router-dom"
+import Fade from 'react-reveal/Fade'
 
 const Main = ()=>{
   return(
-    <>
-    <div className="main">
-      <div className="main-container">
-        <div className="link-container">
-          <Link to='/login' className='nav-button'> Login Page </Link>
-          <Link to='/art' className='nav-button'> Art </Link>
-          <Link to='/profile' className='nav-button'> Profile Page </Link>
+
+      <div className="main">
+        <div className="main-container">
+          <div className="link-container">
+            <Link to='/login' className='nav-button'> Login Page </Link>
+            <Link to='/art' className='nav-button'> Art </Link>
+            <Link to='/profile' className='nav-button'> Profile Page </Link>
+          </div>
         </div>
       </div>
-    </div>
-    </>
+
   )
 }
 
-export default withGlobalProvider(Main)
+export default Main

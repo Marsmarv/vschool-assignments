@@ -9,12 +9,14 @@ import Footer from './components/Footer';
 import Art from './components/Art'
 import Profile from './components/Profile'
 import ProtectedRoute from "./components/ProtectedRoute";
+import Nav from './components/Nav'
 
 import { Switch, Route } from 'react-router-dom'
 
 const App = () => {
   return(
     <>
+    <Nav />
     <Header />
       <Switch>
         <Route exact path='/' component={Main} />

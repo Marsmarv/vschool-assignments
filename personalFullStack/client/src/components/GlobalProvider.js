@@ -34,20 +34,22 @@ class GlobalProvider extends Component {
 
   handleSubmit = e => {
     e.preventDefault()
-    const { search, artIds } = this.state
-    Axios.get(`https://collectionapi.metmuseum.org/public/collection/v1/search?q=${search}`).then( res => {
-      this.setState({artIds: res.data.objectIDs})
+    const { search, artIds , artIds: {length}  } = this.state
+    Axios.get(`https://collectionapi.metmuseum.org/public/collection/v1/search?q=${search}`)
+    .then( res => {
+      const { objectIDs } = res.data
+      this.setState({artIds: objectIDs})
       if(artIds === null && search !== "") {
         alert('no search results')
       } else if (artIds === null && search === ""){
         alert('type something in the search bar')
-      } else if (artIds.length > 100){
-        artIds.splice(100, artIds.length)
+      } else if (length > 100){
+        artIds.splice(100, length)
       }
     })
     .then( () => {
-      const { artIds } = this.state
-      artIds && artIds.map( (id, i) => {
+      const { artIds , artIds: {length}  } = this.state
+      length > 0 && artIds.map( (id, i) => {
         if(i < 21){
           Axios.get(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${id}`).then( res => {
             const { culture, department, medium, period, primaryImage, title, creditLine, objectID } = res.data
@@ -86,6 +88,7 @@ class GlobalProvider extends Component {
         token,
         authErrMsg: ""
       });
+      alert(`${this.state.username} successfully signed up`)
       return res
     })
   }
@@ -101,6 +104,7 @@ class GlobalProvider extends Component {
         token,
         authErrMsg: ""
       });
+      alert(`${this.state.username} successfully logged in`)
       return res
     })
   }
@@ -132,9 +136,11 @@ class GlobalProvider extends Component {
   }
 
   logout = e => {
+    const { username } = this.state
     localStorage.removeItem('user')
     localStorage.removeItem('token')
     this.setState({ user: {}, token: "", authErrMsg: "" })
+    alert(`${ username } successfully logged out`)
   }
 
   render() {
