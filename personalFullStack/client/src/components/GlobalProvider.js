@@ -135,6 +135,16 @@ class GlobalProvider extends Component {
     })
   }
 
+  unFavoriteArt = (unFav) => {
+    const pop = this.state.likedArt
+    artAxios.delete(`/api/art/${unFav}`).then( (res) => {
+      alert('unfavorited')
+      pop.find(id => { id._id !== unFav && window.location.reload()})
+    }, res => {
+      alert('there was a problem deleting')
+    })
+  }
+
   logout = e => {
     const { username } = this.state
     localStorage.removeItem('user')
@@ -154,6 +164,7 @@ class GlobalProvider extends Component {
         handleChange: this.handleChange,
         handleSubmit: this.handleSubmit,
         favoritedArt: this.favoritedArt,
+        unFavoriteArt: this.unFavoriteArt,
         likedArtID: this.state.likedArtID,
         likedArt: this.state.likedArt,
         searchedArt: this.state.searchedArt,

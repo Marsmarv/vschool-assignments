@@ -56,8 +56,8 @@ artRouter.put("/like/:objectID", (req, res, next) => {
   )
 })
 
-artRouter.delete("/like/:objectID", (req, res, next) => {
-  Art.findOneAndRemove({_id:req.params.objectID, user:req.user._id}, (err, art) => {
+artRouter.delete("/:_id", (req, res, next) => {
+  Art.findOneAndRemove({_id:req.params._id, user:req.user._id}, (err, art) => {
     if (err) {
       res.status(500)
       return next(err)
