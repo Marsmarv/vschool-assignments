@@ -2,7 +2,7 @@ import React from 'react'
 import { withGlobalProvider} from './GlobalProvider'
 
 const Profile = (props) => {
-  const { likedArt , likedArtID } = props
+  const { likedArt , likedArtID, unFavoriteArt } = props
   return(
     <div className="profile-container">
       <div className="profile">
@@ -19,8 +19,8 @@ const Profile = (props) => {
               { creditLine && <h1 className="display"><span className="span">Credit line:</span> {creditLine}</h1>}
               <img className="display-image" src={primaryImage} alt=""/>
               <button className="liked-button"
-                onClick={() => console.log("jebba debba")}>
-                un-favorite
+                onClick={() => unFavoriteArt(piece._id)}>
+                unlike
               </button>
             </div>
           })}
