@@ -115,6 +115,11 @@ class GlobalProvider extends Component {
       this.setState({likedArt: res.data, likedArtID: artPieces})
     })
   }
+
+
+  // componentWillUnmount(){
+  //   this.state.likedArt
+  // }
   
 
   favoritedArt = (favoritedArt) => {
@@ -136,10 +141,11 @@ class GlobalProvider extends Component {
   }
 
   unFavoriteArt = (unFav) => {
-    const pop = this.state.likedArt
+    const unliked = this.state.likedArt
     artAxios.delete(`/api/art/${unFav}`).then( (res) => {
-      alert('unfavorited')
-      pop.find(id => { id._id !== unFav && window.location.reload()})
+      // alert('unfavorited')
+      this.setState({likedArt: unliked.filter( unFavId => {return unFavId._id !== unFav} )})
+      // unliked.find(id => { id._id !== unFav && window.location.reload()})
     }, res => {
       alert('there was a problem deleting')
     })

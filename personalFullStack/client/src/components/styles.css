@@ -401,3 +401,7 @@ span{
   position: absolute;
   transition: 1s;
 }
+
+@media (max-width: 375px){
+  
+}
