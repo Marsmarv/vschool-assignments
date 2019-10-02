@@ -6,7 +6,7 @@ const Footer = (props)=>{
     <>
     <div className="footer">
       <div className="github-icon">
-        <a href="https://github.com/Marsmarv" target="_blank">
+        <a href="https://github.com/Marsmarv" target="_blank" rel="noopener noreferrer">
           <svg  className="github" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
             width="68px" height="68px" viewBox="0 0 120.774 117.793" enable-background="new 0 0 120.774 117.793"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M60.388,0C27.041,0,0,27.035,0,60.387
               c0,26.682,17.303,49.316,41.297,57.303c3.018,0.559,4.126-1.311,4.126-2.906c0-1.439-0.056-6.197-0.082-11.242

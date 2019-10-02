@@ -116,16 +116,18 @@ class GlobalProvider extends Component {
     })
   }
 
-
-  // componentWillUnmount(){
-  //   this.state.likedArt
+  // componentWillReceiveProps(nextProps){
+  //   console.log('fired at some point')
+  //   console.log(nextProps)
   // }
-  
 
   favoritedArt = (favoritedArt) => {
     const { likedArtID } = this.state
     const { objectID, title, primaryImage, culture, department, medium, period, creditLine } = favoritedArt
-    this.setState(prevState => {return {likedArtID: [...prevState.likedArtID, objectID]}})
+    this.setState(prevState => {return {
+      likedArtID: [...prevState.likedArtID, objectID],
+      likedArt: [...prevState.likedArt, favoritedArt]
+    }})
     likedArtID.includes(objectID) === true ?
     alert('this is already liked') :
     artAxios.post("/api/art/", { 
@@ -140,16 +142,30 @@ class GlobalProvider extends Component {
     })
   }
 
-  unFavoriteArt = (unFav) => {
-    const unliked = this.state.likedArt
-    artAxios.delete(`/api/art/${unFav}`).then( (res) => {
-      // alert('unfavorited')
-      this.setState({likedArt: unliked.filter( unFavId => {return unFavId._id !== unFav} )})
-      // unliked.find(id => { id._id !== unFav && window.location.reload()})
+  unFavoriteArt = piece => {
+    const { objectID, _id } = piece
+    const { likedArt , likedArtID } = this.state
+    const unFav = _id
+    const newLikedArray = likedArt.filter(id => {return id.objectID !== objectID})
+    const newLikedIdArray = likedArtID.filter(id => {return id !== objectID})
+
+    console.log("PIECE: ", piece)
+    console.log("NLA: ", newLikedArray)
+    console.log("NLidA: ", newLikedIdArray)
+
+    artAxios.delete(`/api/art/${unFav}`).then( res => {
+      console.log("PIECE: ", piece)
+      console.log("NLA: ", newLikedArray)
+      console.log("NLidA: ", newLikedIdArray)
+      this.setState({
+        likedArt: newLikedArray,
+        likedArtID: newLikedIdArray
+      })
     }, res => {
       alert('there was a problem deleting')
     })
   }
+
 
   logout = e => {
     const { username } = this.state
