@@ -1,6 +1,5 @@
 import React from 'react';
 import { withGlobalProvider } from './GlobalProvider'
-import Fade from 'react-reveal/Fade'
 
 const Art = (props) => {
   const { handleChange, handleSubmit, favoritedArt, likedArtID, searchedArt } = props

@@ -1,31 +1,16 @@
-import React, { useEffect , useState } from 'react'
+import React from 'react'
 import { withGlobalProvider} from './GlobalProvider'
-import Axios from "axios"
-const artAxios = Axios.create()
-
-artAxios.interceptors.request.use((config) => {
-  const token = localStorage.getItem('token')
-  config.headers.Authorization = `Bearer ${token}`
-  return config
-})
 
 const Profile = (props) => {
-  const { likedArt , likedArtID , unFavoriteArt } = props
-  let [users, setUsers] = useState([])
-  useEffect(() => {
-    artAxios
-      .get("/api/art/")
-      .then(res => setUsers(res.data))
-      
-  }, [])
+  const { likedArt , unFavoriteArt } = props
 
   return(
     <div className="profile-container">
       <div className="profile">
-        { likedArtID.length === 0 ? <h1 className='art-notification'> no art liked yet </h1> : null }
+        { likedArt.length === 0 ? <h1 className='art-notification'> no art liked yet </h1> : null }
         <div className="fav-container">
           {likedArt.map( piece => {
-            const { title , culture , department , medium , period , creditLine , primaryImage, objectID, _id } = piece
+            const { title , culture , department , medium , period , creditLine , primaryImage } = piece
             return <div className="photo-container pp">
               <button className="liked-button"
                 onClick={ () => unFavoriteArt(piece) }>

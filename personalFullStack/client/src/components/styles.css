@@ -11,19 +11,19 @@ body{
 @import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic);
 
 .header{
-min-height: 9vh;
-background-image: url('https://d1smv7h0armdzg.cloudfront.net/wp-content/uploads/2012/08/the-met_14652598443_o.jpg');
-background-size: 1300px;
-background-position-y: 560px;
-background-position-x: center;
-display: flex;
-justify-content: center;
-align-items: center; 
-font-size: 40px;
-color: white;
-font-weight: bold;
-text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-font-family: 'Julius Sans One', 'Ubuntu', sans-serif;
+  min-height: 10vh;
+  background-image: url('https://d1smv7h0armdzg.cloudfront.net/wp-content/uploads/2012/08/the-met_14652598443_o.jpg');
+  background-size: 1300px;
+  background-position-y: 560px;
+  background-position-x: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-family: 'Julius Sans One', 'Ubuntu', sans-serif;
 }
 
 .search-form{
@@ -79,7 +79,6 @@ form{
   background-position-y: 850px;
   background-position-x: center;
   background-attachment: fixed;
-
 }
 
 .result-container{
@@ -360,8 +359,8 @@ span{
   position: fixed;
   top: 139px;
   left: 0;
-  width: 15vw;
-  height: 33vh;
+  width: 200px;
+  height: 300px;
   border-radius: 10px;
   background: rgba(0,0,0,0.6);
   display: flex;
@@ -402,6 +401,441 @@ span{
   transition: 1s;
 }
 
-@media (max-width: 375px){
-  
+
+@media only screen and (max-device-width: 320px){
+  .header{
+    font-size: 16px;
+    text-shadow: 0 0 0 #000, 0 0 0 #000, 0px 0px 0 #000, 1px 1px 0 #000;
+    color: lightgrey;
+  }
+  #met-span{
+    text-shadow: 0 0 0 white, 0 0 0 white, 0.6px 0px 0 white, 0.6px 1px 0 white;
+  }
+  .show-modal{
+    top: 109px;
+    left: 5px;
+    width: 65vw;
+    height: 52vh;
+  }
+  .hamburger-menu{
+    position: fixed;
+    top: 78px;
+    left: -5px;
+    width: 55px;
+    height: 30px;
+    Z-INDEX: 1;
+  }
+  .display-image{
+    width: 200px;
+
+  }
+  .photo-container {
+    width: 250px;
+}
+  .result-container{
+    padding-top: 40px;
+    grid-template-columns: 1fr;
+  }
+  .fav-container{
+    grid-template-columns: 1fr;
+  }
+  .size {
+    font-size: 12px;
+  }
+  .spotify-icon{
+    bottom:50px;
+    right: 100px;
+    height: 30px;
+  }
+}
+
+@media only screen and (min-device-width: 321px) and (max-device-width: 360px){
+  .header{
+    font-size: 20px;
+    text-shadow: 0 0 0 #000, 0 0 0 #000, 0px 0px 0 #000, 1px 1px 0 #000;
+    color: lightgrey;
+  }
+  #met-span{
+    text-shadow: 0 0 0 white, 0 0 0 white, 0.6px 0px 0 white, 0.6px 1px 0 white;
+  }
+  .show-modal{
+    width: 200px;
+    height: 300px;
+  }
+  .hamburger-menu{
+    position: fixed;
+    top: 78px;
+    left: -5px;
+    width: 55px;
+    height: 30px;
+    Z-INDEX: 1;
+  }
+  .display-image{
+    width: 200px;
+
+  }
+  .photo-container{
+    width: 300px;
+  }
+  .result-container{
+    padding-top: 40px;
+    grid-template-columns: 1fr;
+  }
+  .fav-container{
+    grid-template-columns: 1fr;
+  }
+  .size {
+    font-size: 12px;
+  }
+  .spotify-icon{
+    bottom:40px;
+  }
+}
+
+@media only screen and (min-device-width: 361px) and (max-device-width: 375px){
+  .header{
+    font-size: 20px;
+    text-shadow: 0 0 0 #000, 0 0 0 #000, 0px 0px 0 #000, 1px 1px 0 #000;
+    color: lightgrey;
+  }
+  #met-span{
+    text-shadow: 0 0 0 white, 0 0 0 white, 0.6px 0px 0 white, 0.6px 1px 0 white;
+  }
+  .show-modal{
+    top: 114px;
+    left: 0px;
+    width: 55vw;
+    height: 45vh;
+  }
+  .hamburger-menu{
+    position: fixed;
+    top: 85px;
+    left: -5px;
+    width: 55px;
+    height: 30px;
+    Z-INDEX: 1;
+  }
+  .display-image{
+    width: 200px;
+
+  }
+  .photo-container{
+    width: 300px;
+  }
+  .result-container{
+    padding-top: 40px;
+    grid-template-columns: 1fr;
+  }
+  .fav-container{
+    grid-template-columns: 1fr;
+  }
+  .size {
+    font-size: 12px;
+  }
+  .spotify-icon{
+    bottom:40px;
+  }
+}
+
+@media only screen and (min-device-width: 376px) and (max-device-width: 413px){
+  .header{
+    font-size: 20px;
+    text-shadow: 0 0 0 #000, 0 0 0 #000, 0px 0px 0 #000, 1px 1px 0 #000;
+    color: lightgrey;
+  }
+  #met-span{
+    text-shadow: 0 0 0 white, 0 0 0 white, 0.6px 0px 0 white, 0.6px 1px 0 white;
+  }
+  .show-modal{
+    top: 114px;
+    left: 0px;
+    width: 200px;
+    height: 300px;
+  }
+  .hamburger-menu{
+    position: fixed;
+    top: 85px;
+    left: -5px;
+    width: 55px;
+    height: 30px;
+    Z-INDEX: 1;
+  }
+  .display-image{
+    width: 200px;
+
+  }
+  .photo-container{
+    width: 300px;
+  }
+  .result-container{
+    padding-top: 40px;
+    grid-template-columns: 1fr;
+  }
+  .fav-container{
+    grid-template-columns: 1fr;
+  }
+  .size {
+    font-size: 12px;
+  }
+  .spotify-icon{
+    bottom:40px;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 568px){
+  .header{
+    font-size: 20px;
+    text-shadow: 0 0 0 #000, 0 0 0 #000, 0px 0px 0 #000, 1px 1px 0 #000;
+    color: lightgrey;
+  }
+  #met-span{
+    text-shadow: 0 0 0 white, 0 0 0 white, 0.6px 0px 0 white, 0.6px 1px 0 white;
+  }
+  .show-modal{
+    top: 70px;
+    left: 5px;
+    width: 200px;
+    height: 300px;
+  }
+  .hamburger-menu{
+    position: fixed;
+    top: 38px;
+    left: -5px;
+    width: 55px;
+    height: 30px;
+    Z-INDEX: 1;
+  }
+  .display-image{
+    width: 200px;
+
+  }
+  .photo-container {
+    width: 250px;
+}
+  .result-container{
+    padding-top: 40px;
+    grid-template-columns: 1fr;
+  }
+  .fav-container{
+    grid-template-columns: 1fr;
+  }
+  .size {
+    font-size: 12px;
+  }
+  .spotify-icon{
+    bottom:50px;
+    right: 100px;
+    height: 30px;
+  }
+  .links{
+    height: 240px
+  }
+}
+
+@media only screen and (min-device-width: 569px) and (max-device-width: 640px){
+  .header{
+    font-size: 20px;
+    text-shadow: 0 0 0 #000, 0 0 0 #000, 0px 0px 0 #000, 1px 1px 0 #000;
+    color: lightgrey;
+  }
+  #met-span{
+    text-shadow: 0 0 0 white, 0 0 0 white, 0.6px 0px 0 white, 0.6px 1px 0 white;
+  }
+  .show-modal{
+    top: 70px;
+    left: 5px;
+    width: 200px;
+    height: 250px;
+  }
+  .hamburger-menu{
+    position: fixed;
+    top: 38px;
+    left: -5px;
+    width: 55px;
+    height: 30px;
+    Z-INDEX: 1;
+  }
+  .display-image{
+    width: 200px;
+
+  }
+  .photo-container {
+    width: 250px;
+}
+  .result-container{
+    padding-top: 40px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .fav-container{
+    grid-template-columns: 1fr 1fr;
+  }
+  .size {
+    font-size: 12px;
+  }
+  .spotify-icon{
+    bottom:50px;
+    right: 100px;
+    height: 30px;
+  }
+  .links{
+    height: 240px
+  }
+}
+
+@media only screen and (min-device-width: 641px) and (max-device-width: 735px){
+  .result-container{
+    padding-top: 40px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .fav-container{
+    grid-template-columns: 1fr 1fr;
+  }
+  .display-image{
+    width: 200px;
+  }
+  .photo-container{
+    width: 300px;
+  }
+  .show-modal{
+    width: 300px;
+    top: 100px;
+    left: 0px;
+    height: 300px;
+  }
+  .hamburger-menu{
+    top: 60px;
+  }
+  .spotify-icon{
+    top: 40px;
+    right: 155px;
+  }
+  .header{
+    font-size: 28px;
+  }
+}
+
+@media only screen and (min-device-width: 736px) and (max-device-width: 767px){
+  .result-container{
+    padding-top: 40px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .fav-container{
+    grid-template-columns: 1fr 1fr;
+  }
+  .display-image{
+    width: 200px;
+  }
+  .photo-container{
+    width: 300px;
+  }
+  .show-modal{
+    width: 300px;
+    top: 120px;
+    left: 0px;
+    height: 300px;
+  }
+  .hamburger-menu{
+    top: 80px;
+  }
+  .spotify-icon{
+    top: 40px;
+    right: 155px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 812px){
+  .hamburger-menu{
+    top: 50px;
+  }
+  .show-modal{
+    top: 80px;
+  }
+  .result-container{
+    padding-top: 40px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .fav-container{
+    grid-template-columns: 1fr 1fr;
+  }
+  .display-image{
+    width: 200px;
+  }
+  .photo-container{
+    width: 300px;
+  }
+}
+
+@media only screen and (min-device-width: 813px) and (max-device-width: 1024px){
+  .result-container{
+    padding-top: 40px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .fav-container{
+    grid-template-columns: 1fr 1fr;
+  }
+  .display-image{
+    width: 200px;
+  }
+  .photo-container{
+    width: 300px;
+  }
+  .show-modal{
+    top: 130px;
+    left: 0px;
+    width: 200px;
+    height: 300px;
+  }
+  .hamburger-menu{
+    top: 90px;
+  }
+  .spotify-icon{
+    top: 40px;
+    right: 155px;
+  }
+  .spotify-container{
+    height: 117px;
+  }
+}
+
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1355px) {
+  .result-container{
+    padding-top: 40px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .fav-container{
+    grid-template-columns: 1fr 1fr;
+  }  
+}
+
+@media only screen and (min-width: 500px) and (max-width: 715px) {
+  .result-container{
+    padding-top: 40px;
+    grid-template-columns: 1fr
+  }
+  .fav-container{
+    grid-template-columns: 1fr 
+  }  
+  .header{
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 715px) and (max-width: 980px) {
+  .result-container{
+    padding-top: 40px;
+    grid-template-columns: 1fr
+  }
+  .fav-container{
+    grid-template-columns: 1fr 
+  }  
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1355px) {
+  .result-container{
+    padding-top: 40px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .fav-container{
+    grid-template-columns: 1fr 1fr;
+  }  
 }

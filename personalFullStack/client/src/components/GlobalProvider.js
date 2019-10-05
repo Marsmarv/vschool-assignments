@@ -29,7 +29,7 @@ class GlobalProvider extends Component {
 
   handleChange = e => {
     const { name, value } = e.target
-        this.setState({[name]: value});
+        this.setState({[name]: value})
   }
 
   handleSubmit = e => {
@@ -73,7 +73,7 @@ class GlobalProvider extends Component {
 
   getUserData = () => {
     artAxios.get('/api/art').then( response => {
-      this.setState({userData: response.data})
+      this.setState({likedArt: response.data})
     })
   }
 
@@ -81,13 +81,13 @@ class GlobalProvider extends Component {
     return Axios.post("/auth/signup", userInfo)
     .then(res => {
       const { user, token } = res.data
-      localStorage.setItem("token", token);
-      localStorage.setItem("user", JSON.stringify(user));
+      localStorage.setItem("token", token)
+      localStorage.setItem("user", JSON.stringify(user))
       this.setState({
         user,
         token,
         authErrMsg: ""
-      });
+      })
       alert(`${this.state.username} successfully signed up`)
       return res
     })
@@ -97,13 +97,13 @@ class GlobalProvider extends Component {
     return Axios.post("/auth/login", userInfo)
     .then(res => {
       const { user, token } = res.data
-      localStorage.setItem("token", token);
-      localStorage.setItem("user", JSON.stringify(user));
+      localStorage.setItem("token", token)
+      localStorage.setItem("user", JSON.stringify(user))
       this.setState({
         user,
         token,
         authErrMsg: ""
-      });
+      })
       alert(`${this.state.username} successfully logged in`)
       return res
     })
@@ -115,11 +115,6 @@ class GlobalProvider extends Component {
       this.setState({likedArt: res.data, likedArtID: artPieces})
     })
   }
-
-  // componentWillReceiveProps(nextProps){
-  //   console.log('fired at some point')
-  //   console.log(nextProps)
-  // }
 
   favoritedArt = (favoritedArt) => {
     const { likedArtID } = this.state
@@ -140,6 +135,7 @@ class GlobalProvider extends Component {
       creditLine,
       objectID 
     })
+    this.getUserData()
   }
 
   unFavoriteArt = piece => {
@@ -148,15 +144,8 @@ class GlobalProvider extends Component {
     const unFav = _id
     const newLikedArray = likedArt.filter(id => {return id.objectID !== objectID})
     const newLikedIdArray = likedArtID.filter(id => {return id !== objectID})
-
-    console.log("PIECE: ", piece)
-    console.log("NLA: ", newLikedArray)
-    console.log("NLidA: ", newLikedIdArray)
-
+    
     artAxios.delete(`/api/art/${unFav}`).then( res => {
-      console.log("PIECE: ", piece)
-      console.log("NLA: ", newLikedArray)
-      console.log("NLidA: ", newLikedIdArray)
       this.setState({
         likedArt: newLikedArray,
         likedArtID: newLikedIdArray
@@ -165,7 +154,6 @@ class GlobalProvider extends Component {
       alert('there was a problem deleting')
     })
   }
-
 
   logout = e => {
     const { username } = this.state
