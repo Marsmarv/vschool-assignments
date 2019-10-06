@@ -29,7 +29,7 @@ class GlobalProvider extends Component {
 
   handleChange = e => {
     const { name, value } = e.target
-        this.setState({[name]: value});
+        this.setState({[name]: value})
   }
 
   handleSubmit = e => {
@@ -73,7 +73,7 @@ class GlobalProvider extends Component {
 
   getUserData = () => {
     artAxios.get('/api/art').then( response => {
-      this.setState({userData: response.data})
+      this.setState({likedArt: response.data})
     })
   }
 
@@ -81,13 +81,13 @@ class GlobalProvider extends Component {
     return Axios.post("/auth/signup", userInfo)
     .then(res => {
       const { user, token } = res.data
-      localStorage.setItem("token", token);
-      localStorage.setItem("user", JSON.stringify(user));
+      localStorage.setItem("token", token)
+      localStorage.setItem("user", JSON.stringify(user))
       this.setState({
         user,
         token,
         authErrMsg: ""
-      });
+      })
       alert(`${this.state.username} successfully signed up`)
       return res
     })
@@ -97,13 +97,13 @@ class GlobalProvider extends Component {
     return Axios.post("/auth/login", userInfo)
     .then(res => {
       const { user, token } = res.data
-      localStorage.setItem("token", token);
-      localStorage.setItem("user", JSON.stringify(user));
+      localStorage.setItem("token", token)
+      localStorage.setItem("user", JSON.stringify(user))
       this.setState({
         user,
         token,
         authErrMsg: ""
-      });
+      })
       alert(`${this.state.username} successfully logged in`)
       return res
     })
@@ -115,12 +115,14 @@ class GlobalProvider extends Component {
       this.setState({likedArt: res.data, likedArtID: artPieces})
     })
   }
-  
 
   favoritedArt = (favoritedArt) => {
     const { likedArtID } = this.state
     const { objectID, title, primaryImage, culture, department, medium, period, creditLine } = favoritedArt
-    this.setState(prevState => {return {likedArtID: [...prevState.likedArtID, objectID]}})
+    this.setState(prevState => {return {
+      likedArtID: [...prevState.likedArtID, objectID],
+      likedArt: [...prevState.likedArt, favoritedArt]
+    }})
     likedArtID.includes(objectID) === true ?
     alert('this is already liked') :
     artAxios.post("/api/art/", { 
@@ -133,13 +135,21 @@ class GlobalProvider extends Component {
       creditLine,
       objectID 
     })
+    this.getUserData()
   }
 
-  unFavoriteArt = (unFav) => {
-    const pop = this.state.likedArt
-    artAxios.delete(`/api/art/${unFav}`).then( (res) => {
-      alert('unfavorited')
-      pop.find(id => { id._id !== unFav && window.location.reload()})
+  unFavoriteArt = piece => {
+    const { objectID, _id } = piece
+    const { likedArt , likedArtID } = this.state
+    const unFav = _id
+    const newLikedArray = likedArt.filter(id => {return id.objectID !== objectID})
+    const newLikedIdArray = likedArtID.filter(id => {return id !== objectID})
+    
+    artAxios.delete(`/api/art/${unFav}`).then( res => {
+      this.setState({
+        likedArt: newLikedArray,
+        likedArtID: newLikedIdArray
+      })
     }, res => {
       alert('there was a problem deleting')
     })
