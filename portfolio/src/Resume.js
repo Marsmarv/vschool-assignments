@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import Fade from 'react-reveal/Fade'
-import resume from './resFront.png'
+import resume from './images/updatedResfront.png'
 
 const Resume = () => {
   const [showRes, setShowRes] = useState(false)
