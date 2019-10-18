@@ -254,12 +254,6 @@ body {
   transition: .1s;
 }
 
-.screenshot:hover{
-  transition: .1s;
-  height: 170px;
-  width: 170px;
-  margin: 15px;
-}
 
 .shot-one{
   background-image: url('./images/proj1.png');
@@ -876,5 +870,830 @@ body {
   }
   .proj{
     font-size: 36px;
+  }
+}
+
+/* @media only screen and (min-width: 321px) and (max-width: 360px){
+  .proj, .con{
+    background-size: 750px;
+    background-position-y: 0px;
+  }
+  .proj{
+    background-size: 891px;
+    height: 400px;
+  }
+  .bye{
+    font-size: 21px;
+  }
+  .proj1{
+    grid-column: 2/3;
+    grid-row: 1/7;
+  }
+  .proj2{
+    grid-column: 2/3;
+    grid-row: 8/10;
+  }
+  .proj3{
+    grid-column: 5/11;
+    grid-row: 2/6;
+  }
+  .proj4{
+    grid-column: 5/11;
+    grid-row: 8/10;
+  }
+  .screenshot{
+    height: 120px;
+    width: 120px;
+    background-size: 150px;
+    background-position-x: 2px;
+  }
+  .show-modal{
+    height: 0px;
+    width: 0px;
+  }
+  .xbox{
+    top: 1665px;
+    left: -280px;
+  }
+}
+
+@media only screen and (min-width: 361px) and (max-width: 375px){
+  .proj, .con{
+    background-size: 750px;
+    background-position-y: 0px;
+  }
+  .proj{
+    background-size: 890px;
+    height: 330px;
+  }
+  .bye{
+    font-size: 20px;
+  }
+  .proj1{
+    grid-column: 2/3;
+    grid-row: 1/7;
+  }
+  .proj2{
+    grid-column: 2/3;
+    grid-row: 8/10;
+  }
+  .proj3{
+    grid-column: 5/11;
+    grid-row: 2/6;
+  }
+  .proj4{
+    grid-column: 5/11;
+    grid-row: 8/10;
+  }
+  .screenshot{
+    height: 120px;
+    width: 120px;
+    background-size: 150px;
+    background-position-x: 2px;
+  }
+  .show-modal{
+    height: 0px;
+    width: 0px;
+  }
+  .xbox{
+    top: 1625px;
+    left: -320px;
+  }
+
+}
+
+@media only screen and (min-width: 376px) and (max-width: 413px){
+  .proj, .con{
+    background-size: 750px;
+    background-position-y: 0px;
+  }
+  .header{
+    height: 80px;
+  }
+  .proj {
+    padding-top: 0px;
+    height: 450px;
+    font-size: 30px;
+  }
+  .proj1{
+    grid-column: 2/3;
+    grid-row: 1/7;
+  }
+  .proj2{
+    grid-column: 2/3;
+    grid-row: 8/10;
+  }
+  .proj3{
+    grid-column: 5/11;
+    grid-row: 2/6;
+  }
+  .proj4{
+    grid-column: 5/11;
+    grid-row: 8/10;
+  }
+  .screenshot{
+    height: 120px;
+    width: 120px;
+    background-size: 150px;
+    background-position-x: 2px;
+  }
+  .show-modal{
+    height: 0px;
+    width: 0px;
+  }
+  .xbox{
+    top: 1665px;
+    left: -330px;
+  }
+}
+
+@media only screen and (min-width: 414px) and (max-width: 499px){
+  .proj, .con{
+    background-size: 785px;
+    background-position-y: 0px;
+  }
+  .header{
+    height: 80px;
+  }
+  .hello{
+    padding-top: 5px;
+  }
+  .proj{
+    padding-top: 100px;
+    font-size: 20px;
+    height: 420px;
+  }
+  .proj1 {
+    grid-row: 1/8;  
+  }
+  .proj2 {
+    grid-row: 1/8;  
+  }
+  .proj3 {
+    grid-row: 1/8;  
+  }
+  .proj4 {
+    grid-row: 1/8;  
+  }
+  .screenshot{
+    height: 90px;
+    width: 90px;
+    background-size: 150px;
+    background-position-x: 2px;
+  }
+  .myself-container{
+    height: 325px;
+  }
+  .show-modal{
+    height: 0px;
+    width: 0px;
+  }
+  .xbox{
+    left: -319px;
+    top: 1494px;
+    margin-right: auto;
+  }
+} */
+
+@media only screen and (min-width: 500px) and (max-width: 568px){
+  .proj, .con{
+    background-size: 690px;
+    background-position-y: 0px;
+  }
+  body{
+    background-size: 690px;
+  }
+  .con{
+    background-size: 1358px;
+    background-position-y: 0px;
+    background-position-x: -470px;
+  }
+  .header{
+    height: 65px;
+  }
+  .proj{
+    padding-top: 0px;
+    font-size: 20px;
+    height: 200px;
+  }
+  .hello{
+    padding-top: 20px
+  }
+  .proj1 {
+    grid-row: 1/8;  
+  }
+  .proj2 {
+    grid-row: 1/8;  
+  }
+  .proj3 {
+    grid-row: 1/8;  
+  }
+  .proj4 {
+    grid-row: 1/8;  
+  }
+  .screenshot{
+    height: 90px;
+    width: 90px;
+    background-size: 150px;
+    background-position-x: 2px;
+  }
+  .myself-container{
+    height: 318px;
+  }
+  .con{
+    height: 322px;
+  }
+  .show-modal{
+    height: 0px;
+    width: 0px;
+  }
+  .xbox{
+    top: 1015px;
+    left: -340px;
+  }
+
+  .screenshot:hover{
+    height: 70px;
+    width: 70px;
+    border: 2px black solid;
+    border-radius: 100%;
+    transition: .1s;
+  }
+  .shot-one:hover{
+    background-size: 150px;
+    background-position-y: -50px;
+    background-position-x: -5px;
+  }
+  .shot-two:hover{
+    background-position-x: -5px;
+    background-position-y: -10px;
+   }
+  .shot-three:hover{
+    background-position-x: -8px;
+    background-position-y: -60px;
+    }
+  .shot-four:hover{
+    background-position-x: -12px;
+    background-position-y: 17px;
+  }
+}
+
+@media only screen and (min-width: 569px) and (max-width: 640px){
+  .proj, .con{
+    background-size: 690px;
+    background-position-y: 0px;
+  }
+  body{
+    background-size: 690px;
+  }
+  .con{
+    background-size: 1358px;
+    background-position-y: 0px;
+    background-position-x: -420px;
+  }
+  .header{
+    height: 65px;
+  }
+  .proj{
+    background-size: 690px;
+    height: 230px;
+    padding-top: 0px;
+    font-size: 28px;
+  }
+  .hello{
+    padding-top: 15px;
+  }
+  .myself-container{
+    height: 357px;
+  }
+  .proj1 {
+    grid-row: 1/8;  
+  }
+  .proj2 {
+    grid-row: 1/8;  
+  }
+  .proj3 {
+    grid-row: 1/8;  
+  }
+  .proj4 {
+    grid-row: 1/8;  
+  }
+  .con{
+    height: 364px;
+  }
+  .xbox{
+    left: -460px;
+    margin-right:570px;
+    top: 1265px;
+  }
+  .screenshot{
+    height: 120px;
+    width: 120px;
+    background-size: 150px;
+    background-position-x: 2px;
+  }
+  .screenshot:hover{
+    height: 100px;
+    width: 100px;
+    border: 2px black solid;
+    border-radius: 100%;
+    transition: .1s;
+  }
+  .shot-one:hover{
+    background-size: 150px;
+    background-position-y: -50px;
+    background-position-x: -5px;
+  }
+  .shot-two:hover{
+    background-position-x: -5px;
+    background-position-y: -10px;
+   }
+  .shot-three:hover{
+    background-position-x: -8px;
+    background-position-y: -60px;
+    }
+  .shot-four:hover{
+    background-position-x: -12px;
+    background-position-y: 17px;
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 735px){
+  .proj, .con{
+    background-size: 740px;
+    background-position-y: 0px;
+  }
+
+  body{
+    background-size: 740px;
+    background-position-x: -4px;
+    background-position-y: -4px;
+  }
+  .con{
+    background-size: 1423px;
+    background-position-y: 0px;
+    background-position-x: -420px;
+  }
+
+  .header{
+    height: 65px;
+  }
+  .proj{
+    background-size: 730px;
+    height: 255px;
+    padding-top: 20px;
+  }
+  .hello{
+    padding-top: 0px;
+  }
+  .proj1 {
+    grid-row: 1/8;  
+  }
+  .proj2 {
+    grid-row: 1/8;  
+  }
+  .proj3 {
+    grid-row: 1/8;  
+  }
+  .proj4 {
+    grid-row: 1/8;  
+  }
+  .screenshot{
+    height: 150px;
+    width: 150px;
+    background-size: 150px;
+    background-position-x: 2px;
+  }
+  .myself-container{
+    height: 408px;
+  }
+  .con{
+    height: 412px;
+  }
+  .xbox{
+    left: -626px;
+  }
+
+  .screenshot:hover{
+    height: 130px;
+    width: 130px;
+    border: 2px black solid;
+    border-radius: 100%;
+    transition: .1s;
+  }
+  .shot-one:hover{
+    background-size: 150px;
+    background-position-y: -50px;
+    background-position-x: -5px;
+  }
+  .shot-two:hover{
+    background-position-x: -5px;
+    background-position-y: -10px;
+   }
+  .shot-three:hover{
+    background-position-x: -8px;
+    background-position-y: -60px;
+    }
+  .shot-four:hover{
+    background-position-x: -12px;
+    background-position-y: 17px;
+  }
+}
+
+@media only screen and (min-width: 736px) and (max-width: 767px){
+  .proj, .con{
+    background-size: 770px;
+    background-position-y: 0px;
+  }
+
+  body{
+    background-size: 770px;
+    background-position-x: 0px;
+    background-position-y: 0px;
+  }
+  .con{
+    background-size: 1423px;
+    background-position-y: 0px;
+    background-position-x: -370px;
+  }
+
+  .header{
+    height: 65px;
+  }
+  .myself-container{
+    height: 412px;
+  }
+  .con{
+    height: 412px;
+  }
+  .proj{
+    padding-top: 0px;
+    height: 280px;
+  }
+  .proj1 {
+    grid-row: 1/8;  
+  }
+  .proj2 {
+    grid-row: 1/8;  
+  }
+  .proj3 {
+    grid-row: 1/8;  
+  }
+  .proj4 {
+    grid-row: 1/8;  
+  }
+  .screenshot{
+    height: 150px;
+    width: 150px;
+    background-size: 150px;
+    background-position-x: 2px;
+  }
+
+  .screenshot:hover{
+    height: 130px;
+    width: 130px;
+    border: 2px black solid;
+    border-radius: 100%;
+    transition: .1s;
+  }
+  .shot-one:hover{
+    background-size: 150px;
+    background-position-y: -50px;
+    background-position-x: -5px;
+  }
+  .shot-two:hover{
+    background-position-x: -5px;
+    background-position-y: -10px;
+   }
+  .shot-three:hover{
+    background-position-x: -8px;
+    background-position-y: -60px;
+    }
+  .shot-four:hover{
+    background-position-x: -12px;
+    background-position-y: 17px;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 800px){
+  .proj, .con{
+    background-size: 1193px;
+    background-position-y: 0px;
+  }
+
+  body{
+    background-size: 1193px;
+    background-position-x: 0px;
+    background-position-y: 0px;
+  }
+  .con{
+    background-size: 1423px;
+    background-position-y: 0px;
+    background-position-x: -370px;
+  }
+
+  .header{
+    height: 90px;
+  }
+  .hello{
+    padding-top: 140px;
+  }
+  .proj{
+    padding-top: 0px;
+    height: 700px;
+  }
+  .proj1 {
+    grid-row: 5/8;  
+  }
+  .proj2 {
+    grid-row: 5/8;  
+  }
+  .proj3 {
+    grid-row: 5/8;  
+  }
+  .proj4 {
+    grid-row: 5/8;  
+  }
+  .myself-container{
+    height:500px;
+  }
+  .con{
+    height: 531px;
+  }
+  .screenshot{
+    height: 150px;
+    width: 150px;
+    background-size: 150px;
+    background-position-x: 2px;
+  }
+  .xbox{
+    top: 1610px;
+  }
+  .show-modal{
+    top: 1530px;
+  }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 812px){
+  .proj, .con{
+    background-size: 1193px;
+    background-position-y: 0px;
+  }
+
+  body{
+    background-size: 1193px;
+    background-position-x: 0px;
+    background-position-y: 0px;
+  }
+  .con{
+    background-size: 1423px;
+    background-position-y: 0px;
+    background-position-x: -370px;
+  }
+
+  .header{
+    height: 90px;
+  }
+  .hello{
+    padding-top: 140px;
+  }
+  .proj{
+    padding-top: 0px;
+    height: 700px;
+  }
+  .proj1 {
+    grid-row: 5/8;  
+  }
+  .proj2 {
+    grid-row: 5/8;  
+  }
+  .proj3 {
+    grid-row: 5/8;  
+  }
+  .proj4 {
+    grid-row: 5/8;  
+  }
+  .myself-container{
+    height:500px;
+  }
+  .con{
+    height: 531px;
+  }
+  .screenshot{
+    height: 150px;
+    width: 150px;
+    background-size: 150px;
+    background-position-x: 2px;
+  }
+  .xbox{
+    top: 1610px;
+  }
+  .show-modal{
+    top: 1530px;
+  }
+  .screenshot:hover{
+    height: 130px;
+    width: 130px;
+    border: 2px black solid;
+    border-radius: 100%;
+    transition: .1s;
+  }
+  .shot-one:hover{
+    background-size: 150px;
+    background-position-y: -50px;
+    background-position-x: -5px;
+  }
+  .shot-two:hover{
+    background-position-x: -5px;
+    background-position-y: -10px;
+   }
+  .shot-three:hover{
+    background-position-x: -8px;
+    background-position-y: -60px;
+    }
+  .shot-four:hover{
+    background-position-x: -12px;
+    background-position-y: 17px;
+  }
+}
+
+@media only screen and (min-width: 813px) and (max-width: 823px){
+  .proj, .con{
+    background-size: 1193px;
+    background-position-y: 0px;
+  }
+
+  body{
+    background-size: 1193px;
+    background-position-x: 0px;
+    background-position-y: 0px;
+  }
+  .con{
+    background-size: 1423px;
+    background-position-y: 0px;
+    background-position-x: -370px;
+  }
+
+  .header{
+    height: 70px;
+  }
+  .hello{
+    padding-top: 140px;
+  }
+  .proj{
+    padding-top: 0px;
+    height: 700px;
+  }
+  .xbox{
+    top: 1470px;
+  }
+  .show-modal{
+    top: 1440px;
+  }
+  .screenshot:hover{
+    height: 150px;
+    width: 150px;
+    border: 2px black solid;
+    border-radius: 100%;
+    transition: .1s;
+  }
+  .shot-one:hover{
+    background-size: 300px;
+    background-position-y: -65px;
+  }
+  .shot-two:hover{
+    background-position-x: -70px;
+    background-position-y: -25px;
+   }
+  .shot-three:hover{
+    background-position-x: -75px;
+    background-position-y: -75px;
+    }
+  .shot-four:hover{
+    background-position-x: -85px;
+    background-position-y: 3px;
+  }
+}
+
+@media only screen and (min-width: 824px) and (max-width: 1024px){
+  .proj, .con{
+    background-size: 1044px;
+    background-position-y: 0px;
+  }
+
+  body{
+    background-size: 1044px;
+    background-position-x: 0px;
+    background-position-y: 0px;
+  }
+  .con{
+    background-size: 1423px;
+    background-position-y: 0px;
+    background-position-x: -250px;
+  }
+
+  .xbox{
+    top: 1525px;
+  }
+  .show-modal{
+    top: 1416px;
+    height: 730px;
+    width: 566px;
+  }
+  .screenshot:hover{
+    height: 150px;
+    width: 150px;
+    border: 2px black solid;
+    border-radius: 100%;
+    transition: .1s;
+  }
+  .shot-one:hover{
+    background-size: 300px;
+    background-position-y: -65px;
+  }
+  .shot-two:hover{
+    background-position-x: -70px;
+    background-position-y: -25px;
+   }
+  .shot-three:hover{
+    background-position-x: -75px;
+    background-position-y: -75px;
+    }
+  .shot-four:hover{
+    background-position-x: -85px;
+    background-position-y: 3px;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1366px){
+  .proj, .con{
+    background-size: 1366px;
+    background-position-y: -50px;
+  }
+
+  body{
+    background-size: 1366px;
+    background-position-x: 0px;
+    background-position-y: -50px;
+  }
+  .con{
+    background-size: 1423px;
+    background-position-y: 0px;
+    background-position-x: -20px;
+  }
+
+  .proj{
+    font-size: 36px;
+  }
+
+  .screenshot:hover{
+    height: 150px;
+    width: 150px;
+    border: 2px black solid;
+    border-radius: 100%;
+    transition: .1s;
+  }
+  .shot-one:hover{
+    background-size: 300px;
+    background-position-y: -65px;
+  }
+  .shot-two:hover{
+    background-position-x: -70px;
+    background-position-y: -25px;
+   }
+  .shot-three:hover{
+    background-position-x: -75px;
+    background-position-y: -75px;
+    }
+  .shot-four:hover{
+    background-position-x: -85px;
+    background-position-y: 3px;
+  }
+}
+
+@media only screen and (min-width: 1367px){
+  .screenshot:hover{
+    height: 150px;
+    width: 150px;
+    border: 2px black solid;
+    border-radius: 100%;
+    transition: .1s;
+  }
+  .shot-one:hover{
+    background-size: 300px;
+    background-position-y: -65px;
+  }
+  .shot-two:hover{
+    background-position-x: -70px;
+    background-position-y: -25px;
+   }
+  .shot-three:hover{
+    background-position-x: -75px;
+    background-position-y: -75px;
+    }
+  .shot-four:hover{
+    background-position-x: -85px;
+    background-position-y: 3px;
   }
 }
