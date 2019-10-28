@@ -459,6 +459,7 @@ p{
     background-size: 891px;
     height: 400px;
   }
+
   .bye{
     font-size: 21px;
   }
@@ -781,16 +782,20 @@ p{
     padding-top: 20px
   }
   .proj1 {
-    grid-row: 1/8;  
+    grid-row: 1/8;
+    grid-column: 4/4;
   }
   .proj2 {
-    grid-row: 1/8;  
+    grid-row: 1/8; 
+    grid-column: 5/5; 
   }
   .proj3 {
     grid-row: 1/8;  
+    grid-column: 6/7;
   }
   .proj4 {
     grid-row: 1/8;  
+    grid-column: 7/8;
   }
   .screenshot{
     height: 90px;
@@ -812,6 +817,19 @@ p{
     top: 1015px;
     left: -340px;
   }
+  .info-one{
+    grid-column: 4/4;
+  }
+  .info-two{
+    grid-column: 5/6;
+  }
+  .info-three{
+    grid-column: 6/6;
+  }
+  .info-four{
+    grid-column: 7/7;
+  }
+
 }
 
 @media only screen and (min-device-width: 569px) and (max-device-width: 640px){
@@ -869,6 +887,7 @@ p{
     background-size: 740px;
     background-position-y: 0px;
   }
+
   .header{
     height: 65px;
   }
@@ -1038,18 +1057,21 @@ p{
     background-position-x: 2px;
   }
 
-  /* .info-one{
-    grid-row: 7/11;
+  .desc{
+    display: none
   }
-  .info-two{
-    grid-row: 7/11;
+  .desc2{
+    position: absolute; 
+    border-radius: 16px;
+    top: 620px;
+    width: 305px;
+    font-size: 24px;
+    height: 270px;
+    padding-top: 55px;
+    margin-left: 35px;
+    z-index: 5;
+    background-color: rgba(252, 226, 232, 0.95)
   }
-  .info-three{
-    grid-row: 7/11;
-  }
-  .info-four{
-    grid-row: 7/11;
-  } */
 
 }
 
@@ -1092,6 +1114,37 @@ p{
     height: 730px;
     width: 566px;
   }
+  .proj1 {
+    grid-row: 1/8;
+    grid-column: 3/4;
+  }
+  .proj2 {
+    grid-row: 1/8; 
+    grid-column: 5/6; 
+  }
+  .proj3 {
+    grid-row: 1/8;  
+    grid-column: 7/7;
+  }
+  .proj4 {
+    grid-row: 1/8;  
+    grid-column: 9/9;
+  }
+  .info-one{
+    grid-column: 3/4;
+  }
+  .info-two{
+    grid-column: 5/6;
+  }
+  .info-three{
+    grid-column: 7/7;
+  }
+  .info-four{
+    grid-column: 9/9;
+  }
+  .desc{
+    top: 115px;
+  }
 }
 
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1366px){
@@ -1115,7 +1168,7 @@ p{
   }
   .con{
     background-size: 1358px;
-    background-position-y: 0px;
+    background-position-y: 50px;
     background-position-x: -470px;
   }
   .header{
@@ -1218,7 +1271,7 @@ p{
   }
   .con{
     background-size: 1358px;
-    background-position-y: 0px;
+    background-position-y: 66px;
     background-position-x: -420px;
   }
   .header{
@@ -1321,7 +1374,7 @@ p{
   }
   .con{
     background-size: 1423px;
-    background-position-y: 0px;
+    background-position-y: 21px;
     background-position-x: -420px;
   }
 
@@ -1422,7 +1475,7 @@ p{
   }
   .con{
     background-size: 1423px;
-    background-position-y: 0px;
+    background-position-y: 22px;
     background-position-x: -370px;
   }
 
@@ -1534,7 +1587,7 @@ p{
   }
   .con{
     background-size: 1423px;
-    background-position-y: 0px;
+    background-position-y: 22px;
     background-position-x: -370px;
   }
 
@@ -1636,7 +1689,7 @@ p{
   }
   .con{
     background-size: 1423px;
-    background-position-y: 0px;
+    background-position-y: 22px;
     background-position-x: -370px;
   }
 
@@ -1718,11 +1771,11 @@ p{
     margin-left: 10px;
   }
   .desc{
-    width: 175px;
-    top: 50px;
+    display: none
   }
   .desc2{
-    display: none
+    top: 850px;
+    margin-left: 245px;
   }
 }
 
@@ -1739,7 +1792,7 @@ p{
   }
   .con{
     background-size: 1423px;
-    background-position-y: 0px;
+    background-position-y: 22px;
     background-position-x: -370px;
   }
 
@@ -1815,14 +1868,18 @@ p{
     background-position-y: 0px;
   }
 
+  .proj{
+    background-position-y: 20px;
+  }
+
   body{
     background-size: 1044px;
     background-position-x: 0px;
-    background-position-y: 0px;
+    background-position-y: 20px;
   }
   .con{
     background-size: 1423px;
-    background-position-y: 0px;
+    background-position-y: 22px;
     background-position-x: -250px;
   }
 
@@ -1872,7 +1929,7 @@ p{
   }
   .desc{
     width: 170px;
-    top: 55px;
+    top: 115px;
   }
   .desc2{
     display: none
@@ -1892,7 +1949,7 @@ p{
   }
   .con{
     background-size: 1423px;
-    background-position-y: 0px;
+    background-position-y: 22px;
     background-position-x: -20px;
   }
 
@@ -1967,3 +2024,4 @@ p{
     display: none
   }
 }
+
