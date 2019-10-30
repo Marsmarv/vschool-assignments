@@ -17,7 +17,6 @@ const Myself = () => {
   const modalDisplay3 = showInfoThree ? "desc2" : "no-display"
   const modalDisplay4 = showInfoFour ? "desc2" : "no-display"
 
-
   return (
     <>
     <Fade bottom delay={500}>
@@ -133,8 +132,8 @@ const Myself = () => {
             </Fade>
             <Fade opposite when={showInfoThree === true}> 
               <div className={modalDisplay3} onClick={() => {setShowInfoThree(!showInfoThree) ; showInfoFour && setShowInfoFour(!showInfoFour) ; showInfoTwo && setShowInfoTwo(!showInfoTwo) ; showInfo && setShowInfo(!showInfo)}}>
-                <p><span> title:</span> todo app</p><br/>
-                <p><span> description:</span> A static page made in html with vanilla javascript, a basic public todo app </p>
+                <p><span> title:</span> Mario pest control</p><br/>
+                <p><span> description:</span> A static page made in html with vanilla javascript, a price calculator for Marios pest control business </p>
               </div> 
             </Fade> 
             <Fade opposite when={showInfoFour === true}> 
