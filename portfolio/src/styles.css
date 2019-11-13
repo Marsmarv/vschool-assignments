@@ -716,8 +716,9 @@ p{
   }
   .xbox{
     left: -319px;
-    top: 1494px;
+    top: 1724px;
     margin-right: auto;
+    opacity: 1;
   }
   .proj1{
     grid-column: 1/6;
