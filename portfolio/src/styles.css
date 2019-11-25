@@ -420,6 +420,11 @@ p{
     top: 1540px;
     left: -260px;
   }
+
+  .xbox:active{
+    top: 1540px;
+    left: -260px;
+  }
   .info-one {
     grid-column: 2/5;
     grid-row: 4/8;
@@ -497,6 +502,10 @@ p{
     top: 1665px;
     left: -280px;
   }
+  .xbox:active{
+    top: 1665px;
+    left: -280px;
+  }
   .info-one {
     grid-column: 2/5;
     grid-row: 4/8;
@@ -553,6 +562,10 @@ p{
     width: 0px;
   }
   .xbox{
+    top: 1625px;
+    left: -320px;
+  }
+  .xbox:active{
     top: 1625px;
     left: -320px;
   }
@@ -632,6 +645,10 @@ p{
     width: 0px;
   }
   .xbox{
+    top: 1665px;
+    left: -330px;
+  }
+  .xbox:active{
     top: 1665px;
     left: -330px;
   }
@@ -715,6 +732,12 @@ p{
     width: 0px;
   }
   .xbox{
+    left: -319px;
+    top: 1724px;
+    margin-right: auto;
+    opacity: 1;
+  }
+  .xbox:active{
     left: -319px;
     top: 1724px;
     margin-right: auto;
@@ -822,6 +845,10 @@ p{
     top: 1015px;
     left: -340px;
   }
+  .xbox:active{
+    top: 1015px;
+    left: -340px;
+  }
   .info-one{
     grid-column: 4/4;
   }
@@ -878,6 +905,11 @@ p{
     margin-right:570px;
     top: 1265px;
   }
+  .xbox:active{
+    left: -460px;
+    margin-right:570px;
+    top: 1265px;
+  }
   .screenshot{
     height: 120px;
     width: 120px;
@@ -929,6 +961,9 @@ p{
     height: 412px;
   }
   .xbox{
+    left: -626px;
+  }
+  .xbox:active{
     left: -626px;
   }
 }
@@ -1016,6 +1051,9 @@ p{
   .xbox{
     top: 1610px;
   }
+  .xbox:active{
+    top: 1610px;
+  }
   .show-modal{
     top: 1530px;
   }
@@ -1098,6 +1136,9 @@ p{
     padding-top: 0px;
   }
   .xbox{
+    top: 1470px;
+  }
+  .xbox:active{
     top: 1470px;
   }
   .show-modal{
@@ -1312,6 +1353,11 @@ p{
     margin-right:570px;
     top: 1265px;
   }
+  .xbox:active{
+    left: -460px;
+    margin-right:570px;
+    top: 1265px;
+  }
   .screenshot{
     height: 120px;
     width: 120px;
@@ -1417,6 +1463,9 @@ p{
     height: 412px;
   }
   .xbox{
+    left: -626px;
+  }
+  .xbox:active{
     left: -626px;
   }
 
@@ -1637,6 +1686,9 @@ p{
   .xbox{
     top: 1610px;
   }
+  .xbox:active{
+    top: 1610px;
+  }
   .show-modal{
     top: 1530px;
   }
@@ -1729,6 +1781,9 @@ p{
   .xbox{
     top: 1610px;
   }
+  .xbox:active{
+    top: 1610px;
+  }
   .show-modal{
     top: 1530px;
   }
@@ -1812,6 +1867,9 @@ p{
   .xbox{
     top: 1470px;
   }
+  .xbox:active{
+    top: 1470px;
+  }
   .show-modal{
     top: 1440px;
   }
@@ -1888,6 +1946,9 @@ p{
   .xbox{
     top: 1525px;
   }
+  .xbox:active{
+    top: 1525px;
+  }
   .show-modal{
     top: 1416px;
     height: 730px;
@@ -1958,6 +2019,9 @@ p{
   }
 
   .xbox{
+    top: 1525px;
+  }
+  .xbox:active{
     top: 1525px;
   }
   .show-modal{
