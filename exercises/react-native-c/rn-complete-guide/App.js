@@ -22,9 +22,12 @@ const styles = StyleSheet.create({
   textContainer:{
     borderColor: 'black',
     borderWidth: 1,
-    padding: 10
+    padding: 10,
+    width: "80%"
   },
   goalContainer:{
-    flexDirection: "row"
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center"
   }
 });
