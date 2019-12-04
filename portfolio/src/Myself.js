@@ -35,7 +35,7 @@ const Myself = () => {
                 <Fade opposite when={showInfo === true}>
                   <div className={modalDisplay} onClick={() => {setShowInfo(!showInfo) ; showInfoThree && setShowInfoThree(!showInfoThree) ; showInfoTwo && setShowInfoTwo(!showInfoTwo) ; showInfoFour && setShowInfoFour(!showInfoFour)}}>
                     <p><span> title:</span> met-museum art search</p><br/>
-                    <p><span> description:</span> Made with React, search for historic art using the Metropoleton museum of art api</p>
+                    <p><span> description:</span> Made with React, search for historic art using the Metropolitan museum of art api</p>
                   </div>
                 </Fade>
               </div>  
@@ -129,7 +129,7 @@ const Myself = () => {
             <Fade opposite when={showInfo === true}>
               <div className={modalDisplay1} onClick={() => {setShowInfo(!showInfo) ; showInfoThree && setShowInfoThree(!showInfoThree) ; showInfoTwo && setShowInfoTwo(!showInfoTwo) ; showInfoFour && setShowInfoFour(!showInfoFour)}}>
                 <p><span> title:</span> met-museum art search</p><br/>
-                <p><span> description:</span> Made with React, search for historic art using the Metropoleton museum of art api</p>
+                <p><span> description:</span> Made with React, search for historic art using the Metropolitan museum of art api</p>
               </div>
             </Fade>
             <Fade opposite when={showInfoTwo === true}>

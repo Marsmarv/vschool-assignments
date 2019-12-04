@@ -1972,23 +1972,23 @@ p{
   .shot-one:hover{
     background-size: 150px;
     background-position-y: -60px;
-    background-position-x: -9px;
-    margin-left: 10px;
+    background-position-x: -10px;
+    margin-left: 9px;
   }
   .shot-two:hover{
     background-position-x: -10px;
     background-position-y: -25px;
-    margin-left: 10px;
+    margin-left: 11px;
    }
   .shot-three:hover{
-    background-position-x: -9px;
+    background-position-x: -10px;
     background-position-y: -75px;
-    margin-left: 10px;
+    margin-left: 9px;
     }
   .shot-four:hover{
-    background-position-x: -17px;
+    background-position-x: -11px;
     background-position-y: 3px;
-    margin-left: 20px;
+    margin-left: 13px;
   }
   .desc{
     width: 170px;
@@ -1998,7 +1998,7 @@ p{
     display: none
   }
   .myself-container{
-    height:535px;
+    height: 540px;
   }
 }
 
