@@ -8,7 +8,8 @@ export default function App() {
     setEnteredGoal(enteredText)
   }
   const addGoalHandler = () => {
-    setCourseGoals([...courseGoals, enteredGoal])
+    // setCourseGoals([...courseGoals, enteredGoal]) ; this works fine but 
+    setCourseGoals(currentGoals => [...currentGoals, enteredGoal]) //gauranteed to work because react gives you the gauranteed latest state snapshot before applying state change
   }
   return (
     <View style={styles.container}>
@@ -21,7 +22,7 @@ export default function App() {
         <Button title="ADD" onPress={addGoalHandler}/>
       </View>
       <View>
-
+        {courseGoals.map(goal => <Text>{goal}</Text>)}
       </View>
     </View>
   );
