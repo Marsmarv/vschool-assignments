@@ -4,13 +4,19 @@ import { StyleSheet, Text, View, TextInput, Button, FlatList } from 'react-nativ
 export default function App() {
   const {container, goalContainer, listItem, textContainer}  = styles
   //destructuring the styles out of each styleSheet object
+  
 
   const [enteredGoal, setEnteredGoal] = useState('')
   const [courseGoals, setCourseGoals] = useState([])
 
   const goalInputHandler = enteredText => setEnteredGoal(enteredText)
-  const addGoalHandler = () => setCourseGoals(currentGoals => [...currentGoals, enteredGoal]) 
-  //gauranteed to work because react gives you the gauranteed latest state snapshot before applying state change
+  const addGoalHandler = () => {
+    setCourseGoals(currentGoals => [
+      ...currentGoals, 
+      { id: Math.random().toString(), value: enteredGoal }
+    ]) 
+  }
+  //gauranteed to work because react gives git you the gauranteed latest state snapshot before applying state change
   // setCourseGoals([...courseGoals, enteredGoal]) ; this works fine though 
 
   return (
@@ -23,11 +29,12 @@ export default function App() {
         />
         <Button title="ADD" onPress={ addGoalHandler }/>
       </View>
-      <FlatList 
+      <FlatList       
+        keyExtractor={(item, index) => item.id}
         data={ courseGoals } 
         renderItem={ itemData => (
           <View style={ listItem }>
-            <Text>{ itemData.item }</Text>
+            <Text>{ itemData.item.value }</Text>
           </View>
         )}
       />
