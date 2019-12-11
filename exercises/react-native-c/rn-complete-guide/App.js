@@ -1,41 +1,37 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, TextInput, Button, FlatList } from 'react-native';
+import { StyleSheet, View, FlatList } from 'react-native';
+
+import GoalItem from './components/GoalItem'
+import GoalInput from './components/GoalInput'
 
 export default function App() {
-  const {container, goalContainer, listItem, textContainer}  = styles
-  //destructuring the styles out of each styleSheet object
-  
-
-  const [enteredGoal, setEnteredGoal] = useState('')
+  const {container}  = styles
   const [courseGoals, setCourseGoals] = useState([])
-
-  const goalInputHandler = enteredText => setEnteredGoal(enteredText)
-  const addGoalHandler = () => {
+  const addGoalHandler = goalTitle => {
     setCourseGoals(currentGoals => [
       ...currentGoals, 
-      { id: Math.random().toString(), value: enteredGoal }
+      { id: Math.random().toString(), value: goalTitle }
     ]) 
   }
-  //gauranteed to work because react gives git you the gauranteed latest state snapshot before applying state change
-  // setCourseGoals([...courseGoals, enteredGoal]) ; this works fine though 
+  // setCourseGoals( [...courseGoals, enteredGoal] ) ;; this would work as well.
+  const delGoalHandler = goalId => {
+    setCourseGoals(currentGoals => {
+      return currentGoals.filter(goal => goal.id !== goalId)
+    })
+  }
 
   return (
     <View style={ container }>
-      <View style={ goalContainer }>
-        <TextInput 
-          placeholder="Course Goal" 
-          style={ textContainer } 
-          onChangeText={ goalInputHandler }
-        />
-        <Button title="ADD" onPress={ addGoalHandler }/>
-      </View>
+      <GoalInput AddGoal={addGoalHandler}/>
       <FlatList       
         keyExtractor={(item, index) => item.id}
         data={ courseGoals } 
         renderItem={ itemData => (
-          <View style={ listItem }>
-            <Text>{ itemData.item.value }</Text>
-          </View>
+          <GoalItem 
+            id={itemData.item.id} 
+            onDelete={delGoalHandler} 
+            title={itemData.item.value} 
+          />
         )}
       />
     </View>
@@ -46,24 +42,4 @@ const styles = StyleSheet.create({
   container: {
     padding: 50
   },
-  textContainer: {
-    borderColor: 'black',
-    borderWidth: 1,
-    padding: 10,
-    width: "80%"
-  },
-  goalContainer: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center"
-  },
-  listItem: {
-    padding: 10,
-    borderWidth: 1,
-    marginVertical: 10,
-    backgroundColor: "#ccc",
-    borderColor: "black",
-  }
 });
-
-//commenting on closing out this branch
