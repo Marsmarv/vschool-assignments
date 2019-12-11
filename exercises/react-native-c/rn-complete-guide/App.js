@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, FlatList } from 'react-native';
+import { StyleSheet, View, FlatList, Button } from 'react-native';
 
 import GoalItem from './components/GoalItem'
 import GoalInput from './components/GoalInput'
@@ -7,11 +7,13 @@ import GoalInput from './components/GoalInput'
 export default function App() {
   const {container}  = styles
   const [courseGoals, setCourseGoals] = useState([])
+  const [addModal , setAddModal] = useState(false)
   const addGoalHandler = goalTitle => {
     setCourseGoals(currentGoals => [
       ...currentGoals, 
       { id: Math.random().toString(), value: goalTitle }
     ]) 
+    setAddModal(false)
   }
   // setCourseGoals( [...courseGoals, enteredGoal] ) ;; this would work as well.
   const delGoalHandler = goalId => {
@@ -20,9 +22,18 @@ export default function App() {
     })
   }
 
+  const cancelGoalHandler = () => {
+    setAddModal(false)
+  }
+
   return (
     <View style={ container }>
-      <GoalInput AddGoal={addGoalHandler}/>
+      <Button title="Add New Goal" onPress={() => setAddModal(!addModal)}/>
+      <GoalInput 
+        visible={addModal} 
+        AddGoal={addGoalHandler} 
+        cancel={cancelGoalHandler}
+      />
       <FlatList       
         keyExtractor={(item, index) => item.id}
         data={ courseGoals } 
