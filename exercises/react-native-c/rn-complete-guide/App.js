@@ -8,13 +8,17 @@ export default function App() {
   const {container}  = styles
   const [courseGoals, setCourseGoals] = useState([])
   const addGoalHandler = goalTitle => {
-  //setCourseGoals -- gauranteed to work because react gives git you the gauranteed latest state snapshot before applying state change
     setCourseGoals(currentGoals => [
       ...currentGoals, 
       { id: Math.random().toString(), value: goalTitle }
     ]) 
   }
   // setCourseGoals( [...courseGoals, enteredGoal] ) ;; this would work as well.
+  const delGoalHandler = goalId => {
+    setCourseGoals(currentGoals => {
+      return currentGoals.filter(goal => goal.id !== goalId)
+    })
+  }
 
   return (
     <View style={ container }>
@@ -23,7 +27,11 @@ export default function App() {
         keyExtractor={(item, index) => item.id}
         data={ courseGoals } 
         renderItem={ itemData => (
-          <GoalItem onDelete={() => console.log('feedback')} title={itemData.item.value} />
+          <GoalItem 
+            id={itemData.item.id} 
+            onDelete={delGoalHandler} 
+            title={itemData.item.value} 
+          />
         )}
       />
     </View>
