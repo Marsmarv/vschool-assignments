@@ -1,23 +1,24 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, Button, FlatList } from 'react-native';
 
+import GoalItem from './components/GoalItem'
+
 export default function App() {
-  const {container, goalContainer, listItem, textContainer}  = styles
+  const {container, goalContainer, textContainer}  = styles
   //destructuring the styles out of each styleSheet object
   
-
   const [enteredGoal, setEnteredGoal] = useState('')
   const [courseGoals, setCourseGoals] = useState([])
 
   const goalInputHandler = enteredText => setEnteredGoal(enteredText)
   const addGoalHandler = () => {
+  //setCourseGoals -- gauranteed to work because react gives git you the gauranteed latest state snapshot before applying state change
     setCourseGoals(currentGoals => [
       ...currentGoals, 
       { id: Math.random().toString(), value: enteredGoal }
     ]) 
   }
-  //gauranteed to work because react gives git you the gauranteed latest state snapshot before applying state change
-  // setCourseGoals([...courseGoals, enteredGoal]) ; this works fine though 
+  // setCourseGoals( [...courseGoals, enteredGoal] ) ;; this would work as well.
 
   return (
     <View style={ container }>
@@ -33,9 +34,7 @@ export default function App() {
         keyExtractor={(item, index) => item.id}
         data={ courseGoals } 
         renderItem={ itemData => (
-          <View style={ listItem }>
-            <Text>{ itemData.item.value }</Text>
-          </View>
+          <GoalItem title={itemData.item.value} />
         )}
       />
     </View>
@@ -56,13 +55,6 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center"
-  },
-  listItem: {
-    padding: 10,
-    borderWidth: 1,
-    marginVertical: 10,
-    backgroundColor: "#ccc",
-    borderColor: "black",
   }
 });
 
