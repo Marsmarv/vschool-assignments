@@ -53,7 +53,7 @@ h3 {
 .footer{
   display: grid;
   background-color: rgba(151, 151, 151, 0.63);
-  background-image: url('https://netacare.org/wp-content/themes/neta/dist/images/buds/buds-group-bottom.png');
+  /* background-image: url('https://netacare.org/wp-content/themes/neta/dist/images/buds/buds-group-bottom.png'); */
   background-size: cover;
   opacity: 0.5;
   height: 100%;

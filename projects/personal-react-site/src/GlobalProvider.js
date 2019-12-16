@@ -51,9 +51,9 @@ class GlobalProvider extends Component {
   }
 
   getQuotes = () => {
-    Axios.get('https://vschool-cors.herokuapp.com?url=http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1').then(res=>{
-    const quote = res.data[0].content.replace(/(<([^>]+)>)/ig, '')
-    res.data[0].content = quote
+    Axios.get('https://api.quotable.io/random').then(res=>{
+    const quote = res.data.content.replace(/(<([^>]+)>)/ig, '')
+    res.data.content = quote
     this.setState({quotes: res.data })
     })
   }

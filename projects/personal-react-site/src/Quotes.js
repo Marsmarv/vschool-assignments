@@ -12,8 +12,8 @@ const Quotes = (props)=>{
       </div>
         {props.quotes &&
         <>
-          <h3 className="quote-text"><u>author:</u> {props.quotes[0].title} <br/><br/>
-              <u>quote:</u> {props.quotes[0].content}
+          <h3 className="quote-text"><u>author:</u> {props.quotes.author} <br/><br/>
+              <u>quote:</u> {props.quotes.content}
           </h3>
         </>
         }
