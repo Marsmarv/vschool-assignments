@@ -255,10 +255,10 @@ body {
 }
 
 .shot-three{
-  background-image: url('./images/proj3.png');
+  background-image: url('./images/misery_co.png');
   background-size: 300px;
   background-position-x: -50px;
-  background-position-y: -50px;
+  background-position-y: 0px;
 }
 
 .shot-four{

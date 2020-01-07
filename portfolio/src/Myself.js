@@ -79,11 +79,11 @@ const Myself = () => {
 
             <Fade right duration={2000} delay={2800}>
               <div className="project proj3">
-                <a className="screenshot-link" href="http://www.mariospestcontrol.surge.sh" target="_blank"><div className="screenshot shot-three"></div></a>
+                <a className="screenshot-link" href="https://miseryandcocollective.com/" target="_blank"><div className="screenshot shot-three"></div></a>
                 <Fade opposite when={showInfoThree === true}>  
                   <div className={modalDisplayThree} onClick={() => {setShowInfoThree(!showInfoThree) ; showInfoFour && setShowInfoFour(!showInfoFour) ; showInfoTwo && setShowInfoTwo(!showInfoTwo) ; showInfo && setShowInfo(!showInfo)}}>
-                    <p><span> title:</span> Mario pest control</p><br/>
-                    <p><span> description:</span> A static page made in html with vanilla javascript, a price calculator for Marios pest control business </p>
+                    <p><span> title:</span> Misery & co Collective</p><br/>
+                    <p><span> description:</span> A static site made in WordPress and CSS for a tattoo shop in Salt Lake City, Utah  </p>
                   </div>
                 </Fade>
               </div>
@@ -140,8 +140,8 @@ const Myself = () => {
             </Fade>
             <Fade opposite when={showInfoThree === true}> 
               <div className={modalDisplay3} onClick={() => {setShowInfoThree(!showInfoThree) ; showInfoFour && setShowInfoFour(!showInfoFour) ; showInfoTwo && setShowInfoTwo(!showInfoTwo) ; showInfo && setShowInfo(!showInfo)}}>
-                <p><span> title:</span> Mario pest control</p><br/>
-                <p><span> description:</span> A static page made in html with vanilla javascript, a price calculator for Marios pest control business </p>
+                <p><span> title:</span> Misery & co Collective</p><br/>
+                <p><span> description:</span> A static site made in WordPress and CSS for a tattoo shop in Salt Lake City, Utah </p>
               </div> 
             </Fade> 
             <Fade opposite when={showInfoFour === true}> 
