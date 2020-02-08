@@ -36,8 +36,6 @@ const styles = StyleSheet.create({
     shadowRadius: 6,
     shadowOpacity: 0.26,
     backgroundColor: 'white'
-
-
   },
   buttonContainer:{
     flexDirection: 'row',
