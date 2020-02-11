@@ -5,7 +5,7 @@ let daily = dailyData
 const Daily = () => {
   return(
     <div className="daily">
-      {console.log(daily)}
+
       <div>
         <div>{daily.map(day => {
           return (
@@ -47,7 +47,7 @@ const Daily = () => {
         })}</div>
       </div>
      
-        ======================================
+      ======================================
     </div>
   )
 }

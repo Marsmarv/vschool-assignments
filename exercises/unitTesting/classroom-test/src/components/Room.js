@@ -1,28 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import roomData from '../data/room.json'
 let room = roomData[0]
+let roomPositions = roomData[0].positions
 
 const Room = () => {
+
+  const [ positions, setPositions ] = useState(roomPositions)
+  const handleChange = e => {
+    const {name, value} = e.target
+    setPositions(value)
+  }
+
   return(
     <div className="room">
-      
-      <div>
-        <div>room id: {room.roomId}</div>
-      </div>
-      <br/>
-      <div>
-        room positions:
-        {room.positions.map( roomId => { 
-          return (
+      <div>room ID: {room.roomId}</div>
+      <div> Select Room position </div>
+      <select onChange={handleChange} name="positions" value={positions}>
+      {roomPositions.map((id)=>{
+        return(
           <>
-            <div>{ roomId }</div>
-            <button>choose id</button>
+          <option value={id}>{id}</option>
           </>
-          )
-        })}
-      </div>
-        ======================================
+        )
+      })}
+      </select>
     </div>
+
+
+
   )
 }
 
