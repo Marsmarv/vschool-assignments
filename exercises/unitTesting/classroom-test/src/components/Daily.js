@@ -18,8 +18,7 @@ const Daily = () => {
           })}
         </select>
         
-        <br/>
-        <br/>
+        <br/><br/>
 
         <div>
           {day && 
