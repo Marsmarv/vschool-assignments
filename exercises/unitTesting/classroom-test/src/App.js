@@ -14,7 +14,7 @@ const App = () => {
       
       {/* <Room /> */}
       {/* <Desk /> */}
-      {/* <Student /> */}
+      <Student />
       {/* <Daily /> */}
     </div>
   )
