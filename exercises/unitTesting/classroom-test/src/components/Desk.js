@@ -14,6 +14,7 @@ const Desk = () => {
             <div>desk id: {desk.id}</div> 
             <div>desk purchase date: {desk.purchased}</div>
             <div>{desk.repairs[0] ? null : "No Repairs"}</div>
+            <br/><br/>
             <div> {desk.repairs.map((repair, i) => {
               return (
                 <>

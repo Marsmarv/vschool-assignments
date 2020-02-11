@@ -13,9 +13,9 @@ const App = () => {
     <div className="main-container">
       
       {/* <Room /> */}
-      {/* <Desk /> */}
+      <Desk />
       {/* <Student /> */}
-      <Daily />
+      {/* <Daily /> */}
     </div>
   )
 }
