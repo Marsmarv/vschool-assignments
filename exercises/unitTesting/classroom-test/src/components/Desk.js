@@ -1,13 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
 import deskData from '../data/desk.json'
 let desks = deskData
 
-
+console.log(desks)
 const Desk = () => {
+  const [desk , setDesk] = useState()
+  const handleChange = e => {
+    const {value} = e.target
+    setDesk(value)
+  }
+  
+  
+  
   return(
     <div className="desk">
       <div>
-        {desks.map(desk => {
+        <select name="desk" value={desk}>
+          <option value="" disabled selected hidden>Please Choose desk id...</option>
+          {desks.map(desk=>{
+            return (<><option value={desk.id}>{desk.id}</option></>)
+          })}
+        </select>
+
+        <br/><br/>
+
+        <div>
+          {desk && 
+            <>
+              <div>id: {desk} </div>
+            </>
+          }
+        </div>
+        
+        
+        
+        
+        
+        
+        {/* {desks.map(desk => {
           return (
           <>
 
@@ -33,7 +63,8 @@ const Desk = () => {
 
           </>
           )
-        })}
+        })} */}
+
       </div>
 
       <div>
