@@ -10,3 +10,32 @@
   display: grid;
   width: 30%;
 }
+
+.positions{
+  display: grid;
+    border: 100px;
+    width: 160%;
+    height: 260px;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: white;
+    border-bottom-color: black;
+    margin-top: 20px
+}
+
+.desks{
+  display: flex;
+    border: solid;
+    margin: 10px;
+    align-items: center;
+    background-color: lightblue;
+    text-align: center;
+}
+.desks:active{
+  background-color: lightcyan;
+}
+
+.position-container{
+  display: table-caption;
+    height: 278px;
+    padding-right: 216px;
+}
