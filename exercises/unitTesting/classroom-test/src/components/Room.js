@@ -13,7 +13,12 @@ const Room = () => {
       <div>
         room positions:
         {room.positions.map( roomId => { 
-          return <div>{ roomId }</div>
+          return (
+          <>
+            <div>{ roomId }</div>
+            <button>choose id</button>
+          </>
+          )
         })}
       </div>
         ======================================

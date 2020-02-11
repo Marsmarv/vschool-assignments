@@ -8,7 +8,7 @@ const Student = () => {
       {students.map((student, i)=>{
         return (
           <div>
-            <u>Student bio: {i + 1}</u>
+            <u>STUDENT BIO {i + 1}</u>
               <div> Student id: {student.id}</div>
               <div>Given Name: {student.bio.givenName}</div>
               <div>Family Name: {student.bio.familyName}</div>
