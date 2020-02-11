@@ -1,0 +1,11 @@
+
+.main-container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.desk .room .student{
+  display: grid;
+  width: 30%;
+}
