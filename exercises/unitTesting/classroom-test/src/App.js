@@ -1,10 +1,16 @@
 import React from 'react';
-import Main from './components/Main'
+import Room from './components/Room'
+import Desk from './components/Desk'
+import Student from './components/Student'
 
 const App = () => {
   return (
     <>
-      <Main />
+      <Room />
+      <br/>
+      <Desk />
+      <br/>
+      <Student />
     </>
   )
 }
