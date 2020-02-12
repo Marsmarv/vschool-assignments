@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import dailyData from '../data/daily.json'
+import Fade from 'react-reveal'
 let daily = dailyData
 
 const Daily = () => {
@@ -17,9 +18,7 @@ const Daily = () => {
             return (<><option value={days.date}>{days.date}</option></>)  
           })}
         </select>
-        
         <br/><br/>
-
         <div>
           {day && 
             <>
@@ -27,10 +26,10 @@ const Daily = () => {
               {daily.map((date)=>{ 
                 return date.date.toString() === day &&
                 <>
-                  <div className='info-container'>
+                  <Fade><div className='info-container'>
                     {date.students.map( student => {
                       return (
-                        <div className="porkchops">
+                        <div>
                           <u>Student</u>
                           <div> entry id: {student.entryId} </div>  
                           <div> student id: {student.studentId} </div>  
@@ -42,14 +41,14 @@ const Daily = () => {
                         </div>
                       )
                     })}
-                  </div>
+                  </div></Fade>
                   <br/>------------------------------------------------------------
                   -----------------------------------------------------------------
                   -----------------------------------------------------<br/>
                   <div className="info-container">
                     {date.desks.map( desk => {
                       return (
-                        <div className="porkchops">
+                        <div>
                           <u>Desk</u>
                           <div> entry id: {desk.entryId} </div>  
                           <div> desk id: {desk.deskId} </div>  

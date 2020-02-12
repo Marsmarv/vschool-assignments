@@ -17,9 +17,7 @@ const Desk = () => {
             return (<><option value={desk.id}>{desk.id}</option></>)
           })}
         </select>
-
         <br/><br/>
-
         <div>
           {desk && 
             <>
@@ -35,10 +33,10 @@ const Desk = () => {
                       <>
                         <div><b>{i + 1}</b> repair id: {repair.repairId}</div>
                         <div>Break date: {repair.breakDate}</div> 
-                      <div>fix Date: {repair.fixDate}</div> 
-                      <div>issure String: {repair.issueString}</div> 
-                      <div>fix String: {repair.fixString}</div> 
-                      <br/>
+                        <div>fix Date: {repair.fixDate}</div> 
+                        <div>issure String: {repair.issueString}</div> 
+                        <div>fix String: {repair.fixString}</div> 
+                        <br/>
                       </>
                     )  
                   })} 
