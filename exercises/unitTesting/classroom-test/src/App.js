@@ -1,21 +1,20 @@
 import React from 'react';
-import Room from './components/Room'
-import Daily from './components/Daily'
-import Desk from './components/Desk'
-import Student from './components/Student'
-// import Home from './components/Home'
+import Teacher from './components/Teacher'
+import Custodial from './components/Custodial'
+import Home from './components/Home'
+import { Switch, Route } from 'react-router-dom'
+
 import './components/styles.css'
 
-import { Switch, Route } from 'react-router-dom'
 
 const App = () => {
   return (
     <div className="main-container">
-      
-      <Room />
-      <Desk />
-      <Student />
-      <Daily />
+      <Switch>
+        <Route exact path= '/' component={Home}/>
+        <Route path= '/Teacher' component={Teacher}/>
+        <Route path= '/Custodial' component={Custodial}/>
+      </Switch>
     </div>
   )
 }

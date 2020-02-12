@@ -8,7 +8,6 @@ const Room = () => {
   const [chosenDesk, setChosenDesk] = useState()
   return(
     <>
-    {/* room position */}
     <div className="room">
       <div><b>room id:</b> {room.roomId}</div><br/>
       <div className="position-container">

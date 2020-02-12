@@ -41,9 +41,17 @@
   width: 100%;
 }
 
-.room .desk .student .daily{
+.room, .desk, .student, .daily{
   height: auto;
   display: grid;
   width: 30%;
 }
 
+.custodial, .teacher{
+  font-size: 24px;
+}
+
+.staff{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr
+}
