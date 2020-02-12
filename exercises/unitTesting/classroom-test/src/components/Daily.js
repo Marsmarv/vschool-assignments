@@ -12,7 +12,7 @@ const Daily = () => {
     <div className="daily">
       <div>
         <select onChange={handleChange} placeholder="chicken" name="day" value={day}>
-          <option value="" disabled selected hidden>Please Choose date...</option>
+          <option value="" selected >Choose date...</option>
           {daily.map(days => {
             return (<><option value={days.date}>{days.date}</option></>)  
           })}

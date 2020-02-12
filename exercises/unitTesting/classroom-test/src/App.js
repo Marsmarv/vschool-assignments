@@ -12,10 +12,10 @@ const App = () => {
   return (
     <div className="main-container">
       
-      {/* <Room /> */}
-      {/* <Desk /> */}
+      <Room />
+      <Desk />
       <Student />
-      {/* <Daily /> */}
+      <Daily />
     </div>
   )
 }
