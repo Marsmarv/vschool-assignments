@@ -10,7 +10,7 @@ const Room = () => {
     <>
     {/* room position */}
     <div className="room">
-      <div>room id: {room.roomId}</div><br/>
+      <div><b>room id:</b> {room.roomId}</div><br/>
       <div className="position-container">
         <u>room positions</u>
         <div className="positions" >

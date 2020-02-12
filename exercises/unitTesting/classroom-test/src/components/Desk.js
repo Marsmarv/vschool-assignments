@@ -12,7 +12,7 @@ const Desk = () => {
     <div className="desk">
       <div>
         <select onChange={handleChange}name="desk" value={desk}>
-          <option value="" disabled selected hidden>Please Choose desk id...</option>
+          <option value="" selected>Choose Desk id...</option>
           {desks.map(desk=>{
             return (<><option value={desk.id}>{desk.id}</option></>)
           })}
