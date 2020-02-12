@@ -16,7 +16,7 @@ const Student = () => {
           <select onChange={handleChange}name="student" value={student}>
             <option value="" selected>Choose Student...</option>
             {students.map(student => {
-              return (<><option value={student.id}>{student.id}</option></>)
+              return (<><option value={student.id}>{student.bio.givenName}</option></>)
             })}
           </select>
           <br/><br/>
