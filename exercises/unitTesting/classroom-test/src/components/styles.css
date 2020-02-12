@@ -33,6 +33,7 @@
   display: table-caption;
     height: auto;
     padding-right: 216px;
+    padding-left: 10px;
 }
 
 .info-container{
@@ -44,7 +45,7 @@
 .room, .desk, .student, .daily{
   height: auto;
   display: grid;
-  width: 30%;
+  width: 80%;
 }
 
 .custodial, .teacher{
@@ -54,4 +55,30 @@
 .staff{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr
+}
+
+.modal-container{
+  display: grid;
+  width: 1040px;
+}
+
+.show-modal{
+  background-color: lightgray;
+  grid-template-columns: 1fr 1fr;
+  grid-row: none;
+  width: 97%;
+}
+
+.modal-info{
+  text-align: center;
+}
+
+.no-display{
+  display: none;
+}
+
+.found{
+  height: 100px;
+  width: 100px;
+  background-color: gray;
 }
