@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import studentData from '../data/student.json'
+import Fade from 'react-reveal'
 let students = studentData
 
 const Student = () => {
@@ -18,15 +19,13 @@ const Student = () => {
               return (<><option value={student.id}>{student.id}</option></>)
             })}
           </select>
-
           <br/><br/>
-
           <div>
             {student && 
               <>
                 {students.map((studentInfo, i)=>{
                   return studentInfo.id.toString() === student &&
-                  <>
+                  <Fade>
                     <div>
                       <u>STUDENT BIO {i + 1}</u>
                         <div> Student id: {studentInfo.id}</div>
@@ -48,7 +47,7 @@ const Student = () => {
                         <div>Project: {studentInfo.grades.project4}</div>
                       <br/>
                     </div>
-                  </>
+                  </Fade>
                 })}
               </>
             }

@@ -8,31 +8,33 @@
 
 .positions{
   display: grid;
-    border: 100px;
-    width: 160%;
-    height: 260px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: white;
-    border-bottom-color: black;
-    margin-top: 20px
+  border: 100px;
+  width: 100%;
+  height: 260px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: white;
+  border-bottom-color: black;
+  margin-top: 20px
 }
 
 .desks{
   display: flex;
-    border: solid;
-    margin: 10px;
-    align-items: center;
-    background-color: lightblue;
-    text-align: center;
+  border: solid;
+  margin: 10px;
+  align-items: center;
+  background-color: lightblue;
+  text-align: center;
 }
 .desks:active{
   background-color: lightcyan;
+  border-color: gray;
 }
 
 .position-container{
   display: table-caption;
-    height: auto;
-    padding-right: 216px;
+  height: auto;
+  /* padding-right: 216px; */
+  padding-left: 10px;
 }
 
 .info-container{
@@ -41,9 +43,56 @@
   width: 100%;
 }
 
-.room .desk .student .daily{
+.room, .desk, .student, .daily{
   height: auto;
   display: grid;
-  width: 30%;
+  width: 98%;
+  padding-top: 20px;
 }
 
+.custodial, .teacher{
+  font-size: 24px;
+}
+
+.staff{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr
+}
+
+.modal-container{
+  display: grid;
+  width: 1040px;
+  height: 150px;
+  margin: auto;
+}
+
+.show-modal{
+  background-color: lightgray;
+  grid-template-columns: 1fr 1fr;
+  grid-row: none;
+  width: 97%;
+}
+
+.modal-info{
+  text-align: center;
+}
+
+.no-display{
+  display: none;
+}
+
+.found{
+  height: 100px;
+  width: 100px;
+  background-color: gray;
+}
+
+.a {
+  box-shadow: black 2px 2px 2px 2px;
+  text-align: center;
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  height: 60px;
+  width: 80%;
+  align-self: center;
+}
