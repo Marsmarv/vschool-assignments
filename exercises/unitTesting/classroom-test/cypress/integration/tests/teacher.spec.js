@@ -1,4 +1,4 @@
-describe('Testing the teacher component', () => {
+describe('Testing the Teacher component', () => {
   it('visit teacher page and check that desk elements exist', () => {
     cy.visit('http://localhost:3000/teacher')
       .get('.desks').should('exist').click({multiple: true})
