@@ -18,7 +18,7 @@ const Room = () => {
           <div>Click on a desk</div>
           <Fade><div className="positions" >
             {room.positions.sort().map( roomId => { 
-              return (<><div className="desks" onClick={()=>{setDeskChosen(roomId); setModal(true)}}>id: { roomId }</div></>)
+              return (<><div className="desks" onClick={()=>{setDeskChosen(roomId); setModal(true)}}>desk id: { roomId }</div></>)
             })}
           </div></Fade>
         </div>
@@ -27,7 +27,6 @@ const Room = () => {
       <div>
         {deskChosen && 
           <div className="modal-container">
-            {console.log(Daily)}
             {Daily.map( deskChosenInfo => {
               return deskChosenInfo.desks.map(deskEntry => {
                 return deskChosen === deskEntry.positionId &&
@@ -43,16 +42,15 @@ const Room = () => {
             {Daily.map(studentInSeat => {
               return studentInSeat.students.map(posId => {
                 return posId.positionId === deskChosen &&
-                <Fade delay={1000}><div className="a">
+                <Fade><div className="a">
                   {Student.map(name => {
                     return name.id === posId.studentId &&
                     <>
-                      {console.log(posId.absent)}
-                      <div>{name.bio.givenName} {name.bio.familyName}</div>
-                      <div>{name.bio.email}</div>
-                      <div>nickname: {name.bio.givenName !== name.bio.nickName ? name.bio.nickName : "N/A"}</div>
-                      <div>age: {name.bio.age}</div>
-                      <div>grade: {name.bio.grade}</div>
+                      <div className="student-info">{name.bio.givenName} {name.bio.familyName}</div>
+                      <div className="student-info">{name.bio.email}</div>
+                      <div className="student-info">nickname: {name.bio.givenName !== name.bio.nickName ? name.bio.nickName : "N/A"}</div>
+                      <div className="student-info">age: {name.bio.age}</div>
+                      <div className="student-info">grade: {name.bio.grade}</div>
                     </>
                   })}
                 </div></Fade>
