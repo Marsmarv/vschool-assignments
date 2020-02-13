@@ -1,8 +1,19 @@
-describe('my first test', () => {
-  it('should go to home page', () => {
+describe('Testing Home component', () => {
+  it('should go to the home page', () => {
     cy.visit('http://localhost:3000/')
-      .get('a').should('exist')
-      .get('.custodial').should('exist')
-      .get('.teacher').should('exist')
   })
+
+  it('checks link tag exists', () => {
+    cy.get('a').should('exist')
+  })
+
+  it('goes to teacher page and back home', () => {
+    cy.get('.teacher').should('exist').click()
+      .get('.home').should('exist').click()
+  })
+
+  it('goes to custodial page and back home', () => {
+    cy.get('.custodial').should('exist').click()
+      .get('.home').should('exist').click()
+  })     
 })
