@@ -27,6 +27,7 @@ const Room = () => {
       <div>
         {deskChosen && 
           <div className="modal-container">
+            {console.log(Daily)}
             {Daily.map( deskChosenInfo => {
               return deskChosenInfo.desks.map(deskEntry => {
                 return deskChosen === deskEntry.positionId &&
