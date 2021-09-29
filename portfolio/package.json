@@ -3,12 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-ga": "^2.7.0",
     "react-modal-image": "^2.3.2",
     "react-reveal": "^1.2.2",
-    "react-scripts": "3.0.1",
+    "react-scripts": "^3.4.4",
     "react-scroll-parallax": "^2.1.2",
     "react-scroll-progress-bar": "^1.1.9"
   },
@@ -33,5 +32,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react": "^16.14.0"
   }
 }
