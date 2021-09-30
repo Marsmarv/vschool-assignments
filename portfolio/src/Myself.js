@@ -22,7 +22,7 @@ const Myself = () => {
     <Fade bottom delay={500}>
       <div>
         <div className="myself-container">
-          <h3>
+          <h3 className="project-text">
             <Fade bottom cascade delay={3000}>
             Projects
             </Fade>
@@ -34,8 +34,8 @@ const Myself = () => {
                 <a className="screenshot-link" href=" https://metmuseumartsearch.herokuapp.com" target="_blank"><div className="screenshot shot-four"></div></a>
                 <Fade opposite when={showInfo === true}>
                   <div className={modalDisplay} onClick={() => {setShowInfo(!showInfo) ; showInfoThree && setShowInfoThree(!showInfoThree) ; showInfoTwo && setShowInfoTwo(!showInfoTwo) ; showInfoFour && setShowInfoFour(!showInfoFour)}}>
-                    <p><span> title:</span> met-museum art search</p><br/>
-                    <p><span> description:</span> Made with React, search for historic art using the Metropolitan museum of art api</p>
+                    <p><span> Title:</span> Met-museum art search</p><br/>
+                    <p><span> Description:</span> Made with React, search for historic art using the Metropolitan museum of art api</p>
                   </div>
                 </Fade>
               </div>  
@@ -58,8 +58,8 @@ const Myself = () => {
                 <a className="screenshot-link" href="http://www.bored-place.surge.sh" target="_blank"><div className="screenshot shot-one"></div></a>
                 <Fade opposite when={showInfoTwo === true}>
                   <div className={modalDisplayTwo} onClick={() => {setShowInfoTwo(!showInfoTwo) ; showInfoThree && setShowInfoThree(!showInfoThree) ; showInfoFour && setShowInfoFour(!showInfoFour) ; showInfo && setShowInfo(!showInfo)}}>
-                    <p><span> title:</span> bored-place</p><br/>
-                    <p><span> description:</span> Made with React, using seven api's it is a site to find something to do when users need entertainment</p>
+                    <p><span> Title:</span> Bored-place</p><br/>
+                    <p><span> Description:</span> Made with React, using seven api's it is a site to find something to do when users need entertainment</p>
                   </div>
                 </Fade>
               </div>
@@ -82,8 +82,8 @@ const Myself = () => {
                 <a className="screenshot-link" href="https://miseryandcocollective.com/" target="_blank"><div className="screenshot shot-three"></div></a>
                 <Fade opposite when={showInfoThree === true}>  
                   <div className={modalDisplayThree} onClick={() => {setShowInfoThree(!showInfoThree) ; showInfoFour && setShowInfoFour(!showInfoFour) ; showInfoTwo && setShowInfoTwo(!showInfoTwo) ; showInfo && setShowInfo(!showInfo)}}>
-                    <p><span> title:</span> Misery & co Collective</p><br/>
-                    <p><span> description:</span> A static site made in WordPress and CSS for a tattoo shop in Salt Lake City, Utah  </p>
+                    <p><span> Title:</span> Misery & co Collective</p><br/>
+                    <p><span> Description:</span> A static site made in WordPress and CSS for a tattoo shop in Salt Lake City, Utah  </p>
                   </div>
                 </Fade>
               </div>
@@ -106,8 +106,8 @@ const Myself = () => {
                 <a className="screenshot-link" href=" http://basictodoapp.surge.sh/" target="_blank"><div className="screenshot shot-two"></div></a>
                 <Fade opposite when={showInfoFour === true}> 
                   <div className={modalDisplayFour} onClick={() => {setShowInfoFour(!showInfoFour) ; showInfoThree && setShowInfoThree(!showInfoThree) ; showInfoTwo && setShowInfoTwo(!showInfoTwo) ; showInfo && setShowInfo(!showInfo)}}>
-                    <p><span> title:</span> todo app</p><br/>
-                    <p><span> description:</span> A static page made in html with vanilla javascript, a basic public todo app </p>
+                    <p><span> Title:</span> Todo app</p><br/>
+                    <p><span> Description:</span> A static page made in html with vanilla javascript, a basic public todo app </p>
                   </div> 
                 </Fade> 
               </div>
@@ -128,26 +128,26 @@ const Myself = () => {
             {/* */}
             <Fade opposite when={showInfo === true}>
               <div className={modalDisplay1} onClick={() => {setShowInfo(!showInfo) ; showInfoThree && setShowInfoThree(!showInfoThree) ; showInfoTwo && setShowInfoTwo(!showInfoTwo) ; showInfoFour && setShowInfoFour(!showInfoFour)}}>
-                <p><span> title:</span> met-museum art search</p><br/>
-                <p><span> description:</span> Made with React, search for historic art using the Metropolitan museum of art api</p>
+                <p><span> Title:</span> Met-museum art search</p><br/>
+                <p><span> Description:</span> Made with React, search for historic art using the Metropolitan museum of art api</p>
               </div>
             </Fade>
             <Fade opposite when={showInfoTwo === true}>
               <div className={modalDisplay2} onClick={() => {setShowInfoTwo(!showInfoTwo) ; showInfoThree && setShowInfoThree(!showInfoThree) ; showInfoFour && setShowInfoFour(!showInfoFour) ; showInfo && setShowInfo(!showInfo)}}>
-                <p><span> title:</span> bored-place</p><br/>
-                <p><span> description:</span> Made with React, using seven api's it is a site to find something to do when users need entertainment</p>
+                <p><span> Title:</span> Bored-place</p><br/>
+                <p><span> Description:</span> Made with React, using seven api's it is a site to find something to do when users need entertainment</p>
               </div>
             </Fade>
             <Fade opposite when={showInfoThree === true}> 
               <div className={modalDisplay3} onClick={() => {setShowInfoThree(!showInfoThree) ; showInfoFour && setShowInfoFour(!showInfoFour) ; showInfoTwo && setShowInfoTwo(!showInfoTwo) ; showInfo && setShowInfo(!showInfo)}}>
-                <p><span> title:</span> Misery & co Collective</p><br/>
-                <p><span> description:</span> A static site made in WordPress and CSS for a tattoo shop in Salt Lake City, Utah </p>
+                <p><span> Title:</span> Misery & co Collective</p><br/>
+                <p><span> Description:</span> A static site made in WordPress and CSS for a tattoo shop in Salt Lake City, Utah </p>
               </div> 
             </Fade> 
             <Fade opposite when={showInfoFour === true}> 
               <div className={modalDisplay4} onClick={() => {setShowInfoFour(!showInfoFour) ; showInfoThree && setShowInfoThree(!showInfoThree) ; showInfoTwo && setShowInfoTwo(!showInfoTwo) ; showInfo && setShowInfo(!showInfo)}}>
-                <p><span> title:</span> todo app</p><br/>
-                <p><span> description:</span> A static page made in html with vanilla javascript, a basic public todo app </p>
+                <p><span> Title:</span> Todo app</p><br/>
+                <p><span> Description:</span> A static page made in html with vanilla javascript, a basic public todo app </p>
               </div> 
             </Fade> 
             {/*  */}

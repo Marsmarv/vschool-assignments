@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import studentData from '../data/student.json'
 import Fade from 'react-reveal'
+import roomData from '../data/room.json'
+import dailyData from '../data/daily.json'
 let students = studentData
+let room = roomData[0]
 
 const Student = () => {
-  const [student, setStudent] = useState()
+  const [studentId, setStudentId] = useState()
   const handleChange = e => {
     const {value} = e.target
     setStudent(value)
@@ -21,10 +24,10 @@ const Student = () => {
           </select>
           <br/><br/>
           <div>
-            {student && 
+            {studentId && 
               <>
                 {students.map((studentInfo, i)=>{
-                  return studentInfo.id.toString() === student &&
+                  return studentInfo.id.toString() === studentId &&
                   <Fade>
                     <div>
                       <u>STUDENT BIO {i + 1}</u>
@@ -49,6 +52,19 @@ const Student = () => {
                     </div>
                   </Fade>
                 })}
+                <div>
+                  <div className="room">
+                    <div><b>room id:</b> {room.roomId}</div>
+                    <div className="position-container">
+                      <h3><u>room positions</u></h3>
+                      <Fade><div className="positions" >
+                        {room.positions.sort().map( roomId => { 
+                          return (<><div className="desks">desk id: { roomId }</div></>)
+                        })}
+                      </div></Fade>
+                    </div>
+                  </div>
+                </div>
               </>
             }
           </div>

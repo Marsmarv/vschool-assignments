@@ -7,7 +7,10 @@ const Projects = () => {
     <Fade top delay={600}>
       <div>
         <div className="header"> <br />
-        <h3>MR</h3>
+        <h3 className="name-logo">
+          MR
+          <h5></h5>
+        </h3>
         </div>
       </div>
     </Fade>
@@ -15,7 +18,7 @@ const Projects = () => {
 
       <Fade bottom cascade><h3 className="hello">Hello</h3></Fade>
       <Fade bottom cascade delay={1000}><h3 className="bye">I'm Marvin</h3></Fade>
-      <Fade bottom cascade delay={1600}><h3 className="bye">and I'm a software developer</h3></Fade>
+      <Fade bottom cascade delay={1600}><h3 className="bye">A software developer</h3></Fade>
       <Fade bottom cascade delay={1800}><h3 className="bye">from New York</h3></Fade>
 
     </div>
