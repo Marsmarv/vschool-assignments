@@ -10,7 +10,7 @@ const Resume = () => {
   return (
     <Fade bottom>
       <div>
-        <div className="res">
+        <div className="res" onClick={() => showRes ? setShowRes(false) : "" }>
           <div className="resBox">
             <Fade bottom cascade>
               <h3 className="resume-text">Résumé</h3>

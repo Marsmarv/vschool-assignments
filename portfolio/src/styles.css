@@ -304,20 +304,28 @@ body {
   background-size: 300px;
   background-position-x: -65px;
   background-position-y: -55px;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 
 .shot-two:hover{
   background-position-x: -65px;
   background-position-y: -15px;
+  margin-right: 20px;
+  margin-top: 20px;
  }
  
 .shot-three:hover{
   background-position-x: -65px;
-  background-position-y: -65px;
+  background-position-y: -55px;
+  margin-right: 20px;
+  margin-top: 20px;
   }
 .shot-four:hover{
   background-position-x: -65px;
   background-position-y: 13px;
+  margin-right: 25px;
+  margin-top: 20px;
 }
 
 .screenshot-link{
@@ -559,13 +567,7 @@ p{
   .proj4 {
     grid-row: 1/8;  
   }
-  .screenshot{
-    height: 90px;
-    width: 90px;
-    background-size: 150px;
-    background-position-x: 2px;
-    margin-left: 0px;
-  }
+  
   .myself-container{
     height: 535px;
   }
@@ -576,6 +578,14 @@ p{
   .xbox{
     top: 1015px;
     left: -340px;
+  }
+
+  .screenshot{
+    height: 90px;
+    width: 90px;
+    background-size: 150px;
+    background-position-x: 2px;
+    margin-left: 0px;
   }
 
   .screenshot:hover{
