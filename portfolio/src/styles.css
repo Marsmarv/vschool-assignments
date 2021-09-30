@@ -14,6 +14,10 @@
   padding-top: 40px;
 }
 
+.name-logo{
+  padding-top: 0px;
+}
+
 h5{
   width: 33px;
   height: 33px;
@@ -233,6 +237,7 @@ body {
   grid-row: 3/10;
   justify-self: center;
   align-self: center;
+  text-align: -webkit-center;
 }
 
 .proj2{
@@ -240,6 +245,7 @@ body {
   grid-row: 6/6;
   justify-self: center;
   align-self: center;
+  text-align: -webkit-center;
 }
 
 .proj3{
@@ -247,6 +253,7 @@ body {
   grid-row: 6/6;
   justify-self: center;
   align-self: center;
+  text-align: -webkit-center;
 }
 
 .proj4{
@@ -254,6 +261,7 @@ body {
   grid-row: 6/6;
   justify-self: center;
   align-self: center;
+  text-align: -webkit-center;
 }
 
 .screenshot{
@@ -328,7 +336,7 @@ body {
   font-size: 12px;
   padding-top: 10px;
   width: 210px;
-  height: 150px;
+  height: 200px;
   background-color: rgba(252, 226, 232, 0.75);
   margin-top: 30px;
   border-radius: 5px;
@@ -399,17 +407,126 @@ p{
   text-align: center;
 }
 
+@media (max-width: 500px){
+  .proj{
+    background-attachment: inherit;
+    background-size: 750px;
+    background-position-y: 0px;
+  }
 
+  .con{
+    background-attachment: inherit;
+    background-size: 940px;
+    background-position-y: 0px;
+    background-position-x: -290px;
+  }
 
-@media (min-width: 500px) and (max-width: 568px){
+  .header{
+    height: 80px;
+  }
+
+  .project-text{
+    padding-bottom: 20px;
+  }
+  
+  .myself-container{
+    height: 620px;
+  }
+  .name-logo{
+    padding-top: 5px;
+  }
+
+  .proj {
+    padding-top: 30px;
+    height: 320px;
+    font-size: 24px;
+  }
+  .screenshot{
+    height: 120px;
+    width: 120px;
+    background-size: 150px;
+    background-position-x: 2px;
+  }
+  .show-modal{
+    height: 0px;
+    width: 0px;
+  }
+  .xbox{
+    top: 1665px;
+    left: -330px;
+  }
+  .xbox:active{
+    top: 1665px;
+    left: -330px;
+  }
+  .proj1{
+    grid-column: 1/6;
+    grid-row: 3/7;
+  }
+  .proj2 {
+    grid-column: 1/6;
+    grid-row: 11/12;
+  }
+  .proj3 {
+    grid-column:7/12;
+    grid-row: 3/7;
+  }
+  .proj4 {
+    grid-column:7/12;
+    grid-row: 11/12;
+  }
+
+  .info-one {
+    grid-column: 2/5;
+    grid-row: 4/8;
+  }
+  .info-two {
+    grid-column: 2/5;
+    grid-row: 12/12;
+  }
+  .info-three{
+    grid-column: 7/12;
+    grid-row: 4/8;
+  }
+  .info-four{
+    grid-row: 12/12;
+  }
+  .desc{
+    display: none
+  }
+  .desc2{
+    position: absolute; 
+    border-radius: 16px;
+    top: 630px;
+    width: 340px;
+    font-size: 24px;
+    height: 270px;
+    padding-top: 55px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 5;
+    background-color: rgba(252, 226, 232, 0.95)
+  }
+}
+
+@media (min-width: 501px) and (max-width: 568px){
   .proj, .con{
     background-size: 690px;
     background-position-y: 0px;
   }
 
+  .desc{
+    height: 205px;
+  }
+
+  .project-text{
+    padding-bottom: 50px;
+  }
+
   .name-logo{
     padding-top: 0px;
   }
+
   body{
     background-size: 690px;
   }
@@ -423,9 +540,9 @@ p{
     height: 65px;
   }
   .proj{
-    padding-top: 0px;
+    padding-top: 50px;
     font-size: 20px;
-    height: 200px;
+    height: 290px;
   }
   .hello{
     padding-top: 20px
@@ -450,7 +567,7 @@ p{
     margin-left: 0px;
   }
   .myself-container{
-    height: 385px;
+    height: 535px;
   }
   .show-modal{
     height: 0px;
@@ -498,6 +615,10 @@ p{
     top: 55px;
   }
 
+  .desc2{
+    display: none;
+  }
+
   .info-one, .info-four, .info-three, .info-two{
     grid-row: 2/8;
   }
@@ -507,10 +628,6 @@ p{
   .proj, .con{
     background-size: 690px;
     background-position-y: 0px;
-  }
-
-  .name-logo{
-    padding-top: 5px;
   }
 
   body{
@@ -527,15 +644,20 @@ p{
   }
   .proj{
     background-size: 690px;
-    height: 230px;
-    padding-top: 0px;
+    height: 310px;
+    padding-top: 40px;
     font-size: 28px;
   }
+
+  .project-text{
+    padding-bottom: 40px;
+  }
+
   .hello{
     padding-top: 15px;
   }
   .myself-container{
-    height: 415px;
+    height: 525px;
   }
   .proj1 {
     grid-row: 1/8;  
@@ -620,10 +742,6 @@ p{
     background-position-y: 0px;
   }
 
-  .name-logo{
-    padding-top: 5px;
-  }
-
   body{
     background-size: 740px;
     background-position-x: -4px;
@@ -638,10 +756,14 @@ p{
   .header{
     height: 65px;
   }
+
+  .project-text{
+    padding-bottom: 40px;
+  }
   .proj{
-    background-size: 730px;
-    height: 255px;
-    padding-top: 20px;
+    background-size: 750px;
+    height: 350px;
+    padding-top: 80px;
   }
   .hello{
     padding-top: 0px;
@@ -665,7 +787,7 @@ p{
     background-position-x: 2px;
   }
   .myself-container{
-    height: 435px;
+    height: 535px;
   }
   .con{
     height: 412px;
@@ -723,11 +845,22 @@ p{
 }
 
 @media (min-width: 736px) and (max-width: 767px){
-  .proj, .con{
+  .con{
     background-size: 770px;
     background-position-y: 0px;
-    height: 445px;
+    height: 545px;
     padding-top: 0px;
+  }
+
+  .proj{
+    background-size: 922px;
+    background-position-y: 0px;
+    height: 430px;
+    padding-top: 70px;
+  }
+
+  .info-four, .info-three, .info-two, .info-one{
+    margin-top: 50px;
   }
 
   .project{
@@ -749,7 +882,7 @@ p{
     height: 65px;
   }
   .myself-container{
-    height: 425px;
+    height: 575px;
   }
   .con{
     height: 412px;
@@ -834,10 +967,6 @@ p{
   .desc2{
     display: none
   }
-
-  .name-logo{
-    padding-top: 5px;
-  }
 }
 
 @media (min-width: 768px) and (max-width: 800px){
@@ -880,7 +1009,7 @@ p{
     grid-row: 5/8;  
   }
   .myself-container{
-    height:520px;
+    height: 600px;
   }
   .con{
     height: 531px;
@@ -981,7 +1110,7 @@ p{
   }
 
   .myself-container{
-    height:521px;
+    height: 600px;
   }
   .con{
     height: 531px;
@@ -1068,6 +1197,10 @@ p{
     background-position-x: -370px;
   }
 
+  .name-logo{
+    padding-top: 0px;
+  }
+
   .header{
     height: 70px;
   }
@@ -1088,7 +1221,7 @@ p{
     top: 1440px;
   }
   .myself-container{
-    height:530px;
+    height: 605px;
   }
 
   .screenshot{
@@ -1212,7 +1345,7 @@ p{
     display: none
   }
   .myself-container{
-    height: 540px;
+    height: 645px;
   }
 }
 
@@ -1287,7 +1420,7 @@ p{
     display: none
   }
   .myself-container{
-    height:535px;
+    height: 635px;
   }
 }
 
@@ -1347,7 +1480,7 @@ p{
     top: 85px;
   }
   .myself-container{
-    height:555px;
+    height:635px;
   }
 }
 
@@ -1388,7 +1521,7 @@ p{
     top: 85px;
   }
   .myself-container{
-    height:555px;
+    height: 645px;
   }
 }
 
@@ -1559,17 +1692,34 @@ p{
 }
 
 @media only screen and (min-device-width: 361px) and (max-device-width: 375px){
-  .proj, .con{
+  .proj{
     background-attachment: inherit;
     background-size: 750px;
     background-position-y: 0px;
   }
+
+  .con{
+    background-attachment: inherit;
+    background-size: 780px;
+    background-position-x: -220px;
+  }
+
+  .project-text{
+    padding-bottom: 20px;
+  }
+
+  .myself-container{
+    height: 620px;
+  }
+
   .proj{
     background-size: 890px;
-    height: 330px;
+    height: 350px;
+    font-size: 32px;
+    padding-top: 30px;
   }
   .bye{
-    font-size: 20px;
+    font-size: 30px;
   }
   .screenshot{
     height: 120px;
@@ -1642,18 +1792,38 @@ p{
 }
 
 @media only screen and (min-device-width: 376px) and (max-device-width: 413px){
-  .proj, .con{
+  .proj{
     background-attachment: inherit;
     background-size: 750px;
     background-position-y: 0px;
   }
+
+  .con{
+    background-attachment: inherit;
+    background-size: 940px;
+    background-position-y: 0px;
+    background-position-x: -290px;
+  }
+
   .header{
     height: 80px;
   }
+
+  .project-text{
+    padding-bottom: 20px;
+  }
+  
+  .myself-container{
+    height: 620px;
+  }
+  .name-logo{
+    padding-top: 5px;
+  }
+
   .proj {
-    padding-top: 0px;
-    height: 450px;
-    font-size: 30px;
+    padding-top: 30px;
+    height: 320px;
+    font-size: 24px;
   }
   .screenshot{
     height: 120px;
@@ -1727,7 +1897,7 @@ p{
   .proj, .con{
     background-attachment: inherit;
     background-size: 785px;
-    background-position-y: 0px;
+    background-position: 0px;
   }
 
   .name-logo{
@@ -1858,9 +2028,9 @@ p{
     height: 65px;
   }
   .proj{
-    padding-top: 0px;
+    padding-top: 50px;
     font-size: 20px;
-    height: 230px;
+    height: 290px;
   }
   .hello{
     padding-top: 20px
@@ -1942,8 +2112,8 @@ p{
 
   .proj{
     background-size: 690px;
-    height: 285px;
-    padding-top: 0px;
+    height: 350px;
+    padding-top: 70px;
     font-size: 28px;
   }
 
@@ -2012,8 +2182,8 @@ p{
   }
   .proj{
     background-size: 735px;
-    height: 300px;
-    padding-top: 20px;
+    height: 350px;
+    padding-top: 80px;
   }
   .hello{
     padding-top: 0px;
@@ -2061,35 +2231,51 @@ p{
     height: 65px;
   }
   .myself-container{
-    height: 510px;
+    height: 605px;
   }
   .con{
     height: 412px;
   }
   .proj{
-    padding-top: 0px;
-    height: 350px;
+    padding-top: 50px;
+    height: 400px;
   }
   .proj1, .proj2, .proj3, .proj4{
     grid-row: 1/8; 
     text-align: -webkit-center;
     width: 175px; 
   }
+
+  .info-four,.info-one,.info-three,.info-two{
+    margin-top: 50px;
+  }
+
   .screenshot{
-    height: 90px;
-    width: 90px;
+    height: 150px;
+    width: 150px;
     background-size: 150px;
     background-position-x: 2px;
+  }
+
+  .project-text{
+    padding-bottom: 30px;
   }
 
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 800px){
-  .proj, .con{
+  .proj{
     background-attachment: inherit;
     background-size: 1060px;
     background-position-y: 0px;
   }
+
+  .con{
+    background-attachment: inherit;
+    background-size: 1060px;
+    background-position: -160px;
+  }
+
   .header{
     height: 90px;
   }
@@ -2098,7 +2284,7 @@ p{
   }
   .proj{
     padding-top: 0px;
-    height: 700px;
+    height: 640px;
   }
   .proj1 {
     grid-row: 5/8;  
@@ -2113,7 +2299,7 @@ p{
     grid-row: 5/8;  
   }
   .myself-container{
-    height:515px;
+    height: 575px;
   }
   .con{
     height: 531px;
@@ -2136,10 +2322,30 @@ p{
 }
 
 @media only screen and (min-device-width: 801px) and (max-device-width: 812px){
-  .proj, .con{
+  .proj{
     background-attachment: inherit;
     background-size: 812px;
     background-position-y: 0px;
+  }
+
+  .con {
+    background-attachment: inherit;
+    background-size: 812px;
+    background-position: 0px;
+}
+
+  .projects {
+    display: grid;
+    grid-template-rows: repeat(11, 26.5px);
+    grid-template-columns: repeat(11, 1fr);
+  }
+
+  .project{
+    height: 190px;
+  }
+
+  .project-text{
+    padding-bottom: 50px;
   }
   .header{
     height: 70px;
@@ -2148,8 +2354,8 @@ p{
     padding-top: 10px;
   }
   .proj{
-    padding-top: 0px;
-    height: 240px;
+    padding-top: 100px;
+    height: 420px;
   }
   .proj1 {
     grid-row: 1/8;  
@@ -2164,7 +2370,7 @@ p{
     grid-row: 1/8;  
   }
   .myself-container{
-    height: 395px;
+    height: 555px;
   }
   .con{
     height: 378px;
@@ -2176,37 +2382,28 @@ p{
     background-position-x: 2px;
   }
 
-  /* .desc{
-    display: none
-  }
-  .desc2{
-    position: absolute; 
-    border-radius: 16px;
-    top: 620px;
-    width: 305px;
-    font-size: 24px;
-    height: 270px;
-    padding-top: 55px;
-    margin-left: 35px;
-    z-index: 5;
-    background-color: rgba(252, 226, 232, 0.95)
-  } */
-
 }
 
 @media only screen and (min-device-width: 813px) and (max-device-width: 823px){
-  .proj, .con{
+  .proj{
     background-attachment: inherit;
     background-size: 830px;
     background-position-y: 0px;
   }
+
+  .con {
+    background-attachment: inherit;
+    background-size: 830px;
+    background-position: 0px;
+  }
+
   .header{
     height: 70px;
   }
   .proj{
     background-size: 825px;
-    height: 255px;
-    padding-top: 20px;
+    height: 375px;
+    padding-top: 110px;
   }
   .hello{
     padding-top: 0px;
@@ -2223,11 +2420,28 @@ p{
 }
 
 @media only screen and (min-device-width: 824px) and (max-device-width: 1024px){
-  .proj, .con{
+  .proj{
     background-attachment: inherit;
     background-size: 1024px;
     background-position-y: 0px;
   }
+
+  .info-four,.info-one,.info-three,.info-two{
+    margin-bottom: 140px
+  }
+
+  .con{
+    background-position: 0px;
+    background-attachment: inherit;
+    background-size: 1024px;
+  }
+
+
+
+  .project-text{
+    padding-bottom: 40px;
+  }
+
   .xbox{
     top: 1525px;
   }
@@ -2270,11 +2484,18 @@ p{
 }
 
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1366px){
-  .proj, .con{
+  .proj{
     background-attachment: inherit;
     background-size: 1366px;
     background-position-y: -50px;
   }
+
+  .con{
+    background-attachment: inherit;
+    background-size: 1366px;
+    background-position: 0px;
+  }
+
   .proj{
     font-size: 36px;
   }
