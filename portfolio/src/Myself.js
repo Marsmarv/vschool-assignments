@@ -22,7 +22,7 @@ const Myself = () => {
     <Fade bottom delay={500}>
       <div>
         <div className="myself-container">
-          <h3>
+          <h3 className="project-text">
             <Fade bottom cascade delay={3000}>
             Projects
             </Fade>

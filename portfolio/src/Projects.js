@@ -7,7 +7,10 @@ const Projects = () => {
     <Fade top delay={600}>
       <div>
         <div className="header"> <br />
-        <h3>MR</h3>
+        <h3 className="name-logo">
+          MR
+          <h5></h5>
+        </h3>
         </div>
       </div>
     </Fade>

@@ -13,7 +13,7 @@ const Resume = () => {
         <div className="res">
           <div className="resBox">
             <Fade bottom cascade>
-              <h3>Résumé</h3>
+              <h3 className="resume-text">Résumé</h3>
               <div className='pic' onClick={() => setShowRes(!showRes)}></div>
               <Fade bottom opposite when={showRes === true}>
                 <div className={modalDisplay} onClick={() => setShowRes(!showRes)}></div>
