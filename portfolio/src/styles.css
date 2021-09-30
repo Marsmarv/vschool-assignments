@@ -1947,6 +1947,11 @@ p{
     background-position-x: 0px;
   }
 
+  .resume-text, .contact-text, .project-text {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
   .header{
     height: 65px;
   }
