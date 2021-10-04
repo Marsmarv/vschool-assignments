@@ -103,11 +103,11 @@ const Myself = () => {
 
             <Fade right duration={2000} delay={3200}>
               <div className="project proj4">
-                <a className="screenshot-link" href=" http://basictodoapp.surge.sh/" target="_blank"><div className="screenshot shot-two"></div></a>
+                <a className="screenshot-link" href="https://petesmeals.com/home" target="_blank"><div className="screenshot shot-two"></div></a>
                 <Fade opposite when={showInfoFour === true}> 
                   <div className={modalDisplayFour} onClick={() => {setShowInfoFour(!showInfoFour) ; showInfoThree && setShowInfoThree(!showInfoThree) ; showInfoTwo && setShowInfoTwo(!showInfoTwo) ; showInfo && setShowInfo(!showInfo)}}>
-                    <p><span> Title:</span> Todo app</p><br/>
-                    <p><span> Description:</span> A static page made in html with vanilla javascript, a basic public todo app </p>
+                    <p><span> Title:</span> Pete's Meals</p><br/>
+                    <p><span> Description:</span> A meal prep subscription site done in React and backend in Node.js </p>
                   </div> 
                 </Fade> 
               </div>
@@ -146,8 +146,8 @@ const Myself = () => {
             </Fade> 
             <Fade opposite when={showInfoFour === true}> 
               <div className={modalDisplay4} onClick={() => {setShowInfoFour(!showInfoFour) ; showInfoThree && setShowInfoThree(!showInfoThree) ; showInfoTwo && setShowInfoTwo(!showInfoTwo) ; showInfo && setShowInfo(!showInfo)}}>
-                <p><span> Title:</span> Todo app</p><br/>
-                <p><span> Description:</span> A static page made in html with vanilla javascript, a basic public todo app </p>
+                <p><span> Title:</span> Pete's Meals</p><br/>
+                <p><span> Description:</span> A meal prep subscription site done in React and backend in Node.js </p>
               </div> 
             </Fade> 
             {/*  */}

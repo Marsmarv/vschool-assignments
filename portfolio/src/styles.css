@@ -273,24 +273,24 @@ body {
 }
 
 .shot-one{
-  background-image: url('./images/proj1.png');
-  background-size: 300px;
-  background-position-x: -50px;
-  background-position-y: -40px;
+  background-image: url('./images/proj6.jpeg');
+  background-size: 340px;
+  background-position-x: -70px;
+  background-position-y: 0px;
 }
 
 .shot-two{
-  background-image: url('./images/proj2.png');
+  background-image: url('./images/proj5.png');
   background-size: 300px;
   background-position-x: -50px;
   background-position-y: 0px;
 }
 
 .shot-three{
-  background-image: url('./images/misery_co.png');
-  background-size: 300px;
-  background-position-x: -50px;
-  background-position-y: 0px;
+  background-image: url('./images/proj7.png');
+  background-size: 310px;
+  background-position-x: 20px;
+  background-position-y: -10px;
 }
 
 .shot-four{
@@ -301,23 +301,23 @@ body {
 }
 
 .shot-one:hover{
-  background-size: 300px;
-  background-position-x: -65px;
-  background-position-y: -55px;
+  background-size: 340px;
+  background-position-y: 0px;
+  background-position-x: -80px;
   margin-right: 20px;
   margin-top: 20px;
 }
 
 .shot-two:hover{
-  background-position-x: -65px;
-  background-position-y: -15px;
+  background-position-x: -155px;
+  background-position-y: -5px;
   margin-right: 20px;
   margin-top: 20px;
  }
  
 .shot-three:hover{
-  background-position-x: -65px;
-  background-position-y: -55px;
+  background-position-x: 10px;
+  background-position-y: -45px;
   margin-right: 20px;
   margin-top: 20px;
   }
