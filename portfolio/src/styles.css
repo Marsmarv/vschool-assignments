@@ -452,7 +452,7 @@ p{
   .screenshot{
     height: 120px;
     width: 120px;
-    background-size: 150px;
+    background-size: 200px;
     background-position-x: 2px;
   }
   .show-modal{
@@ -697,7 +697,7 @@ p{
   .screenshot{
     height: 120px;
     width: 120px;
-    background-size: 150px;
+    background-size: 200px;
     background-position-x: 2px;
   }
   .screenshot:hover{
@@ -712,24 +712,24 @@ p{
   }
 
   .shot-one:hover{
-    background-position-y: -30px;
-    background-position-x: -8px;
+    background-position-y: -20px;
+    background-position-x: -3px;
     margin-left: 10px;
-    background-size: 150px;
+    background-size: 200px;
   }
   .shot-two:hover{
-    background-position-x: -7px;
-    background-position-y: -25px;
+    background-position-x: -1px;
+    background-position-y: -20px;
     margin-left: 10px;
    }
   .shot-three:hover{
-    background-position-x: -7px;
-    background-position-y: -75px;
+    background-position-x: -3px;
+    background-position-y: -30px;
     margin-left: 10px;
     }
   .shot-four:hover{
-    background-position-x: -8px;
-    background-position-y: 9px;
+    background-position-x: -3px;
+    background-position-y: -42px;
     margin-left: 10px;
   }
   .desc{
@@ -793,7 +793,7 @@ p{
   .screenshot{
     height: 150px;
     width: 150px;
-    background-size: 150px;
+    background-size: 280px;
     background-position-x: 2px;
   }
   .myself-container{
@@ -821,25 +821,25 @@ p{
   }
 
   .shot-one:hover{
-    background-position-y: -30px;
-    background-position-x: -8px;
-    margin-left: 10px;
-    background-size: 150px;
+    background-size: 280px;
+    background-position-y: -20px;
+    background-position-x: -3px;
+    margin-left: 9px;
   }
   .shot-two:hover{
-    background-position-x: -7px;
-    background-position-y: -25px;
-    margin-left: 10px;
+    background-position-x: -1px;
+    background-position-y: -20px;
+    margin-left: 11px;
    }
   .shot-three:hover{
-    background-position-x: -7px;
-    background-position-y: -75px;
-    margin-left: 10px;
+    background-position-x: -1px;
+    background-position-y: -30px;
+    margin-left: 9px;
     }
   .shot-four:hover{
-    background-position-x: -8px;
-    background-position-y: 9px;
-    margin-left: 10px;
+    background-position-x: -6px;
+    background-position-y: -42px;
+    margin-left: 13px;
   }
   .desc{
     width: 150px;
@@ -912,7 +912,7 @@ p{
   .screenshot{
     height: 150px;
     width: 150px;
-    background-size: 150px;
+    background-size: 280px;
     background-position-x: 2px;
   }
 
@@ -946,25 +946,25 @@ p{
   }
 
   .shot-one:hover{
-    background-position-y: -30px;
-    background-position-x: -8px;
-    margin-left: 10px;
-    background-size: 150px;
+    background-size: 280px;
+    background-position-y: -20px;
+    background-position-x: -3px;
+    margin-left: 9px;
   }
   .shot-two:hover{
-    background-position-x: -7px;
-    background-position-y: -25px;
-    margin-left: 10px;
+    background-position-x: -1px;
+    background-position-y: -20px;
+    margin-left: 11px;
    }
   .shot-three:hover{
-    background-position-x: -7px;
-    background-position-y: -75px;
-    margin-left: 10px;
+    background-position-x: -1px;
+    background-position-y: -30px;
+    margin-left: 9px;
     }
   .shot-four:hover{
-    background-position-x: -8px;
-    background-position-y: 9px;
-    margin-left: 10px;
+    background-position-x: -6px;
+    background-position-y: -42px;
+    margin-left: 13px;
   }
   .desc{
     width: 175px;
@@ -1027,7 +1027,7 @@ p{
   .screenshot{
     height: 160px;
     width: 160px;
-    background-size: 150px;
+    background-size: 280px;
     background-position-x: 2px;
     margin-left: 10px;
   }
@@ -1043,25 +1043,25 @@ p{
   }
 
   .shot-one:hover{
-    background-position-y: -30px;
-    background-position-x: -8px;
-    margin-left: 18px;
-    background-size: 150px;
+    background-size: 280px;
+    background-position-y: -20px;
+    background-position-x: 3px;
+    margin-left: 9px;
   }
   .shot-two:hover{
-    background-position-x: -7px;
-    background-position-y: -25px;
-    margin-left: 18px;
+    background-position-x: 1px;
+    background-position-y: -20px;
+    margin-left: 11px;
    }
   .shot-three:hover{
-    background-position-x: -7px;
-    background-position-y: -75px;
-    margin-left: 18px;
+    background-position-x: 2px;
+    background-position-y: -30px;
+    margin-left: 9px;
     }
   .shot-four:hover{
-    background-position-x: -8px;
-    background-position-y: 9px;
-    margin-left: 18px;
+    background-position-x: 2px;
+    background-position-y: -42px;
+    margin-left: 13px;
   }
   .desc{
     width: 175px;
@@ -1127,7 +1127,7 @@ p{
   .screenshot{
     height: 160px;
     width: 160px;
-    background-size: 150px;
+    background-size: 280px;
     background-position-x: 2px;
   }
 
@@ -1144,25 +1144,25 @@ p{
   }
 
   .shot-one:hover{
-    background-position-y: -30px;
-    background-position-x: -8px;
-    margin-left: 10px;
-    background-size: 150px;
+    background-size: 280px;
+    background-position-y: -20px;
+    background-position-x: -7px;
+    margin-left: 9px;
   }
   .shot-two:hover{
-    background-position-x: -7px;
-    background-position-y: -25px;
-    margin-left: 10px;
+    background-position-x: -9px;
+    background-position-y: -20px;
+    margin-left: 11px;
    }
   .shot-three:hover{
-    background-position-x: -7px;
-    background-position-y: -75px;
-    margin-left: 10px;
+    background-position-x: -8px;
+    background-position-y: -30px;
+    margin-left: 9px;
     }
   .shot-four:hover{
-    background-position-x: -8px;
-    background-position-y: 9px;
-    margin-left: 10px;
+    background-position-x: -9px;
+    background-position-y: -42px;
+    margin-left: 13px;
   }
   .desc{
     width: 175px;
@@ -1211,7 +1211,7 @@ p{
   .screenshot{
     height: 160px;
     width: 160px;
-    background-size: 150px;
+    background-size: 280px;
     background-position-x: 2px;
   }
 
@@ -1228,25 +1228,25 @@ p{
   }
 
   .shot-one:hover{
-    background-position-y: -30px;
-    background-position-x: -8px;
-    margin-left: 10px;
-    background-size: 150px;
+    background-size: 280px;
+    background-position-y: -20px;
+    background-position-x: -4px;
+    margin-left: 9px;
   }
   .shot-two:hover{
-    background-position-x: -7px;
-    background-position-y: -25px;
-    margin-left: 10px;
+    background-position-x: -1px;
+    background-position-y: -20px;
+    margin-left: 11px;
    }
   .shot-three:hover{
-    background-position-x: -7px;
-    background-position-y: -75px;
-    margin-left: 10px;
+    background-position-x: -2px;
+    background-position-y: -30px;
+    margin-left: 9px;
     }
   .shot-four:hover{
-    background-position-x: -8px;
-    background-position-y: 9px;
-    margin-left: 10px;
+    background-position-x: -6px;
+    background-position-y: -42px;
+    margin-left: 13px;
   }
   .desc{
     width: 170px;
@@ -1283,7 +1283,7 @@ p{
   .screenshot{
     height: 170px;
     width: 170px;
-    background-size: 150px;
+    background-size: 280px;
     background-position-x: 2px;
   }
 
@@ -1295,24 +1295,24 @@ p{
     transition: .1s;
   }
   .shot-one:hover{
-    background-size: 150px;
-    background-position-y: -60px;
-    background-position-x: -10px;
+    background-size: 280px;
+    background-position-y: -20px;
+    background-position-x: -4px;
     margin-left: 9px;
   }
   .shot-two:hover{
-    background-position-x: -10px;
-    background-position-y: -25px;
+    background-position-x: -1px;
+    background-position-y: -20px;
     margin-left: 11px;
    }
   .shot-three:hover{
-    background-position-x: -10px;
-    background-position-y: -75px;
+    background-position-x: -2px;
+    background-position-y: -30px;
     margin-left: 9px;
     }
   .shot-four:hover{
-    background-position-x: -11px;
-    background-position-y: 3px;
+    background-position-x: -6px;
+    background-position-y: -42px;
     margin-left: 13px;
   }
   .desc{
@@ -1351,8 +1351,8 @@ p{
   .screenshot{
     height: 170px;
     width: 170px;
-    background-size: 150px;
-    background-position-x: 2px;
+    background-size: 290px;
+    background-position-x: 0px;
   }
 
   .screenshot:hover{
@@ -1363,24 +1363,24 @@ p{
     transition: .1s;
   }
   .shot-one:hover{
-    background-size: 150px;
-    background-position-y: -60px;
-    background-position-x: -9px;
+    background-size: 290px;
+    background-position-y: -20px;
+    background-position-x: -5px;
     margin-left: 10px;
   }
   .shot-two:hover{
-    background-position-x: -10px;
-    background-position-y: -25px;
+    background-position-x: -2px;
+    background-position-y: -20px;
     margin-left: 10px;
    }
   .shot-three:hover{
-    background-position-x: -9px;
-    background-position-y: -75px;
+    background-position-x: -4px;
+    background-position-y: -30px;
     margin-left: 10px;
     }
   .shot-four:hover{
-    background-position-x: -17px;
-    background-position-y: 3px;
+    background-position-x: -13px;
+    background-position-y: -42px;
     margin-left: 20px;
   }
   .desc{
@@ -1423,25 +1423,25 @@ p{
     transition: .1s;
   }
   .shot-one:hover{
-    background-size: 300px;
-    background-position-y: -60px;
-    background-position-x: -70px;
-    margin-left: 20px;
+    background-size: 340px;
+    background-position-y: -20px;
+    background-position-x: -89px;
+    margin-left: 10px;
   }
   .shot-two:hover{
-    background-position-x: -70px;
-    background-position-y: -25px;
-    margin-left: 20px;
+    background-position-x: -73px;
+    background-position-y: -20px;
+    margin-left: 10px;
    }
   .shot-three:hover{
-    background-position-x: -70px;
-    background-position-y: -75px;
-    margin-left: 20px;
+    background-position-x: -2px;
+    background-position-y: -30px;
+    margin-left: 10px;
     }
   .shot-four:hover{
-    background-position-x: -80px;
-    background-position-y: 3px;
-    margin-left: 30px;
+    background-position-x: -35px;
+    background-position-y: -42px;
+    margin-left: 10px;
   }
   .desc2{
     display: none
@@ -1465,25 +1465,25 @@ p{
     
   }
   .shot-one:hover{
-    background-size: 300px;
-    background-position-y: -60px;
-    background-position-x: -70px;
-    margin-left: 20px;
+    background-size: 340px;
+    background-position-y: -20px;
+    background-position-x: -94px;
+    margin-left: 10px;
   }
   .shot-two:hover{
-    background-position-x: -70px;
-    background-position-y: -25px;
-    margin-left: 20px;
+    background-position-x: -78px;
+    background-position-y: -20px;
+    margin-left: 10px;
    }
   .shot-three:hover{
-    background-position-x: -70px;
-    background-position-y: -75px;
-    margin-left: 20px;
+    background-position-x: -6px;
+    background-position-y: -30px;
+    margin-left: 10px;
     }
   .shot-four:hover{
-    background-position-x: -80px;
-    background-position-y: 3px;
-    margin-left: 30px;
+    background-position-x: -48px;
+    background-position-y: -42px;
+    margin-left: 10px;
   }
   .desc2{
     display: none
@@ -1535,7 +1535,7 @@ p{
   .screenshot{
     height: 120px;
     width: 120px;
-    background-size: 150px;
+    background-size: 200px;
     background-position-x: 2px;
   }
   .show-modal{
@@ -1622,7 +1622,7 @@ p{
   .screenshot{
     height: 120px;
     width: 120px;
-    background-size: 150px;
+    background-size: 200px;
     background-position-x: 2px;
   }
   .show-modal{
@@ -1707,7 +1707,7 @@ p{
   .screenshot{
     height: 120px;
     width: 120px;
-    background-size: 150px;
+    background-size: 200px;
     background-position-x: 2px;
   }
   .show-modal{
@@ -1815,7 +1815,7 @@ p{
   .screenshot{
     height: 120px;
     width: 120px;
-    background-size: 150px;
+    background-size: 200px;
     background-position-x: 2px;
   }
   .show-modal{
@@ -1918,7 +1918,7 @@ p{
   .screenshot{
     height: 120px;
     width: 120px;
-    background-size: 150px;
+    background-size: 200px;
     background-position-x: 2px;
   }
   .myself-container{
@@ -2065,7 +2065,7 @@ p{
   .screenshot{
     height: 120px;
     width: 120px;
-    background-size: 150px;
+    background-size: 280px;
     background-position-x: -15px;
   }
   .myself-container{
@@ -2150,7 +2150,7 @@ p{
   .screenshot{
     height: 120px;
     width: 120px;
-    background-size: 150px;
+    background-size: 280px;
     background-position-x: 2px;
   }
 }
@@ -2198,7 +2198,7 @@ p{
   .screenshot{
     height: 150px;
     width: 150px;
-    background-size: 150px;
+    background-size: 280px;
     background-position-x: 2px;
   }
   .myself-container{
@@ -2248,7 +2248,7 @@ p{
   .screenshot{
     height: 150px;
     width: 150px;
-    background-size: 150px;
+    background-size: 280px;
     background-position-x: 2px;
   }
 
@@ -2302,7 +2302,7 @@ p{
   .screenshot{
     height: 150px;
     width: 150px;
-    background-size: 150px;
+    background-size: 280px;
     background-position-x: 2px;
   }
   .xbox{
@@ -2373,7 +2373,7 @@ p{
   .screenshot{
     height: 150px;
     width: 150px;
-    background-size: 150px;
+    background-size: 280px;
     background-position-x: 2px;
   }
 
