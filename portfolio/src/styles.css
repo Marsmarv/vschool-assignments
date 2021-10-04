@@ -515,6 +515,35 @@ p{
     z-index: 5;
     background-color: rgba(252, 226, 232, 0.95)
   }
+
+  .shot-three:hover {
+    background-position-x: -20px;
+    background-position-y: -10px;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+
+  .shot-four:hover {
+    background-position-x: -27px;
+    background-position-y: -21px;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+
+  .shot-one:hover {
+    background-size: 200px;
+    background-position-y: 0px;
+    background-position-x: -40px;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+
+  .shot-two:hover {
+    background-position-x: -25px;
+    background-position-y: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
 }
 
 @media (min-width: 501px) and (max-width: 568px){
@@ -600,24 +629,24 @@ p{
   }
 
   .shot-one:hover{
-    background-position-y: -30px;
-    background-position-x: -8px;
+    background-position-y: -20px;
+    background-position-x: -9px;
     margin-left: 20px;
     background-size: 150px;
   }
   .shot-two:hover{
-    background-position-x: -7px;
-    background-position-y: -25px;
+    background-position-x: -4px;
+    background-position-y: -20px;
     margin-left: 20px;
    }
   .shot-three:hover{
     background-position-x: -7px;
-    background-position-y: -75px;
+    background-position-y: -30px;
     margin-left: 20px;
     }
   .shot-four:hover{
-    background-position-x: -8px;
-    background-position-y: 9px;
+    background-position-x: -11px;
+    background-position-y: -42px;
     margin-left: 20px;
   }
   .desc{
