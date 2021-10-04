@@ -31,11 +31,11 @@ const Myself = () => {
           <div className="projects">
             <Fade right duration={2000} delay={2000}>
               <div className="project proj1">
-                <a className="screenshot-link" href=" https://metmuseumartsearch.herokuapp.com" target="_blank"><div className="screenshot shot-four"></div></a>
+                <a className="screenshot-link" href="https://www.inspirave.com/" target="_blank"><div className="screenshot shot-four"></div></a>
                 <Fade opposite when={showInfo === true}>
                   <div className={modalDisplay} onClick={() => {setShowInfo(!showInfo) ; showInfoThree && setShowInfoThree(!showInfoThree) ; showInfoTwo && setShowInfoTwo(!showInfoTwo) ; showInfoFour && setShowInfoFour(!showInfoFour)}}>
-                    <p><span> Title:</span> Met-museum art search</p><br/>
-                    <p><span> Description:</span> Made with React, search for historic art using the Metropolitan museum of art api</p>
+                    <p><span> Title:</span> Inspirave</p><br/>
+                    <p><span> Description:</span> Enterprise level website SaveAway® utilizes the power of peer to peer sharing, to save towards purchase goals</p>
                   </div>
                 </Fade>
               </div>  
@@ -55,11 +55,11 @@ const Myself = () => {
 
             <Fade right duration={2000} delay={2400}>
               <div className="project proj2">
-                <a className="screenshot-link" href="http://www.bored-place.surge.sh" target="_blank"><div className="screenshot shot-one"></div></a>
+                <a className="screenshot-link" href="https://theofficeexperience.com/" target="_blank"><div className="screenshot shot-one"></div></a>
                 <Fade opposite when={showInfoTwo === true}>
                   <div className={modalDisplayTwo} onClick={() => {setShowInfoTwo(!showInfoTwo) ; showInfoThree && setShowInfoThree(!showInfoThree) ; showInfoFour && setShowInfoFour(!showInfoFour) ; showInfo && setShowInfo(!showInfo)}}>
-                    <p><span> Title:</span> Bored-place</p><br/>
-                    <p><span> Description:</span> Made with React, using seven api's it is a site to find something to do when users need entertainment</p>
+                    <p><span> Title:</span> The Office Experience</p><br/>
+                    <p><span> Description:</span> Made with React in collaboration with SuperFly, a live experience for the hit show "The Office"</p>
                   </div>
                 </Fade>
               </div>
@@ -79,11 +79,11 @@ const Myself = () => {
 
             <Fade right duration={2000} delay={2800}>
               <div className="project proj3">
-                <a className="screenshot-link" href="https://miseryandcocollective.com/" target="_blank"><div className="screenshot shot-three"></div></a>
+                <a className="screenshot-link" href="https://revvupyourfitness.com/" target="_blank"><div className="screenshot shot-three"></div></a>
                 <Fade opposite when={showInfoThree === true}>  
                   <div className={modalDisplayThree} onClick={() => {setShowInfoThree(!showInfoThree) ; showInfoFour && setShowInfoFour(!showInfoFour) ; showInfoTwo && setShowInfoTwo(!showInfoTwo) ; showInfo && setShowInfo(!showInfo)}}>
-                    <p><span> Title:</span> Misery & co Collective</p><br/>
-                    <p><span> Description:</span> A static site made in WordPress and CSS for a tattoo shop in Salt Lake City, Utah  </p>
+                    <p><span> Title:</span> Revv Fitness</p><br/>
+                    <p><span> Description:</span> Website made in WordPress and CSS for a gym experience in southern Utah</p>
                   </div>
                 </Fade>
               </div>
@@ -128,20 +128,20 @@ const Myself = () => {
             {/* */}
             <Fade opposite when={showInfo === true}>
               <div className={modalDisplay1} onClick={() => {setShowInfo(!showInfo) ; showInfoThree && setShowInfoThree(!showInfoThree) ; showInfoTwo && setShowInfoTwo(!showInfoTwo) ; showInfoFour && setShowInfoFour(!showInfoFour)}}>
-                <p><span> Title:</span> Met-museum art search</p><br/>
-                <p><span> Description:</span> Made with React, search for historic art using the Metropolitan museum of art api</p>
+                <p><span> Title:</span> Inspirave</p><br/>
+                <p><span> Description:</span> Enterprise level website SaveAway® utilizes the power of peer to peer sharing, to save towards purchase goals</p>
               </div>
             </Fade>
             <Fade opposite when={showInfoTwo === true}>
               <div className={modalDisplay2} onClick={() => {setShowInfoTwo(!showInfoTwo) ; showInfoThree && setShowInfoThree(!showInfoThree) ; showInfoFour && setShowInfoFour(!showInfoFour) ; showInfo && setShowInfo(!showInfo)}}>
-                <p><span> Title:</span> Bored-place</p><br/>
-                <p><span> Description:</span> Made with React, using seven api's it is a site to find something to do when users need entertainment</p>
+                <p><span> Title:</span> The Office Experience</p><br/>
+                <p><span> Description:</span> Made with React in collaboration with SuperFly, a live experience for the hit show "The Office"</p>
               </div>
             </Fade>
             <Fade opposite when={showInfoThree === true}> 
               <div className={modalDisplay3} onClick={() => {setShowInfoThree(!showInfoThree) ; showInfoFour && setShowInfoFour(!showInfoFour) ; showInfoTwo && setShowInfoTwo(!showInfoTwo) ; showInfo && setShowInfo(!showInfo)}}>
-                <p><span> Title:</span> Misery & co Collective</p><br/>
-                <p><span> Description:</span> A static site made in WordPress and CSS for a tattoo shop in Salt Lake City, Utah </p>
+                <p><span> Title:</span> Revv Fitness</p><br/>
+                <p><span> Description:</span> Website made in WordPress and CSS for a gym experience in southern Utah</p>
               </div> 
             </Fade> 
             <Fade opposite when={showInfoFour === true}> 

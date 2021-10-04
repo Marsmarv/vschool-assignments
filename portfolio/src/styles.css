@@ -294,10 +294,10 @@ body {
 }
 
 .shot-four{
-  background-image: url('./images/proj4.png');
-  background-size: 300px;
-  background-position-x: -50px;
-  background-position-y: 28px;
+  background-image: url('./images/proj8.png');
+  background-size: 310px;
+  background-position-x: -20px;
+  background-position-y: -22px;
 }
 
 .shot-one:hover{
@@ -322,8 +322,8 @@ body {
   margin-top: 20px;
   }
 .shot-four:hover{
-  background-position-x: -65px;
-  background-position-y: 13px;
+  background-position-x: -47px;
+  background-position-y: -41px;
   margin-right: 25px;
   margin-top: 20px;
 }
