@@ -82,7 +82,7 @@ const Myself = () => {
                 <a className="screenshot-link" href="https://friendstheexperience.com/" target="_blank"><div className="screenshot shot-three"></div></a>
                 <Fade opposite when={showInfoThree === true}>  
                   <div className={modalDisplayThree} onClick={() => {setShowInfoThree(!showInfoThree) ; showInfoFour && setShowInfoFour(!showInfoFour) ; showInfoTwo && setShowInfoTwo(!showInfoTwo) ; showInfo && setShowInfo(!showInfo)}}>
-                    <p><span> Title:</span> Friends Enterprise</p><br/>
+                    <p><span> Title:</span> Friends Experience</p><br/>
                     <p><span> Description:</span> Made with React in collaboration with SuperFly, a live experience for the hit show "Friends"</p>
                   </div>
                 </Fade>
