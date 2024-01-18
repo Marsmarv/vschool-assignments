@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import Fade from 'react-reveal/Fade'
-import resume from './images/MarvFEresWc.pdf'
+import resume from './images/Fdev.pdf'
 
 const Resume = () => {
   const [showRes, setShowRes] = useState(false)
@@ -10,7 +10,7 @@ const Resume = () => {
   return (
     <Fade bottom>
       <div>
-        <div className="res">
+        <div className="res" onClick={() => showRes ? setShowRes(false) : "" }>
           <div className="resBox">
             <Fade bottom cascade>
               <h3 className="resume-text">Résumé</h3>

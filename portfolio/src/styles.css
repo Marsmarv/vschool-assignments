@@ -14,6 +14,10 @@
   padding-top: 40px;
 }
 
+.name-logo{
+  padding-top: 0px;
+}
+
 h5{
   width: 33px;
   height: 33px;
@@ -39,7 +43,7 @@ h5{
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  top: 1310px;
+  top: 180px;
   color: rgb(255, 227, 253);
   text-align: center;
   border-radius:10px;
@@ -62,7 +66,7 @@ h5{
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  top: 1310px;
+  top: 1620px;
   color: rgb(219, 188, 217);
   text-align: center;
   border-radius:10px;
@@ -196,7 +200,7 @@ body {
   margin-top: 30px;
   height: 350px;
   width: 270px;
-  background-image: url('./images/MarvFEresWc-1.png');
+  background-image: url('./images/FdevP.png');
   background-size: cover;
   box-shadow: 2px 2px 5px 1px;
   margin-left: auto;
@@ -206,10 +210,10 @@ body {
 .show-modal{
   position: absolute;
   margin-top: 30px;
-  top: 1280px;
+  top: 150px;
   height: 750px;
   width: 580px;
-  background-image: url('./images/MarvFEresWc-1.png');
+  background-image: url('./images/FdevP.png');
   background-size: cover;
   box-shadow: 2px 2px 5px 1px;
   margin-left: auto;
@@ -233,6 +237,7 @@ body {
   grid-row: 3/10;
   justify-self: center;
   align-self: center;
+  text-align: -webkit-center;
 }
 
 .proj2{
@@ -240,6 +245,7 @@ body {
   grid-row: 6/6;
   justify-self: center;
   align-self: center;
+  text-align: -webkit-center;
 }
 
 .proj3{
@@ -247,6 +253,7 @@ body {
   grid-row: 6/6;
   justify-self: center;
   align-self: center;
+  text-align: -webkit-center;
 }
 
 .proj4{
@@ -254,6 +261,7 @@ body {
   grid-row: 6/6;
   justify-self: center;
   align-self: center;
+  text-align: -webkit-center;
 }
 
 .screenshot{
@@ -265,51 +273,59 @@ body {
 }
 
 .shot-one{
-  background-image: url('./images/proj1.png');
-  background-size: 300px;
-  background-position-x: -50px;
-  background-position-y: -40px;
+  background-image: url('./images/proj10.png');
+  background-size: 340px;
+  background-position-x: -70px;
+  background-position-y: -100px;
 }
 
 .shot-two{
-  background-image: url('./images/proj2.png');
+  background-image: url('./images/proj12.png');
   background-size: 300px;
   background-position-x: -50px;
   background-position-y: 0px;
 }
 
 .shot-three{
-  background-image: url('./images/misery_co.png');
-  background-size: 300px;
-  background-position-x: -50px;
-  background-position-y: 0px;
+  background-image: url('./images/proj11.png');
+  background-size: 310px;
+  background-position-x: 20px;
+  background-position-y: -10px;
 }
 
 .shot-four{
-  background-image: url('./images/proj4.png');
-  background-size: 300px;
-  background-position-x: -50px;
-  background-position-y: 28px;
+  background-image: url('./images/proj9.png');
+  background-size: 310px;
+  background-position-x: -20px;
+  background-position-y: 22px;
 }
 
 .shot-one:hover{
-  background-size: 300px;
-  background-position-x: -65px;
-  background-position-y: -55px;
+  background-position-y: -120px;
+  background-size: 340px;
+  background-position-x: -80px;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 
 .shot-two:hover{
-  background-position-x: -65px;
-  background-position-y: -15px;
+  background-position-x: -155px;
+  background-position-y: -5px;
+  margin-right: 20px;
+  margin-top: 20px;
  }
  
 .shot-three:hover{
-  background-position-x: -65px;
-  background-position-y: -65px;
+  background-position-x: 10px;
+  background-position-y: -45px;
+  margin-right: 20px;
+  margin-top: 20px;
   }
 .shot-four:hover{
-  background-position-x: -65px;
-  background-position-y: 13px;
+  background-position-x: -47px;
+  background-position-y: 3px;
+  margin-right: 25px;
+  margin-top: 20px;
 }
 
 .screenshot-link{
@@ -328,7 +344,7 @@ body {
   font-size: 12px;
   padding-top: 10px;
   width: 210px;
-  height: 150px;
+  height: 200px;
   background-color: rgba(252, 226, 232, 0.75);
   margin-top: 30px;
   border-radius: 5px;
@@ -399,17 +415,155 @@ p{
   text-align: center;
 }
 
+@media (max-width: 500px){
+  .proj{
+    background-attachment: inherit;
+    background-size: 750px;
+    background-position-y: 0px;
+  }
 
+  .con{
+    background-attachment: inherit;
+    background-size: 940px;
+    background-position-y: 0px;
+    background-position-x: -290px;
+  }
 
-@media (min-width: 500px) and (max-width: 568px){
+  .header{
+    height: 80px;
+  }
+
+  .project-text{
+    padding-bottom: 20px;
+  }
+  
+  .myself-container{
+    height: 620px;
+  }
+  .name-logo{
+    padding-top: 5px;
+  }
+
+  .proj {
+    padding-top: 30px;
+    height: 320px;
+    font-size: 24px;
+  }
+  .screenshot{
+    height: 120px;
+    width: 120px;
+    background-size: 200px;
+    background-position-x: 2px;
+  }
+  .show-modal{
+    height: 0px;
+    width: 0px;
+  }
+  .xbox{
+    top: 180px;
+    left: -330px;
+  }
+  .xbox:active{
+    top: 180px;
+    left: -330px;
+  }
+  .proj1{
+    grid-column: 1/6;
+    grid-row: 3/7;
+  }
+  .proj2 {
+    grid-column: 1/6;
+    grid-row: 11/12;
+  }
+  .proj3 {
+    grid-column:7/12;
+    grid-row: 3/7;
+  }
+  .proj4 {
+    grid-column:7/12;
+    grid-row: 11/12;
+  }
+
+  .info-one {
+    grid-column: 2/5;
+    grid-row: 4/8;
+  }
+  .info-two {
+    grid-column: 2/5;
+    grid-row: 12/12;
+  }
+  .info-three{
+    grid-column: 7/12;
+    grid-row: 4/8;
+  }
+  .info-four{
+    grid-row: 12/12;
+  }
+  .desc{
+    display: none
+  }
+  .desc2{
+    position: absolute; 
+    border-radius: 16px;
+    top: 630px;
+    width: 340px;
+    font-size: 24px;
+    height: 270px;
+    padding-top: 55px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 5;
+    background-color: rgba(252, 226, 232, 0.95)
+  }
+
+  .shot-three:hover {
+    background-position-x: -20px;
+    background-position-y: -10px;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+
+  .shot-four:hover {
+    background-position-x: -27px;
+    background-position-y: 3px;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+
+  .shot-one:hover {
+    background-position-y: -120px;
+    background-size: 200px;
+    background-position-x: -40px;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+
+  .shot-two:hover {
+    background-position-x: -25px;
+    background-position-y: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 568px){
   .proj, .con{
     background-size: 690px;
     background-position-y: 0px;
   }
 
-  .name-logo{
-    padding-top: 5px;
+  .desc{
+    height: 205px;
   }
+
+  .project-text{
+    padding-bottom: 50px;
+  }
+
+  .name-logo{
+    padding-top: 0px;
+  }
+
   body{
     background-size: 690px;
   }
@@ -423,9 +577,9 @@ p{
     height: 65px;
   }
   .proj{
-    padding-top: 0px;
+    padding-top: 50px;
     font-size: 20px;
-    height: 200px;
+    height: 290px;
   }
   .hello{
     padding-top: 20px
@@ -442,23 +596,25 @@ p{
   .proj4 {
     grid-row: 1/8;  
   }
-  .screenshot{
-    height: 90px;
-    width: 90px;
-    background-size: 150px;
-    background-position-x: 2px;
-    margin-left: 15px;
-  }
+  
   .myself-container{
-    height: 385px;
+    height: 535px;
   }
   .show-modal{
     height: 0px;
     width: 0px;
   }
   .xbox{
-    top: 1015px;
+    top: 180px;
     left: -340px;
+  }
+
+  .screenshot{
+    height: 90px;
+    width: 90px;
+    background-size: 150px;
+    background-position-x: 2px;
+    margin-left: 0px;
   }
 
   .screenshot:hover{
@@ -473,24 +629,24 @@ p{
   }
 
   .shot-one:hover{
-    background-position-y: -30px;
-    background-position-x: -8px;
+    background-position-y: -120px;
+    background-position-x: -9px;
     margin-left: 20px;
     background-size: 150px;
   }
   .shot-two:hover{
-    background-position-x: -7px;
-    background-position-y: -25px;
+    background-position-x: -4px;
+    background-position-y: -20px;
     margin-left: 20px;
    }
   .shot-three:hover{
     background-position-x: -7px;
-    background-position-y: -75px;
+    background-position-y: -30px;
     margin-left: 20px;
     }
   .shot-four:hover{
-    background-position-x: -8px;
-    background-position-y: 9px;
+    background-position-x: -11px;
+    background-position-y: 3px;
     margin-left: 20px;
   }
   .desc{
@@ -498,11 +654,12 @@ p{
     top: 55px;
   }
 
+  .desc2{
+    display: none;
+  }
+
   .info-one, .info-four, .info-three, .info-two{
     grid-row: 2/8;
-  }
-  .desc2{
-    display: none
   }
 }
 
@@ -510,10 +667,6 @@ p{
   .proj, .con{
     background-size: 690px;
     background-position-y: 0px;
-  }
-
-  .name-logo{
-    padding-top: 5px;
   }
 
   body{
@@ -530,15 +683,20 @@ p{
   }
   .proj{
     background-size: 690px;
-    height: 230px;
-    padding-top: 0px;
+    height: 310px;
+    padding-top: 40px;
     font-size: 28px;
   }
+
+  .project-text{
+    padding-bottom: 40px;
+  }
+
   .hello{
     padding-top: 15px;
   }
   .myself-container{
-    height: 415px;
+    height: 525px;
   }
   .proj1 {
     grid-row: 1/8;  
@@ -558,17 +716,17 @@ p{
   .xbox{
     left: -460px;
     margin-right:570px;
-    top: 1265px;
+    top: 180px;
   }
   .xbox:active{
     left: -460px;
     margin-right:570px;
-    top: 1265px;
+    top: 180px;
   }
   .screenshot{
     height: 120px;
     width: 120px;
-    background-size: 150px;
+    background-size: 200px;
     background-position-x: 2px;
   }
   .screenshot:hover{
@@ -583,24 +741,24 @@ p{
   }
 
   .shot-one:hover{
-    background-position-y: -30px;
-    background-position-x: -8px;
+    background-position-y: -120px;
+    background-position-x: -3px;
     margin-left: 10px;
-    background-size: 150px;
+    background-size: 200px;
   }
   .shot-two:hover{
-    background-position-x: -7px;
-    background-position-y: -25px;
+    background-position-x: -1px;
+    background-position-y: -20px;
     margin-left: 10px;
    }
   .shot-three:hover{
-    background-position-x: -7px;
-    background-position-y: -75px;
+    background-position-x: -3px;
+    background-position-y: -30px;
     margin-left: 10px;
     }
   .shot-four:hover{
-    background-position-x: -8px;
-    background-position-y: 9px;
+    background-position-x: -3px;
+    background-position-y: 3px;
     margin-left: 10px;
   }
   .desc{
@@ -623,10 +781,6 @@ p{
     background-position-y: 0px;
   }
 
-  .name-logo{
-    padding-top: 5px;
-  }
-
   body{
     background-size: 740px;
     background-position-x: -4px;
@@ -641,10 +795,14 @@ p{
   .header{
     height: 65px;
   }
+
+  .project-text{
+    padding-bottom: 40px;
+  }
   .proj{
-    background-size: 730px;
-    height: 255px;
-    padding-top: 20px;
+    background-size: 750px;
+    height: 350px;
+    padding-top: 80px;
   }
   .hello{
     padding-top: 0px;
@@ -664,11 +822,11 @@ p{
   .screenshot{
     height: 150px;
     width: 150px;
-    background-size: 150px;
+    background-size: 280px;
     background-position-x: 2px;
   }
   .myself-container{
-    height: 435px;
+    height: 535px;
   }
   .con{
     height: 412px;
@@ -692,25 +850,25 @@ p{
   }
 
   .shot-one:hover{
-    background-position-y: -30px;
-    background-position-x: -8px;
-    margin-left: 10px;
-    background-size: 150px;
+    background-position-y: -120px;
+    background-size: 280px;
+    background-position-x: -3px;
+    margin-left: 9px;
   }
   .shot-two:hover{
-    background-position-x: -7px;
-    background-position-y: -25px;
-    margin-left: 10px;
+    background-position-x: -1px;
+    background-position-y: -20px;
+    margin-left: 11px;
    }
   .shot-three:hover{
-    background-position-x: -7px;
-    background-position-y: -75px;
-    margin-left: 10px;
+    background-position-x: -1px;
+    background-position-y: -30px;
+    margin-left: 9px;
     }
   .shot-four:hover{
-    background-position-x: -8px;
-    background-position-y: 9px;
-    margin-left: 10px;
+    background-position-x: -6px;
+    background-position-y: 3px;
+    margin-left: 13px;
   }
   .desc{
     width: 150px;
@@ -726,11 +884,22 @@ p{
 }
 
 @media (min-width: 736px) and (max-width: 767px){
-  .proj, .con{
+  .con{
     background-size: 770px;
     background-position-y: 0px;
-    height: 445px;
+    height: 545px;
     padding-top: 0px;
+  }
+
+  .proj{
+    background-size: 922px;
+    background-position-y: 0px;
+    height: 430px;
+    padding-top: 70px;
+  }
+
+  .info-four, .info-three, .info-two, .info-one{
+    margin-top: 50px;
   }
 
   .project{
@@ -752,7 +921,7 @@ p{
     height: 65px;
   }
   .myself-container{
-    height: 425px;
+    height: 575px;
   }
   .con{
     height: 412px;
@@ -772,7 +941,7 @@ p{
   .screenshot{
     height: 150px;
     width: 150px;
-    background-size: 150px;
+    background-size: 280px;
     background-position-x: 2px;
   }
 
@@ -784,8 +953,8 @@ p{
     transition: .1s;
   }
   .shot-one:hover{
+    background-position-y: -120px;
     background-size: 150px;
-    background-position-y: -50px;
     background-position-x: -5px;
   }
   .shot-two:hover{
@@ -798,7 +967,7 @@ p{
     }
   .shot-four:hover{
     background-position-x: -12px;
-    background-position-y: 17px;
+    background-position-y: 3px;
   }
 
   .shot-one{
@@ -806,25 +975,25 @@ p{
   }
 
   .shot-one:hover{
-    background-position-y: -30px;
-    background-position-x: -8px;
-    margin-left: 10px;
-    background-size: 150px;
+    background-position-y: -120px;
+    background-size: 280px;
+    background-position-x: -3px;
+    margin-left: 9px;
   }
   .shot-two:hover{
-    background-position-x: -7px;
-    background-position-y: -25px;
-    margin-left: 10px;
+    background-position-x: -1px;
+    background-position-y: -20px;
+    margin-left: 11px;
    }
   .shot-three:hover{
-    background-position-x: -7px;
-    background-position-y: -75px;
-    margin-left: 10px;
+    background-position-x: -1px;
+    background-position-y: -30px;
+    margin-left: 9px;
     }
   .shot-four:hover{
-    background-position-x: -8px;
-    background-position-y: 9px;
-    margin-left: 10px;
+    background-position-x: -6px;
+    background-position-y: 3px;
+    margin-left: 13px;
   }
   .desc{
     width: 175px;
@@ -836,10 +1005,6 @@ p{
   }
   .desc2{
     display: none
-  }
-
-  .name-logo{
-    padding-top: 5px;
   }
 }
 
@@ -883,7 +1048,7 @@ p{
     grid-row: 5/8;  
   }
   .myself-container{
-    height:520px;
+    height: 600px;
   }
   .con{
     height: 531px;
@@ -891,7 +1056,7 @@ p{
   .screenshot{
     height: 160px;
     width: 160px;
-    background-size: 150px;
+    background-size: 280px;
     background-position-x: 2px;
     margin-left: 10px;
   }
@@ -900,40 +1065,32 @@ p{
     height: 140px;
     width: 140px;
   }
-  .xbox{
-    top: 1610px;
-  }
-  .xbox:active{
-    top: 1610px;
-  }
-  .show-modal{
-    top: 1530px;
-  }
+  
 
   .shot-one{
     background-position-y: 0px;
   }
 
   .shot-one:hover{
-    background-position-y: -30px;
-    background-position-x: -8px;
-    margin-left: 18px;
-    background-size: 150px;
+    background-position-y: -120px;
+    background-size: 280px;
+    background-position-x: 3px;
+    margin-left: 9px;
   }
   .shot-two:hover{
-    background-position-x: -7px;
-    background-position-y: -25px;
-    margin-left: 18px;
+    background-position-x: 1px;
+    background-position-y: -20px;
+    margin-left: 11px;
    }
   .shot-three:hover{
-    background-position-x: -7px;
-    background-position-y: -75px;
-    margin-left: 18px;
+    background-position-x: 2px;
+    background-position-y: -30px;
+    margin-left: 9px;
     }
   .shot-four:hover{
-    background-position-x: -8px;
-    background-position-y: 9px;
-    margin-left: 18px;
+    background-position-x: 2px;
+    background-position-y: 3px;
+    margin-left: 13px;
   }
   .desc{
     width: 175px;
@@ -984,7 +1141,7 @@ p{
   }
 
   .myself-container{
-    height:521px;
+    height: 600px;
   }
   .con{
     height: 531px;
@@ -995,20 +1152,11 @@ p{
     background-size: 150px;
     background-position-x: 2px;
   }
-  .xbox{
-    top: 1610px;
-  }
-  .xbox:active{
-    top: 1610px;
-  }
-  .show-modal{
-    top: 1530px;
-  }
 
   .screenshot{
     height: 160px;
     width: 160px;
-    background-size: 150px;
+    background-size: 280px;
     background-position-x: 2px;
   }
 
@@ -1025,25 +1173,25 @@ p{
   }
 
   .shot-one:hover{
-    background-position-y: -30px;
-    background-position-x: -8px;
-    margin-left: 10px;
-    background-size: 150px;
+    background-position-y: -120px;
+    background-size: 280px;
+    background-position-x: -7px;
+    margin-left: 9px;
   }
   .shot-two:hover{
-    background-position-x: -7px;
-    background-position-y: -25px;
-    margin-left: 10px;
+    background-position-x: -9px;
+    background-position-y: -20px;
+    margin-left: 11px;
    }
   .shot-three:hover{
-    background-position-x: -7px;
-    background-position-y: -75px;
-    margin-left: 10px;
+    background-position-x: -8px;
+    background-position-y: -30px;
+    margin-left: 9px;
     }
   .shot-four:hover{
-    background-position-x: -8px;
-    background-position-y: 9px;
-    margin-left: 10px;
+    background-position-x: -9px;
+    background-position-y: 3px;
+    margin-left: 13px;
   }
   .desc{
     width: 175px;
@@ -1071,6 +1219,10 @@ p{
     background-position-x: -370px;
   }
 
+  .name-logo{
+    padding-top: 0px;
+  }
+
   .header{
     height: 70px;
   }
@@ -1081,23 +1233,14 @@ p{
     padding-top: 0px;
     height: 700px;
   }
-  .xbox{
-    top: 1470px;
-  }
-  .xbox:active{
-    top: 1470px;
-  }
-  .show-modal{
-    top: 1440px;
-  }
   .myself-container{
-    height:530px;
+    height: 605px;
   }
 
   .screenshot{
     height: 160px;
     width: 160px;
-    background-size: 150px;
+    background-size: 280px;
     background-position-x: 2px;
   }
 
@@ -1114,25 +1257,25 @@ p{
   }
 
   .shot-one:hover{
-    background-position-y: -30px;
-    background-position-x: -8px;
-    margin-left: 10px;
-    background-size: 150px;
+    background-position-y: -120px;
+    background-size: 280px;
+    background-position-x: -4px;
+    margin-left: 9px;
   }
   .shot-two:hover{
-    background-position-x: -7px;
-    background-position-y: -25px;
-    margin-left: 10px;
+    background-position-x: -1px;
+    background-position-y: -20px;
+    margin-left: 11px;
    }
   .shot-three:hover{
-    background-position-x: -7px;
-    background-position-y: -75px;
-    margin-left: 10px;
+    background-position-x: -2px;
+    background-position-y: -30px;
+    margin-left: 9px;
     }
   .shot-four:hover{
-    background-position-x: -8px;
-    background-position-y: 9px;
-    margin-left: 10px;
+    background-position-x: -6px;
+    background-position-y: 3px;
+    margin-left: 13px;
   }
   .desc{
     width: 170px;
@@ -1160,14 +1303,8 @@ p{
     background-position-x: -250px;
   }
 
-  .xbox{
-    top: 1525px;
-  }
-  .xbox:active{
-    top: 1525px;
-  }
   .show-modal{
-    top: 1416px;
+
     height: 730px;
     width: 566px;
   }
@@ -1175,7 +1312,7 @@ p{
   .screenshot{
     height: 170px;
     width: 170px;
-    background-size: 150px;
+    background-size: 280px;
     background-position-x: 2px;
   }
 
@@ -1187,23 +1324,23 @@ p{
     transition: .1s;
   }
   .shot-one:hover{
-    background-size: 150px;
-    background-position-y: -60px;
-    background-position-x: -10px;
+    background-position-y: -120px;
+    background-size: 280px;
+    background-position-x: -4px;
     margin-left: 9px;
   }
   .shot-two:hover{
-    background-position-x: -10px;
-    background-position-y: -25px;
+    background-position-x: -1px;
+    background-position-y: -20px;
     margin-left: 11px;
    }
   .shot-three:hover{
-    background-position-x: -10px;
-    background-position-y: -75px;
+    background-position-x: -2px;
+    background-position-y: -30px;
     margin-left: 9px;
     }
   .shot-four:hover{
-    background-position-x: -11px;
+    background-position-x: -6px;
     background-position-y: 3px;
     margin-left: 13px;
   }
@@ -1215,7 +1352,7 @@ p{
     display: none
   }
   .myself-container{
-    height: 540px;
+    height: 645px;
   }
 }
 
@@ -1235,14 +1372,7 @@ p{
     background-position-x: -250px;
   }
 
-  .xbox{
-    top: 1525px;
-  }
-  .xbox:active{
-    top: 1525px;
-  }
   .show-modal{
-    top: 1416px;
     height: 730px;
     width: 566px;
   }
@@ -1250,8 +1380,8 @@ p{
   .screenshot{
     height: 170px;
     width: 170px;
-    background-size: 150px;
-    background-position-x: 2px;
+    background-size: 290px;
+    background-position-x: 0px;
   }
 
   .screenshot:hover{
@@ -1262,23 +1392,23 @@ p{
     transition: .1s;
   }
   .shot-one:hover{
-    background-size: 150px;
-    background-position-y: -60px;
-    background-position-x: -9px;
+    background-position-y: -120px;
+    background-size: 290px;
+    background-position-x: -5px;
     margin-left: 10px;
   }
   .shot-two:hover{
-    background-position-x: -10px;
-    background-position-y: -25px;
+    background-position-x: -2px;
+    background-position-y: -20px;
     margin-left: 10px;
    }
   .shot-three:hover{
-    background-position-x: -9px;
-    background-position-y: -75px;
+    background-position-x: -4px;
+    background-position-y: -30px;
     margin-left: 10px;
     }
   .shot-four:hover{
-    background-position-x: -17px;
+    background-position-x: -13px;
     background-position-y: 3px;
     margin-left: 20px;
   }
@@ -1290,7 +1420,7 @@ p{
     display: none
   }
   .myself-container{
-    height:535px;
+    height: 635px;
   }
 }
 
@@ -1322,25 +1452,25 @@ p{
     transition: .1s;
   }
   .shot-one:hover{
-    background-size: 300px;
-    background-position-y: -60px;
-    background-position-x: -70px;
-    margin-left: 20px;
+    background-position-y: -120px;
+    background-size: 340px;
+    background-position-x: -89px;
+    margin-left: 10px;
   }
   .shot-two:hover{
-    background-position-x: -70px;
-    background-position-y: -25px;
-    margin-left: 20px;
+    background-position-x: -73px;
+    background-position-y: -20px;
+    margin-left: 10px;
    }
   .shot-three:hover{
-    background-position-x: -70px;
-    background-position-y: -75px;
-    margin-left: 20px;
+    background-position-x: -2px;
+    background-position-y: -30px;
+    margin-left: 10px;
     }
   .shot-four:hover{
-    background-position-x: -80px;
+    background-position-x: -35px;
     background-position-y: 3px;
-    margin-left: 30px;
+    margin-left: 10px;
   }
   .desc2{
     display: none
@@ -1350,7 +1480,7 @@ p{
     top: 85px;
   }
   .myself-container{
-    height:555px;
+    height:635px;
   }
 }
 
@@ -1364,25 +1494,25 @@ p{
     
   }
   .shot-one:hover{
-    background-size: 300px;
-    background-position-y: -60px;
-    background-position-x: -70px;
-    margin-left: 20px;
+    background-position-y: -120px;
+    background-size: 340px;
+    background-position-x: -94px;
+    margin-left: 10px;
   }
   .shot-two:hover{
-    background-position-x: -70px;
-    background-position-y: -25px;
-    margin-left: 20px;
+    background-position-x: -78px;
+    background-position-y: -20px;
+    margin-left: 10px;
    }
   .shot-three:hover{
-    background-position-x: -70px;
-    background-position-y: -75px;
-    margin-left: 20px;
+    background-position-x: -6px;
+    background-position-y: -30px;
+    margin-left: 10px;
     }
   .shot-four:hover{
-    background-position-x: -80px;
+    background-position-x: -48px;
     background-position-y: 3px;
-    margin-left: 30px;
+    margin-left: 10px;
   }
   .desc2{
     display: none
@@ -1391,11 +1521,15 @@ p{
     top: 85px;
   }
   .myself-container{
-    height:555px;
+    height: 645px;
   }
 }
 
 @media only screen and (max-device-width: 320px){
+  body{
+    letter-spacing: 1px;
+  }
+  
   .proj{
     background-attachment: inherit;
     background-size: 690px;
@@ -1430,7 +1564,7 @@ p{
   .screenshot{
     height: 120px;
     width: 120px;
-    background-size: 150px;
+    background-size: 200px;
     background-position-x: 2px;
   }
   .show-modal{
@@ -1438,12 +1572,12 @@ p{
     width: 0px;
   }
   .xbox{
-    top: 1540px;
+    top: 124px;
     left: -260px;
   }
 
   .xbox:active{
-    top: 1540px;
+    top: 124px;
     left: -260px;
   }
   .info-one {
@@ -1467,12 +1601,13 @@ p{
   .desc2{
     position: absolute; 
     border-radius: 16px;
-    top: 550px;
-    width: 300px;
+    top: 145px;
+    width: 340px;
     font-size: 24px;
     height: 270px;
     padding-top: 55px;
-    margin-left: 9px;
+    margin-left: 35px;
+    margin-right: auto;
     z-index: 5;
     background-color: rgba(252, 226, 232, 0.95)
   }
@@ -1480,6 +1615,10 @@ p{
 }
 
 @media only screen and (min-device-width: 321px) and (max-device-width: 360px){
+  body{
+    letter-spacing: 1px;
+  }
+  
   .proj, .con{
     background-attachment: inherit;
     background-size: 750px;
@@ -1512,7 +1651,7 @@ p{
   .screenshot{
     height: 120px;
     width: 120px;
-    background-size: 150px;
+    background-size: 200px;
     background-position-x: 2px;
   }
   .show-modal{
@@ -1520,11 +1659,11 @@ p{
     width: 0px;
   }
   .xbox{
-    top: 1665px;
+    top: 124px;
     left: -280px;
   }
   .xbox:active{
-    top: 1665px;
+    top: 124px;
     left: -280px;
   }
   .info-one {
@@ -1548,34 +1687,56 @@ p{
   .desc2{
     position: absolute; 
     border-radius: 16px;
-    top: 690px;
-    width: 300px;
+    top: 145px;
+    width: 340px;
     font-size: 24px;
     height: 270px;
     padding-top: 55px;
-    margin-left: 30px;
+    margin-left: 35px;
+    margin-right: auto;
     z-index: 5;
     background-color: rgba(252, 226, 232, 0.95)
   }
 }
 
 @media only screen and (min-device-width: 361px) and (max-device-width: 375px){
-  .proj, .con{
+  body{
+    letter-spacing: 1px;
+  }
+  
+  .proj{
     background-attachment: inherit;
     background-size: 750px;
     background-position-y: 0px;
   }
+
+  .con{
+    background-attachment: inherit;
+    background-size: 780px;
+    background-position-x: -220px;
+  }
+
+  .project-text{
+    padding-bottom: 20px;
+  }
+
+  .myself-container{
+    height: 620px;
+  }
+
   .proj{
     background-size: 890px;
-    height: 330px;
+    height: 350px;
+    font-size: 32px;
+    padding-top: 30px;
   }
   .bye{
-    font-size: 20px;
+    font-size: 30px;
   }
   .screenshot{
     height: 120px;
     width: 120px;
-    background-size: 150px;
+    background-size: 200px;
     background-position-x: 2px;
   }
   .show-modal{
@@ -1583,11 +1744,11 @@ p{
     width: 0px;
   }
   .xbox{
-    top: 1625px;
+    top: 124px;
     left: -320px;
   }
   .xbox:active{
-    top: 1625px;
+    top: 124px;
     left: -320px;
   }
 
@@ -1629,12 +1790,13 @@ p{
   .desc2{
     position: absolute; 
     border-radius: 16px;
-    top: 620px;
-    width: 305px;
+    top: 145px;
+    width: 340px;
     font-size: 24px;
     height: 270px;
     padding-top: 55px;
     margin-left: 35px;
+    margin-right: auto;
     z-index: 5;
     background-color: rgba(252, 226, 232, 0.95)
   }
@@ -1642,23 +1804,47 @@ p{
 }
 
 @media only screen and (min-device-width: 376px) and (max-device-width: 413px){
-  .proj, .con{
+  body{
+    letter-spacing: 1px;
+  }
+  
+  .proj{
     background-attachment: inherit;
     background-size: 750px;
     background-position-y: 0px;
   }
+
+  .con{
+    background-attachment: inherit;
+    background-size: 940px;
+    background-position-y: 0px;
+    background-position-x: -290px;
+  }
+
   .header{
     height: 80px;
   }
+
+  .project-text{
+    padding-bottom: 20px;
+  }
+  
+  .myself-container{
+    height: 620px;
+  }
+  .name-logo{
+    padding-top: 5px;
+  }
+
   .proj {
-    padding-top: 0px;
-    height: 450px;
-    font-size: 30px;
+    padding-top: 30px;
+    height: 320px;
+    font-size: 24px;
   }
   .screenshot{
     height: 120px;
     width: 120px;
-    background-size: 150px;
+    background-size: 200px;
     background-position-x: 2px;
   }
   .show-modal{
@@ -1666,11 +1852,11 @@ p{
     width: 0px;
   }
   .xbox{
-    top: 1665px;
+    top: 124px;
     left: -330px;
   }
   .xbox:active{
-    top: 1665px;
+    top: 124px;
     left: -330px;
   }
   .proj1{
@@ -1711,42 +1897,61 @@ p{
   .desc2{
     position: absolute; 
     border-radius: 16px;
-    top: 630px;
+    top: 145px;
     width: 340px;
     font-size: 24px;
     height: 270px;
     padding-top: 55px;
     margin-left: 35px;
+    margin-right: auto;
     z-index: 5;
     background-color: rgba(252, 226, 232, 0.95)
   }
 }
 
 @media only screen and (min-device-width: 414px) and (max-device-width: 499px){
+  h5{
+    left: -3px;
+  }
+  
   .proj, .con{
     background-attachment: inherit;
     background-size: 785px;
-    background-position-y: 0px;
+    background-position: 0px;
   }
+
+  body{
+    letter-spacing: 1px;
+  }
+
+  .name-logo{
+    padding-top: 5px;
+  }
+
   .header{
     height: 80px;
   }
   .hello{
     padding-top: 5px;
   }
+
+  .project-text{
+    padding-bottom: 30px;
+  }
+
   .proj{
     padding-top: 100px;
     font-size: 20px;
-    height: 420px;
+    height: 310px;
   }
   .screenshot{
-    height: 90px;
-    width: 90px;
-    background-size: 150px;
+    height: 120px;
+    width: 120px;
+    background-size: 200px;
     background-position-x: 2px;
   }
   .myself-container{
-    height: 520px;
+    height: 650px;
   }
   .show-modal{
     height: 0px;
@@ -1754,13 +1959,13 @@ p{
   }
   .xbox{
     left: -319px;
-    top: 1724px;
+    top: 124px;
     margin-right: auto;
     opacity: 1;
   }
   .xbox:active{
     left: -319px;
-    top: 1724px;
+    top: 124px;
     margin-right: auto;
     opacity: 1;
   }
@@ -1802,12 +2007,13 @@ p{
   .desc2{
     position: absolute; 
     border-radius: 16px;
-    top: 685px;
+    top: 145px;
     width: 340px;
     font-size: 24px;
     height: 270px;
     padding-top: 55px;
     margin-left: 35px;
+    margin-right: auto;
     z-index: 5;
     background-color: rgba(252, 226, 232, 0.95)
   }
@@ -1819,69 +2025,98 @@ p{
     background-size: 690px;
     background-position-y: 0px;
   }
+
+  .desc{
+    height: 210px;
+    display: none;
+  }
+
+  .desc2 {
+    position: absolute;
+    border-radius: 16px;
+    top: 450px;
+    width: 340px;
+    font-size: 24px;
+    height: 270px;
+    padding-top: 55px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 5;
+    background-color: rgba(252, 226, 232, 0.95);
+}
+
+  .project-text{
+    padding-bottom: 40px;
+  }
   .header{
     height: 65px;
   }
   .proj{
-    padding-top: 0px;
+    padding-top: 50px;
     font-size: 20px;
-    height: 200px;
+    height: 290px;
   }
   .hello{
     padding-top: 20px
   }
-  .proj1 {
-    grid-row: 1/8;
-    grid-column: 4/4;
+  .proj1{
+    grid-column: 1/6;
+    grid-row: 3/7;
   }
   .proj2 {
-    grid-row: 1/8; 
-    grid-column: 5/5; 
+    grid-column: 1/6;
+    grid-row: 11/12;
   }
   .proj3 {
-    grid-row: 1/8;  
-    grid-column: 6/7;
+    grid-column:7/12;
+    grid-row: 3/7;
   }
   .proj4 {
-    grid-row: 1/8;  
-    grid-column: 7/8;
+    grid-column:7/12;
+    grid-row: 11/12;
+  }
+
+  .info-one {
+    grid-column: 2/5;
+    grid-row: 4/8;
+  }
+  .info-two {
+    grid-column: 2/5;
+    grid-row: 12/12;
+  }
+  .info-three{
+    grid-column: 7/12;
+    grid-row: 4/8;
+  }
+  .info-four{
+    grid-row: 12/12;
   }
   .screenshot{
-    height: 90px;
-    width: 90px;
-    background-size: 150px;
-    background-position-x: 2px;
+    height: 120px;
+    width: 120px;
+    background-size: 280px;
+    background-position-x: -15px;
   }
   .myself-container{
-    height: 318px;
+    height: 690px;
   }
   .con{
     height: 322px;
+    background-position: -110px;
   }
   .show-modal{
     height: 0px;
     width: 0px;
   }
   .xbox{
-    top: 1015px;
+    top: 180px;
     left: -340px;
   }
   .xbox:active{
-    top: 1015px;
+    top: 180px;
     left: -340px;
   }
-  .info-one{
-    grid-column: 4/4;
-  }
-  .info-two{
-    grid-column: 5/6;
-  }
-  .info-three{
-    grid-column: 6/6;
-  }
-  .info-four{
-    grid-column: 7/7;
-  }
+
 
 }
 
@@ -1889,22 +2124,32 @@ p{
   .proj, .con{
     background-attachment: inherit;
     background-size: 690px;
-    background-position-y: 0px;
+    background-position: 0px;
   }
   .header{
     height: 65px;
   }
+
+  .desc{
+    height: 170px;
+  }
+
   .proj{
     background-size: 690px;
-    height: 230px;
-    padding-top: 0px;
+    height: 350px;
+    padding-top: 70px;
     font-size: 28px;
   }
+
+  .project-text{
+    padding-bottom: 50px;
+  }
+
   .hello{
     padding-top: 15px;
   }
   .myself-container{
-    height: 357px;
+    height: 532px;
   }
   .proj1 {
     grid-row: 1/8;  
@@ -1924,17 +2169,17 @@ p{
   .xbox{
     left: -460px;
     margin-right:570px;
-    top: 1265px;
+    top: 180px;
   }
   .xbox:active{
     left: -460px;
     margin-right:570px;
-    top: 1265px;
+    top: 180px;
   }
   .screenshot{
     height: 120px;
     width: 120px;
-    background-size: 150px;
+    background-size: 280px;
     background-position-x: 2px;
   }
 }
@@ -1947,6 +2192,10 @@ p{
     background-position-x: 0px;
   }
 
+  .res{
+    height: 550px;
+  }
+
   .resume-text, .contact-text, .project-text {
     padding-top: 40px;
     padding-bottom: 50px;
@@ -1957,8 +2206,8 @@ p{
   }
   .proj{
     background-size: 735px;
-    height: 300px;
-    padding-top: 20px;
+    height: 350px;
+    padding-top: 80px;
   }
   .hello{
     padding-top: 0px;
@@ -1978,11 +2227,11 @@ p{
   .screenshot{
     height: 150px;
     width: 150px;
-    background-size: 150px;
+    background-size: 280px;
     background-position-x: 2px;
   }
   .myself-container{
-    height: 408px;
+    height: 540px;
   }
   .con{
     height: 412px;
@@ -2006,35 +2255,51 @@ p{
     height: 65px;
   }
   .myself-container{
-    height: 510px;
+    height: 605px;
   }
   .con{
     height: 412px;
   }
   .proj{
-    padding-top: 0px;
-    height: 350px;
+    padding-top: 50px;
+    height: 400px;
   }
   .proj1, .proj2, .proj3, .proj4{
     grid-row: 1/8; 
     text-align: -webkit-center;
     width: 175px; 
   }
+
+  .info-four,.info-one,.info-three,.info-two{
+    margin-top: 50px;
+  }
+
   .screenshot{
-    height: 90px;
-    width: 90px;
-    background-size: 150px;
+    height: 150px;
+    width: 150px;
+    background-size: 280px;
     background-position-x: 2px;
+  }
+
+  .project-text{
+    padding-bottom: 30px;
   }
 
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 800px){
-  .proj, .con{
+  .proj{
     background-attachment: inherit;
     background-size: 1060px;
     background-position-y: 0px;
   }
+
+  .con{
+    background-attachment: inherit;
+    background-size: 1060px;
+    background-position: -160px;
+  }
+
   .header{
     height: 90px;
   }
@@ -2043,7 +2308,7 @@ p{
   }
   .proj{
     padding-top: 0px;
-    height: 700px;
+    height: 640px;
   }
   .proj1 {
     grid-row: 5/8;  
@@ -2058,7 +2323,7 @@ p{
     grid-row: 5/8;  
   }
   .myself-container{
-    height:515px;
+    height: 575px;
   }
   .con{
     height: 531px;
@@ -2066,25 +2331,45 @@ p{
   .screenshot{
     height: 150px;
     width: 150px;
-    background-size: 150px;
+    background-size: 280px;
     background-position-x: 2px;
   }
   .xbox{
-    top: 1610px;
+    top: 180px;
   }
   .xbox:active{
-    top: 1610px;
+    top: 180px;
   }
   .show-modal{
-    top: 1530px;
+    top: 180px;
   }
 }
 
 @media only screen and (min-device-width: 801px) and (max-device-width: 812px){
-  .proj, .con{
+  .proj{
     background-attachment: inherit;
     background-size: 812px;
     background-position-y: 0px;
+  }
+
+  .con {
+    background-attachment: inherit;
+    background-size: 812px;
+    background-position: 0px;
+}
+
+  .projects {
+    display: grid;
+    grid-template-rows: repeat(11, 26.5px);
+    grid-template-columns: repeat(11, 1fr);
+  }
+
+  .project{
+    height: 190px;
+  }
+
+  .project-text{
+    padding-bottom: 50px;
   }
   .header{
     height: 70px;
@@ -2093,8 +2378,8 @@ p{
     padding-top: 10px;
   }
   .proj{
-    padding-top: 0px;
-    height: 240px;
+    padding-top: 100px;
+    height: 420px;
   }
   .proj1 {
     grid-row: 1/8;  
@@ -2109,7 +2394,7 @@ p{
     grid-row: 1/8;  
   }
   .myself-container{
-    height: 395px;
+    height: 555px;
   }
   .con{
     height: 378px;
@@ -2117,50 +2402,41 @@ p{
   .screenshot{
     height: 150px;
     width: 150px;
-    background-size: 150px;
+    background-size: 280px;
     background-position-x: 2px;
   }
-
-  /* .desc{
-    display: none
-  }
-  .desc2{
-    position: absolute; 
-    border-radius: 16px;
-    top: 620px;
-    width: 305px;
-    font-size: 24px;
-    height: 270px;
-    padding-top: 55px;
-    margin-left: 35px;
-    z-index: 5;
-    background-color: rgba(252, 226, 232, 0.95)
-  } */
 
 }
 
 @media only screen and (min-device-width: 813px) and (max-device-width: 823px){
-  .proj, .con{
+  .proj{
     background-attachment: inherit;
     background-size: 830px;
     background-position-y: 0px;
   }
+
+  .con {
+    background-attachment: inherit;
+    background-size: 830px;
+    background-position: 0px;
+  }
+
   .header{
     height: 70px;
   }
   .proj{
     background-size: 825px;
-    height: 255px;
-    padding-top: 20px;
+    height: 375px;
+    padding-top: 110px;
   }
   .hello{
     padding-top: 0px;
   }
   .xbox{
-    top: 1470px;
+    top: 180px;
   }
   .xbox:active{
-    top: 1470px;
+    top: 180px;
   }
   .show-modal{
     top: 1440px;
@@ -2168,13 +2444,30 @@ p{
 }
 
 @media only screen and (min-device-width: 824px) and (max-device-width: 1024px){
-  .proj, .con{
+  .proj{
     background-attachment: inherit;
     background-size: 1024px;
     background-position-y: 0px;
   }
+
+  .info-four,.info-one,.info-three,.info-two{
+    margin-bottom: 140px
+  }
+
+  .con{
+    background-position: 0px;
+    background-attachment: inherit;
+    background-size: 1024px;
+  }
+
+
+
+  .project-text{
+    padding-bottom: 40px;
+  }
+
   .xbox{
-    top: 1525px;
+    top: 180px;
   }
   .show-modal{
     top: 1416px;
@@ -2215,11 +2508,18 @@ p{
 }
 
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1366px){
-  .proj, .con{
+  .proj{
     background-attachment: inherit;
     background-size: 1366px;
     background-position-y: -50px;
   }
+
+  .con{
+    background-attachment: inherit;
+    background-size: 1366px;
+    background-position: 0px;
+  }
+
   .proj{
     font-size: 36px;
   }
