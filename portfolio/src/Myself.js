@@ -31,11 +31,11 @@ const Myself = () => {
           <div className="projects">
             <Fade right duration={2000} delay={2000}>
               <div className="project proj1">
-                <a className="screenshot-link" href="https://www.inspirave.com/" target="_blank"><div className="screenshot shot-four"></div></a>
+                <a className="screenshot-link" href="https://sfoutsidelands.com/" target="_blank"><div className="screenshot shot-four"></div></a>
                 <Fade opposite when={showInfo === true}>
                   <div className={modalDisplay} onClick={() => {setShowInfo(!showInfo) ; showInfoThree && setShowInfoThree(!showInfoThree) ; showInfoTwo && setShowInfoTwo(!showInfoTwo) ; showInfoFour && setShowInfoFour(!showInfoFour)}}>
-                    <p><span> Title:</span> Inspirave</p><br/>
-                    <p><span> Description:</span> Enterprise level website SaveAway® utilizes the power of peer to peer sharing, to save towards purchase goals</p>
+                    <p><span> Title:</span> Outside Lands</p><br/>
+                    <p><span> Description:</span> Website for a three day destival in San Fransisco, converted into React in collaboration with SuperFly</p>
                   </div>
                 </Fade>
               </div>  
@@ -79,11 +79,11 @@ const Myself = () => {
 
             <Fade right duration={2000} delay={2800}>
               <div className="project proj3">
-                <a className="screenshot-link" href="https://revvupyourfitness.com/" target="_blank"><div className="screenshot shot-three"></div></a>
+                <a className="screenshot-link" href="https://friendstheexperience.com/" target="_blank"><div className="screenshot shot-three"></div></a>
                 <Fade opposite when={showInfoThree === true}>  
                   <div className={modalDisplayThree} onClick={() => {setShowInfoThree(!showInfoThree) ; showInfoFour && setShowInfoFour(!showInfoFour) ; showInfoTwo && setShowInfoTwo(!showInfoTwo) ; showInfo && setShowInfo(!showInfo)}}>
-                    <p><span> Title:</span> Revv Fitness</p><br/>
-                    <p><span> Description:</span> Website made in WordPress and CSS for a gym experience in southern Utah</p>
+                    <p><span> Title:</span> Friends Enterprise</p><br/>
+                    <p><span> Description:</span> Made with React in collaboration with SuperFly, a live experience for the hit show "Friends"</p>
                   </div>
                 </Fade>
               </div>
@@ -128,8 +128,8 @@ const Myself = () => {
             {/* */}
             <Fade opposite when={showInfo === true}>
               <div className={modalDisplay1} onClick={() => {setShowInfo(!showInfo) ; showInfoThree && setShowInfoThree(!showInfoThree) ; showInfoTwo && setShowInfoTwo(!showInfoTwo) ; showInfoFour && setShowInfoFour(!showInfoFour)}}>
-                <p><span> Title:</span> Inspirave</p><br/>
-                <p><span> Description:</span> Enterprise level website SaveAway® utilizes the power of peer to peer sharing, to save towards purchase goals</p>
+                <p><span> Title:</span> Outside Lands</p><br/>
+                <p><span> Description:</span> Website for a three day destival in San Fransisco, converted into React in collaboration with SuperFly</p>
               </div>
             </Fade>
             <Fade opposite when={showInfoTwo === true}>
@@ -140,8 +140,8 @@ const Myself = () => {
             </Fade>
             <Fade opposite when={showInfoThree === true}> 
               <div className={modalDisplay3} onClick={() => {setShowInfoThree(!showInfoThree) ; showInfoFour && setShowInfoFour(!showInfoFour) ; showInfoTwo && setShowInfoTwo(!showInfoTwo) ; showInfo && setShowInfo(!showInfo)}}>
-                <p><span> Title:</span> Revv Fitness</p><br/>
-                <p><span> Description:</span> Website made in WordPress and CSS for a gym experience in southern Utah</p>
+                <p><span> Title:</span> The Friends Experience</p><br/>
+                <p><span> Description:</span> Made with React in collaboration with SuperFly, a live experience for the hit show "Friends"</p>
               </div> 
             </Fade> 
             <Fade opposite when={showInfoFour === true}> 

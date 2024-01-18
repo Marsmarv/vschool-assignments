@@ -43,7 +43,7 @@ h5{
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  top: 1620px;
+  top: 180px;
   color: rgb(255, 227, 253);
   text-align: center;
   border-radius:10px;
@@ -200,7 +200,7 @@ body {
   margin-top: 30px;
   height: 350px;
   width: 270px;
-  background-image: url('./images/MarvFEresWc-1.png');
+  background-image: url('./images/FdevP.png');
   background-size: cover;
   box-shadow: 2px 2px 5px 1px;
   margin-left: auto;
@@ -210,10 +210,10 @@ body {
 .show-modal{
   position: absolute;
   margin-top: 30px;
-  top: 1590px;
+  top: 150px;
   height: 750px;
   width: 580px;
-  background-image: url('./images/MarvFEresWc-1.png');
+  background-image: url('./images/FdevP.png');
   background-size: cover;
   box-shadow: 2px 2px 5px 1px;
   margin-left: auto;
@@ -273,36 +273,36 @@ body {
 }
 
 .shot-one{
-  background-image: url('./images/proj6.jpeg');
+  background-image: url('./images/proj10.png');
   background-size: 340px;
   background-position-x: -70px;
-  background-position-y: 0px;
+  background-position-y: -100px;
 }
 
 .shot-two{
-  background-image: url('./images/proj5.png');
+  background-image: url('./images/proj12.png');
   background-size: 300px;
   background-position-x: -50px;
   background-position-y: 0px;
 }
 
 .shot-three{
-  background-image: url('./images/proj7.png');
+  background-image: url('./images/proj11.png');
   background-size: 310px;
   background-position-x: 20px;
   background-position-y: -10px;
 }
 
 .shot-four{
-  background-image: url('./images/proj8.png');
+  background-image: url('./images/proj9.png');
   background-size: 310px;
   background-position-x: -20px;
-  background-position-y: -22px;
+  background-position-y: 22px;
 }
 
 .shot-one:hover{
+  background-position-y: -120px;
   background-size: 340px;
-  background-position-y: 0px;
   background-position-x: -80px;
   margin-right: 20px;
   margin-top: 20px;
@@ -323,7 +323,7 @@ body {
   }
 .shot-four:hover{
   background-position-x: -47px;
-  background-position-y: -41px;
+  background-position-y: 3px;
   margin-right: 25px;
   margin-top: 20px;
 }
@@ -460,11 +460,11 @@ p{
     width: 0px;
   }
   .xbox{
-    top: 1665px;
+    top: 180px;
     left: -330px;
   }
   .xbox:active{
-    top: 1665px;
+    top: 180px;
     left: -330px;
   }
   .proj1{
@@ -525,14 +525,14 @@ p{
 
   .shot-four:hover {
     background-position-x: -27px;
-    background-position-y: -21px;
+    background-position-y: 3px;
     margin-right: 0px;
     margin-top: 0px;
   }
 
   .shot-one:hover {
+    background-position-y: -120px;
     background-size: 200px;
-    background-position-y: 0px;
     background-position-x: -40px;
     margin-right: 0px;
     margin-top: 0px;
@@ -605,7 +605,7 @@ p{
     width: 0px;
   }
   .xbox{
-    top: 1015px;
+    top: 180px;
     left: -340px;
   }
 
@@ -629,7 +629,7 @@ p{
   }
 
   .shot-one:hover{
-    background-position-y: -20px;
+    background-position-y: -120px;
     background-position-x: -9px;
     margin-left: 20px;
     background-size: 150px;
@@ -646,7 +646,7 @@ p{
     }
   .shot-four:hover{
     background-position-x: -11px;
-    background-position-y: -42px;
+    background-position-y: 3px;
     margin-left: 20px;
   }
   .desc{
@@ -716,12 +716,12 @@ p{
   .xbox{
     left: -460px;
     margin-right:570px;
-    top: 1265px;
+    top: 180px;
   }
   .xbox:active{
     left: -460px;
     margin-right:570px;
-    top: 1265px;
+    top: 180px;
   }
   .screenshot{
     height: 120px;
@@ -741,7 +741,7 @@ p{
   }
 
   .shot-one:hover{
-    background-position-y: -20px;
+    background-position-y: -120px;
     background-position-x: -3px;
     margin-left: 10px;
     background-size: 200px;
@@ -758,7 +758,7 @@ p{
     }
   .shot-four:hover{
     background-position-x: -3px;
-    background-position-y: -42px;
+    background-position-y: 3px;
     margin-left: 10px;
   }
   .desc{
@@ -850,8 +850,8 @@ p{
   }
 
   .shot-one:hover{
+    background-position-y: -120px;
     background-size: 280px;
-    background-position-y: -20px;
     background-position-x: -3px;
     margin-left: 9px;
   }
@@ -867,7 +867,7 @@ p{
     }
   .shot-four:hover{
     background-position-x: -6px;
-    background-position-y: -42px;
+    background-position-y: 3px;
     margin-left: 13px;
   }
   .desc{
@@ -953,8 +953,8 @@ p{
     transition: .1s;
   }
   .shot-one:hover{
+    background-position-y: -120px;
     background-size: 150px;
-    background-position-y: -50px;
     background-position-x: -5px;
   }
   .shot-two:hover{
@@ -967,7 +967,7 @@ p{
     }
   .shot-four:hover{
     background-position-x: -12px;
-    background-position-y: 17px;
+    background-position-y: 3px;
   }
 
   .shot-one{
@@ -975,8 +975,8 @@ p{
   }
 
   .shot-one:hover{
+    background-position-y: -120px;
     background-size: 280px;
-    background-position-y: -20px;
     background-position-x: -3px;
     margin-left: 9px;
   }
@@ -992,7 +992,7 @@ p{
     }
   .shot-four:hover{
     background-position-x: -6px;
-    background-position-y: -42px;
+    background-position-y: 3px;
     margin-left: 13px;
   }
   .desc{
@@ -1072,8 +1072,8 @@ p{
   }
 
   .shot-one:hover{
+    background-position-y: -120px;
     background-size: 280px;
-    background-position-y: -20px;
     background-position-x: 3px;
     margin-left: 9px;
   }
@@ -1089,7 +1089,7 @@ p{
     }
   .shot-four:hover{
     background-position-x: 2px;
-    background-position-y: -42px;
+    background-position-y: 3px;
     margin-left: 13px;
   }
   .desc{
@@ -1173,8 +1173,8 @@ p{
   }
 
   .shot-one:hover{
+    background-position-y: -120px;
     background-size: 280px;
-    background-position-y: -20px;
     background-position-x: -7px;
     margin-left: 9px;
   }
@@ -1190,7 +1190,7 @@ p{
     }
   .shot-four:hover{
     background-position-x: -9px;
-    background-position-y: -42px;
+    background-position-y: 3px;
     margin-left: 13px;
   }
   .desc{
@@ -1257,8 +1257,8 @@ p{
   }
 
   .shot-one:hover{
+    background-position-y: -120px;
     background-size: 280px;
-    background-position-y: -20px;
     background-position-x: -4px;
     margin-left: 9px;
   }
@@ -1274,7 +1274,7 @@ p{
     }
   .shot-four:hover{
     background-position-x: -6px;
-    background-position-y: -42px;
+    background-position-y: 3px;
     margin-left: 13px;
   }
   .desc{
@@ -1324,8 +1324,8 @@ p{
     transition: .1s;
   }
   .shot-one:hover{
+    background-position-y: -120px;
     background-size: 280px;
-    background-position-y: -20px;
     background-position-x: -4px;
     margin-left: 9px;
   }
@@ -1341,7 +1341,7 @@ p{
     }
   .shot-four:hover{
     background-position-x: -6px;
-    background-position-y: -42px;
+    background-position-y: 3px;
     margin-left: 13px;
   }
   .desc{
@@ -1392,8 +1392,8 @@ p{
     transition: .1s;
   }
   .shot-one:hover{
+    background-position-y: -120px;
     background-size: 290px;
-    background-position-y: -20px;
     background-position-x: -5px;
     margin-left: 10px;
   }
@@ -1409,7 +1409,7 @@ p{
     }
   .shot-four:hover{
     background-position-x: -13px;
-    background-position-y: -42px;
+    background-position-y: 3px;
     margin-left: 20px;
   }
   .desc{
@@ -1452,8 +1452,8 @@ p{
     transition: .1s;
   }
   .shot-one:hover{
+    background-position-y: -120px;
     background-size: 340px;
-    background-position-y: -20px;
     background-position-x: -89px;
     margin-left: 10px;
   }
@@ -1469,7 +1469,7 @@ p{
     }
   .shot-four:hover{
     background-position-x: -35px;
-    background-position-y: -42px;
+    background-position-y: 3px;
     margin-left: 10px;
   }
   .desc2{
@@ -1494,8 +1494,8 @@ p{
     
   }
   .shot-one:hover{
+    background-position-y: -120px;
     background-size: 340px;
-    background-position-y: -20px;
     background-position-x: -94px;
     margin-left: 10px;
   }
@@ -1511,7 +1511,7 @@ p{
     }
   .shot-four:hover{
     background-position-x: -48px;
-    background-position-y: -42px;
+    background-position-y: 3px;
     margin-left: 10px;
   }
   .desc2{
@@ -2109,11 +2109,11 @@ p{
     width: 0px;
   }
   .xbox{
-    top: 1015px;
+    top: 180px;
     left: -340px;
   }
   .xbox:active{
-    top: 1015px;
+    top: 180px;
     left: -340px;
   }
 
@@ -2169,12 +2169,12 @@ p{
   .xbox{
     left: -460px;
     margin-right:570px;
-    top: 1265px;
+    top: 180px;
   }
   .xbox:active{
     left: -460px;
     margin-right:570px;
-    top: 1265px;
+    top: 180px;
   }
   .screenshot{
     height: 120px;
@@ -2335,13 +2335,13 @@ p{
     background-position-x: 2px;
   }
   .xbox{
-    top: 1610px;
+    top: 180px;
   }
   .xbox:active{
-    top: 1610px;
+    top: 180px;
   }
   .show-modal{
-    top: 1530px;
+    top: 180px;
   }
 }
 
@@ -2433,10 +2433,10 @@ p{
     padding-top: 0px;
   }
   .xbox{
-    top: 1470px;
+    top: 180px;
   }
   .xbox:active{
-    top: 1470px;
+    top: 180px;
   }
   .show-modal{
     top: 1440px;
@@ -2467,7 +2467,7 @@ p{
   }
 
   .xbox{
-    top: 1525px;
+    top: 180px;
   }
   .show-modal{
     top: 1416px;
